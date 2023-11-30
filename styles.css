@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+nav {
+    height: 80px;
+    background:  #222222;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 16px 30px;
+}
+
+nav a {
+        text-decoration: none;
+        color:azure;
+        padding: 0 1.5em;
+        font-weight: 400;
+} 
+
+.banner {
+    background-color:#222222;
+}
+
+
+.container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    position: relative;
+    padding: 18rem 2rem;
+    height: 85vh;
+    z-index: 2;
+    overflow: hidden;
+    
+}
+
+
+.col-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+
+.col-left h1 {
+    margin-bottom: 40px;
+    font-size: 52px;
+    color: aliceblue;
+}
+
+.col-left p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.8em;
+    color: rgb(213, 213, 213);
+}
+
+.btn {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #3d3d3d;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.btm:hover {
+    background: #bfbfbf;
+    color: #3d3d3d;
+}
+
+.col-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 2rem;
+     
+    }
+
+    .col-left {
+        width: 100%;
+        padding-top: 60px;
+    }
+    
+    .col-right{
+        padding-top: 60px;
+    }
+    
+}
+
+
+@media screen and (max-width: 420px) {
+
+    nav {
+        padding: 16px 15px;
+    }
+
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .col-left{
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .col-left h1 {
+        font-size: 40px;
+    }
+
+    .col-left p {
+        font-size: 14px;
+    }
+
+
+
+}
