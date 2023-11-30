@@ -1,3 +1,3 @@
 # FrontendProject
 
-okay lets connect
+Frontend project using HTML and CSS
