@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="sleekauto.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-items">
+              <!-- <ul>
+                <li><a href="#_">Menu Item 1</a></li>
+                <li><a href="#_">Menu Item 2</a></li>
+                <li><a href="#_">Menu Item 3</a></li>
+                <li><a href="#_">Menu Item 4</a></li>
+              </ul> -->
+                <a href="#" target="_blank">Home</a>
+                <a href="about.html" target="_blank">About</a>
+                <a href="product.html" target="_blank">Product</a>
+                <a href="contact.html" target="_blank">Contact</a>
+            </div>    
+        </nav>
+    
+        <section class="banner"> 
+            <div class="container">
+                <div class="col-left">
+                    <h1>Unlock the Thrill of Driving</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse. 
+                    </p>
+                    <button href = "#" class="btn">Shop Now</button>
+                </div>
+                <div class="col-right">
+                    <!-- <img src="car.png" alt="banner-img" class="banner-img" width="450" height="250"> -->
+                </div>
+            </div>                                               
+
+        </section>
+    </header>
+
+
+    <section class="service_section layout_padding">
+        <div class="container">
+          <div class="heading_container">
+            <h2>
+              Our Services
+            </h2>
+            <img src="images/plug.png" alt="">
+          </div>
+    
+          <div class="service_container">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/s1.png" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Equipment installation
+                </h5>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,
+                </p>
+              </div>
+            </div>
+            <div class="box active">
+              <div class="img-box">
+                <img src="images/s2.png" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Windmill Energy
+                </h5>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img-box">
+                <img src="images/s3.png" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Equipment Maintenance
+                </h5>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,
+                </p>
+              </div>
+            </div>
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s4.png" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Offshore Engineering
+                </h5>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img-box">
+                <img src="images/s5.png" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Electrical Wiring
+                </h5>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- end service section -->
+
+<script>
+   document.addEventListener('scroll',() => {
+      const nav = document.querySelector('nav')
+
+      if (window.scrollY > 0) {
+        nav.classList.add ('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+   });
+
+</script>
+
+
+
+    
+</body>
+</html>
