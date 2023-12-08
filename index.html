@@ -15,18 +15,18 @@
                     <img src="sleekauto.png" alt="logo">
                 </a>
             </div>
-            <div class="nav-items">
-              <!-- <ul>
-                <li><a href="#_">Menu Item 1</a></li>
-                <li><a href="#_">Menu Item 2</a></li>
-                <li><a href="#_">Menu Item 3</a></li>
-                <li><a href="#_">Menu Item 4</a></li>
-              </ul> -->
-                <a href="#" target="_blank">Home</a>
-                <a href="about.html" target="_blank">About</a>
-                <a href="product.html" target="_blank">Product</a>
-                <a href="contact.html" target="_blank">Contact</a>
-            </div>    
+              <ul class="nav-menu">
+                  <li><a href="#" target="_blank">Home</a></li>
+                  <li><a href="about.html" target="_blank">About</a></li>
+                  <li><a href="product.html" target="_blank">Product</a></li>
+                  <li><a href="contact.html" target="_blank">Contact</a></li>
+              </ul>
+
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div> 
         </nav>
     
         <section class="banner"> 
@@ -144,6 +144,28 @@
         nav.classList.remove('scrolled');
       }
    });
+
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+}
+
+      const navLink = document.querySelectorAll("li");
+
+      navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+}
+
+
 
 </script>
 

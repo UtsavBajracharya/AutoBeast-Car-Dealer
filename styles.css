@@ -25,7 +25,7 @@ nav {
 }
 
 nav.scrolled {
-    background-color: rgba(0, 0, 0, 0.808);
+    background-color: #000000d3;
     box-shadow: rgba(56, 56, 57, 0.2) 0px 7px 29px 0px;
     opacity: 1.5;
     
@@ -47,9 +47,55 @@ nav.scrolled {
 nav a {
         text-decoration: none;
         color:azure;
-        padding: 0 1.5em;
         font-weight: 500;
 } 
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+    
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    margin-left: 3rem;
+}
+
+
+/* a:hover{
+    color: #482ff7;
+} */
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+
 
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(banner.jpg);
@@ -158,7 +204,7 @@ nav a {
     }
 
     .logo img {
-        width: 70%;
+        width: 50%;
     }
 
     .container {
@@ -181,6 +227,64 @@ nav a {
 
 
 
+
+@media only screen and (max-width: 768px) {
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4rem;
+        flex-direction: column;
+        background-color: #000000d3;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    li a {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        top: 0;
+        padding: 4rem 0;
+        
+    }
+
+    li {
+        margin: 1.2rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        top: 5;
+        right: 35px;
+    }
+
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+
+
 @media screen and (max-width: 420px) {
 
     nav {
@@ -192,7 +296,7 @@ nav a {
     }
 
     .logo img {
-        width: 80%;
+        width: 50%;
     }
 
     .col-left{
