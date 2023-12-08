@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Home Page</title>
 </head>
 <body>
@@ -12,14 +13,14 @@
         <nav>
             <div class="logo">
                 <a href="#">
-                    <img src="sleekauto.png" alt="logo">
+                    <img src="images/logo.png" alt="logo">
                 </a>
             </div>
               <ul class="nav-menu">
-                  <li><a href="#" target="_blank">Home</a></li>
-                  <li><a href="about.html" target="_blank">About</a></li>
-                  <li><a href="product.html" target="_blank">Product</a></li>
-                  <li><a href="contact.html" target="_blank">Contact</a></li>
+                  <li class="nav-link"><a href="#" target="_blank">Home</a></li>
+                  <li class="nav-link"><a href="about.html" target="_blank">About</a></li>
+                  <li class="nav-link"><a href="product.html" target="_blank">Product</a></li>
+                  <li class="nav-link"><a href="contact.html" target="_blank">Contact</a></li>
               </ul>
 
               <div class="hamburger">
@@ -40,9 +41,7 @@
                     </p>
                     <button href = "#" class="btn">Shop Now</button>
                 </div>
-                <div class="col-right">
-                    <!-- <img src="car.png" alt="banner-img" class="banner-img" width="450" height="250"> -->
-                </div>
+                <div class="col-right"></div>
             </div>                                               
 
         </section>
@@ -133,6 +132,55 @@
         </div>
       </section>
       <!-- end service section -->
+
+
+      <footer>
+        <div class="footer-row">
+          <div class="footer-col">
+              <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam.
+
+              <div class="icons">
+                <i class="fa-brands fa-facebook-f fa-lg grow"></i>
+                <i class="fa-brands fa-instagram fa-lg grow"></i>
+                <i class="fa-brands fa-twitter fa-lg grow"></i>
+                <i class="fa-brands fa-youtube fa-lg grow"></i>
+              </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li class="links"><a href="#">Home</a></li>
+              <li class="links"><a href="#">About</a></li>
+              <li class="links"><a href="#">Products</a></li>
+              <li class="links"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-links">
+              <li class="links"><a href="#">Special Offers</a></li>
+              <li class="links"><a href="#">Latest Models</a></li>
+              <li class="links"><a href="#">Customer Stories</a></li>
+              <li class="links"><a href="#">Events</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form action="#">
+              <input type="email" placeholder="Enter email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+        </div>
+      </footer>
 
 <script>
    document.addEventListener('scroll',() => {
