@@ -70,9 +70,6 @@ a {
     margin-left: 3rem;
 }
 
-/* a:hover{
-    color: #482ff7;
-} */
 
 .nav-logo {
     font-size: 2.1rem;
@@ -180,38 +177,12 @@ a {
     }   
     
     .products{
-          padding: 4rem 1rem;
+          padding: 4rem 2rem;
     }
-    
+ 
+
 }
 
-
-@media screen and (min-width: 768px) {
-
-    /* section {
-        padding: 0 2rem;
-      } */
-
-
-    .column {
-      flex: 0 50%;
-      max-width: 50%;
-    }
-  }
-
-  @media screen and (min-width: 992px) {
-
-    .products {
-        padding: 4rem 4rem;
-    }
-
-    .column {
-      flex: 0 0 33.33%;
-      max-width: 33.33%;
-    }
-
-
-  }
 
 @media screen and (max-width: 820px) {
 
@@ -239,7 +210,7 @@ a {
         padding-top: 60px;
     }
 
-    
+  
 }
 
 
@@ -260,7 +231,7 @@ a {
 
     li a {
         color: #fff;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .nav-menu.active {
@@ -299,6 +270,15 @@ a {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .footer-col {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .bottom-footer p {
+        font-size: 14px;
+    }
 }
 
 
@@ -334,10 +314,10 @@ a {
 }
 
 
-.products{
+.products {
     width: 100%;
     display: grid;
-    place-items: center;
+    text-align: center;
  
   }
 
@@ -351,11 +331,12 @@ a {
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
+    justify-content: center;
+
   }
 
   .column {
     width: 100%;
-    padding: 0 1em 1em 1em;
     text-align: center;
   }
 
@@ -379,7 +360,7 @@ a {
     margin-top: 2rem;
   }
 
-  p {
+  .description {
     color: #575a7b;
     font-size: 15px;
     line-height: 1.6;
@@ -419,14 +400,55 @@ a {
     color: #f0f0f0;
   }
 
+  .btn-box {
+    background: #FF0003;
+    color: #fff;    
+    outline: none;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.2s ease;
+    margin-top: 20px;
+}
+
+.btn-box:hover {
+    background: #161616; 
+}
 
 
 
+  @media screen and (min-width: 768px) {
+
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+      padding: 1rem;
+    }
+
+  }
+
+  @media screen and (min-width: 992px) {
+
+    .products {
+        padding: 4rem 4rem;
+    }
+
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 1rem;
+    }
+
+  }
 
 
-footer {
+.top-footer{
     width: 100%;
-    background: #1A1100;
+    background: #222222;
+    padding: 3rem 4rem;
 }
 
 
@@ -435,8 +457,13 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
-    padding: 3rem 4rem;
+
 }
+
+.footer-col{
+    margin-bottom: 20px;
+}
+
 
 .footer-row .footer-col h4 {
     color: #fff;
@@ -471,7 +498,7 @@ footer {
 .footer-col p {
     margin: 30px 0;
     color: #bfbfbf;
-    max-width: 400px;
+    max-width: 450px;
     font-size: 14px;
     line-height: 26px;
 }
@@ -485,28 +512,33 @@ footer {
 
 .footer-col input {
     height: 40px;
-    border-radius: 6px;
+    border-radius: 8px;
     background: none;
     font-size: 14px;
     width: 100%;
     outline: none;
-    border: 1px solid #ffffff ;
+    border: 1px solid #ffffff85 ;
     caret-color: #fff;
     color: #fff;
     padding-left: 10px;
 }
 
 .footer-col input::placeholder {
-    color: #c3c3c3;
+    color: #c3c3c37e;
 }
+
+.footer-col input:focus {
+    border: 1px solid rgb(184, 184, 184);
+    box-shadow: 0 0 4px rgb(170, 170, 170);
+  }
 
 .footer-col form button {
     background: #FF0003;
-    color: #fff;
+    color: #fff;    
     outline: none;
     border: none;
     padding: 10px 15px;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: 500;
     font-size: 14px;
@@ -542,25 +574,49 @@ footer {
     transform: scale(1.2);
 }
 
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+    padding: 1.8rem;
+    background-color: #000000;
+    border-top: 1px solid #323232;
+}
+
+.bottom-footer p {
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.bottom-footer a {
+    color: #E50002;
+}
+
+
+
+@media only screen and (max-width: 992px) and (min-width: 420px)  {
+    
+    .top-footer{
+        padding: 4rem 2rem !important;
+    }
+    
+}
+
 
 @media (max-width: 768px) {
-    footer {
+    .top-footer{
         position: relative;
         bottom: 0;
         left: 0;
         transform: none;
         width: 100%;
+        padding: 3rem 1rem;
     }
 
-    .footer .footer-row {
+    .top-footer.footer-row {
         padding: 20px;
         gap: 1rem;
         
     }
-/* 
-    .footer-col {
-        margin-bottom: 150px;
-    } */
 
     .footer-col form {
         display: block;
@@ -573,4 +629,5 @@ footer {
     .footer-col form button {
         margin: 10px 0 0 0;
     }
+
 }
