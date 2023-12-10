@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Home Page</title>
 </head>
 <body>
@@ -12,21 +13,21 @@
         <nav>
             <div class="logo">
                 <a href="#">
-                    <img src="sleekauto.png" alt="logo">
+                    <img src="images/logo.png" alt="logo">
                 </a>
             </div>
-            <div class="nav-items">
-              <!-- <ul>
-                <li><a href="#_">Menu Item 1</a></li>
-                <li><a href="#_">Menu Item 2</a></li>
-                <li><a href="#_">Menu Item 3</a></li>
-                <li><a href="#_">Menu Item 4</a></li>
-              </ul> -->
-                <a href="#" target="_blank">Home</a>
-                <a href="about.html" target="_blank">About</a>
-                <a href="product.html" target="_blank">Product</a>
-                <a href="contact.html" target="_blank">Contact</a>
-            </div>    
+              <ul class="nav-menu">
+                  <li class="nav-link"><a href="#" target="_blank">Home</a></li>
+                  <li class="nav-link"><a href="about.html" target="_blank">About</a></li>
+                  <li class="nav-link"><a href="product.html" target="_blank">Product</a></li>
+                  <li class="nav-link"><a href="contact.html" target="_blank">Contact</a></li>
+              </ul>
+
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div> 
         </nav>
     
         <section class="banner"> 
@@ -40,99 +41,143 @@
                     </p>
                     <button href = "#" class="btn">Shop Now</button>
                 </div>
-                <div class="col-right">
-                    <!-- <img src="car.png" alt="banner-img" class="banner-img" width="450" height="250"> -->
-                </div>
+                <div class="col-right"></div>
             </div>                                               
 
         </section>
     </header>
 
 
-    <section class="service_section layout_padding">
-        <div class="container">
-          <div class="heading_container">
-            <h2>
-              Our Services
-            </h2>
-            <img src="images/plug.png" alt="">
-          </div>
-    
-          <div class="service_container">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s1.png" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Equipment installation
-                </h5>
-                <p>
-                  There are many variations of passages of Lorem Ipsum available,
-                </p>
-              </div>
+    <section class="products">
+      <h2 class="section-heading">Our Products</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-hammer"></i>
             </div>
-            <div class="box active">
-              <div class="img-box">
-                <img src="images/s2.png" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Windmill Energy
-                </h5>
-                <p>
-                  There are many variations of passages of Lorem Ipsum available,
-                </p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s3.png" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Equipment Maintenance
-                </h5>
-                <p>
-                  There are many variations of passages of Lorem Ipsum available,
-                </p>
-              </div>
-            </div>
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s4.png" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Offshore Engineering
-                </h5>
-                <p>
-                  There are many variations of passages of Lorem Ipsum available,
-                </p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s5.png" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Electrical Wiring
-                </h5>
-                <p>
-                  There are many variations of passages of Lorem Ipsum available,
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="btn-box">
-            <a href="">
-              Read More
-            </a>
+            <h3>Product 1</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
           </div>
         </div>
-      </section>
-      <!-- end service section -->
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-brush"></i>
+            </div>
+            <h3>Product heading </h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <h3>Product heading </h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-truck-pickup"></i>
+            </div>
+            <h3>Product heading </h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-broom"></i>
+            </div>
+            <h3>Product heading </h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3>Product heading </h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+      <footer>
+        <div class="footer-row">
+          <div class="footer-col">
+              <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam.
+
+              <div class="icons">
+                <i class="fa-brands fa-facebook-f fa-lg grow"></i>
+                <i class="fa-brands fa-instagram fa-lg grow"></i>
+                <i class="fa-brands fa-twitter fa-lg grow"></i>
+                <i class="fa-brands fa-youtube fa-lg grow"></i>
+              </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li class="links"><a href="#">Home</a></li>
+              <li class="links"><a href="#">About</a></li>
+              <li class="links"><a href="#">Products</a></li>
+              <li class="links"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-links">
+              <li class="links"><a href="#">Special Offers</a></li>
+              <li class="links"><a href="#">Latest Models</a></li>
+              <li class="links"><a href="#">Customer Stories</a></li>
+              <li class="links"><a href="#">Events</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form action="#">
+              <input type="email" placeholder="Enter email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+        </div>
+      </footer>
 
 <script>
    document.addEventListener('scroll',() => {
@@ -144,6 +189,28 @@
         nav.classList.remove('scrolled');
       }
    });
+
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+}
+
+      const navLink = document.querySelectorAll("li");
+
+      navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+}
+
+
 
 </script>
 
