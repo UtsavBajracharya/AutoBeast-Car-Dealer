@@ -6,24 +6,6 @@
     font-family: 'Raleway', sans-serif;
 }
 
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body {
-    margin: 0;
-    font-family: "Poppins", sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-}
-
 .sub_page .header_area {
     height: auto;
 }
@@ -221,6 +203,7 @@ img {
 
 .contact_section textarea.message-box {
     height: 120px;
+    padding-top: 15px;
 }
 
 button, input {
@@ -258,16 +241,24 @@ input, button, select, optgroup, textarea {
 }
 
 /* Footer section starts*/
-footer {
-    width: 100%;
-    background: #1A1100;
-}
-
 .footer-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.footer-col {
+    margin-bottom: 20px;
+}
+
+.top-footer {
+    width: 100%;
+    background: #222222;
     padding: 3rem 4rem;
 }
 
@@ -275,6 +266,17 @@ footer {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.footer-col .icons {
+    display: inline-flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.footer-col .icons i {
+    color: #afb6c7;
+    transition-duration: 0.3s;
 }
 
 .footer-col .footer-links {
@@ -293,14 +295,10 @@ footer {
     padding: 0;
 }
 
-.footer-col .footer-links .links a:hover {
-    color: #fff;
-}
-
 .footer-col p {
     margin: 30px 0;
     color: #bfbfbf;
-    max-width: 400px;
+    max-width: 450px;
     font-size: 14px;
     line-height: 26px;
 }
@@ -308,24 +306,20 @@ footer {
 .footer-col form {
     display: flex;
     gap: 12px;
-    margin:30px 0;
+    margin: 30px 0;
 }
 
 .footer-col input {
     height: 40px;
-    border-radius: 6px;
+    border-radius: 8px;
     background: none;
     font-size: 14px;
     width: 100%;
     outline: none;
-    border: 1px solid #ffffff ;
+    border: 1px solid #ffffff85;
     caret-color: #fff;
     color: #fff;
     padding-left: 10px;
-}
-
-.footer-col input::placeholder {
-    color: #c3c3c3;
 }
 
 .footer-col form button {
@@ -334,37 +328,34 @@ footer {
     outline: none;
     border: none;
     padding: 10px 15px;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: 500;
     font-size: 14px;
     transition: 0.2s ease;
 }
 
-.footer-col form button:hover {
-    background: #E50002;    ;
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+    padding: 1.8rem;
+    background-color: #000000;
+    border-top: 1px solid #323232;
 }
 
-.footer-col .icons {
-    display: inline-flex;
-    gap: 30px;
-    cursor: pointer;
+.bottom-footer p {
+    color: #f0f0f0;
+    text-align: center;
 }
 
-.footer-col .icons i {
-    color: #afb6c7;
-    transition-duration: 0.3s;
-    
+.bottom-footer a {
+    color: #E50002;
 }
 
-.footer-col .icons i .grow {
-    transition: all .2s ease-in-out;
+a {
+    text-decoration: none;
 }
 
-.footer-col .icons i:hover  {
-    color: #fff;
-    transform: scale(1.2);
-}
 /* Footer section ends*/
 
 /* Laptop */
@@ -394,6 +385,10 @@ footer {
         padding-top: 10px;
     }
 
+    .logo img {
+        width: 50%;
+    }
+
     nav {
         padding: 3rem 2rem;
     }
@@ -414,6 +409,10 @@ footer {
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        margin: 1.2rem 0;
     }
 
     .hamburger {
@@ -437,24 +436,22 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    footer {
+    .top-footer {
         position: relative;
         bottom: 0;
         left: 0;
         transform: none;
         width: 100%;
+        padding: 4rem 2rem;
     }
 
-    .logo img {
-        width: 50%;
+    .footer-col {
+        margin-bottom: 20px;
+        width: 100%;
     }
 
     .footer-col form {
         display: block;
-    }
-
-    li {
-        margin: 1.2rem 0;
     }
 
     .footer-col form :where(input, button) {
@@ -463,6 +460,15 @@ footer {
 
     .footer-col form button {
         margin: 10px 0 0 0;
+    }
+
+    .bottom-footer p {
+        font-size: 14px;
+    }
+
+    li a {
+        color: #fff;
+        font-size: 14px;
     }
 }
 
@@ -507,6 +513,10 @@ footer {
         margin: 1.2rem 0;
     }
 
+    li {
+        margin: 1.2rem 0;
+    }
+
     li a {
         color: #fff;
         font-size: 20px;
@@ -533,6 +543,25 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    li a {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .top-footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+    
+    .footer-col {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
     .footer-col form {
         display: block;
     }
@@ -543,5 +572,9 @@ footer {
 
     .footer-col form button {
         margin: 10px 0 0 0;
+    }
+
+    .bottom-footer p {
+        font-size: 14px;
     }
 }
