@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .sub_page .header_area {
