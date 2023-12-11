@@ -634,6 +634,14 @@ a {
 
 /* Contact Section */
 
+
+.contact-column h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
 .contact_section {
     width: 100%;
     display: grid;
@@ -675,8 +683,9 @@ input, button, select, optgroup, textarea {
 }
 
 .button-flex {
-    display: flex !important;
+    display: flex;
 }
+
 
 .contact_section button {
     background: #FF0003;
@@ -684,7 +693,7 @@ input, button, select, optgroup, textarea {
     outline: none;
     border: none;
     padding: 12px 28px;
-    border-radius: 8px;
+    border-radius: 40px;
     cursor: pointer;
     font-weight: 500;
     font-size: 14px;
@@ -692,7 +701,7 @@ input, button, select, optgroup, textarea {
 }
 
 .contact_section button:hover {
-    background: #E50002;
+    background: #161616;
 }
 
 .contact_section .map_container {
@@ -706,9 +715,6 @@ input, button, select, optgroup, textarea {
 
 /* Laptop */
 @media screen and (min-width: 1024px) {
-    .container {
-        max-width: 960px;
-    }
 
     .contact-column {
         flex: 0 50%;
@@ -739,7 +745,12 @@ input, button, select, optgroup, textarea {
 /* Mobile */
 @media screen and (max-width: 767px) {
 
+    .contact-column{
+        width: 100%;
+    }
+
     .contact_section form {
+        margin: 0;
         padding-right: 0;
     }
 
