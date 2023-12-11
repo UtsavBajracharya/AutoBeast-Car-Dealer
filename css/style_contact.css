@@ -115,8 +115,8 @@ nav a {
 }
 
 .layout_padding {
-    padding-top: 180px;
-    padding-bottom: 90px;
+    padding-top: 153px;
+    padding-bottom: 60px;
 }
 
 .container {
@@ -159,8 +159,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
 }
 
-.heading_container img {
+.heading_container i {
     width: 30px;
+    font-size: x-large;
+    color: #ee0002;
 }
 
 img {
@@ -222,13 +224,20 @@ input, button, select, optgroup, textarea {
 }
 
 .contact_section button {
+    background: #FF0003;
+    color: #fff;
+    outline: none;
     border: none;
-    display: inline-block;
-    padding: 12px 45px;
-    background-color: #4b208c;
-    color: #ffffff;
-    border-radius: 0px;
-    margin-top: 35px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.contact_section button:hover {
+    background: #E50002;
 }
 
 .contact_section .map_container {
@@ -279,6 +288,11 @@ input, button, select, optgroup, textarea {
     transition-duration: 0.3s;
 }
 
+.footer-col .icons i:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
 .footer-col .footer-links {
     margin-top: 30px;
     padding: 0;
@@ -293,6 +307,10 @@ input, button, select, optgroup, textarea {
     text-decoration: none;
     color: #bfbfbf;
     padding: 0;
+}
+
+.footer-col .footer-links .links a:hover {
+    color: #fff;
 }
 
 .footer-col p {
@@ -333,6 +351,10 @@ input, button, select, optgroup, textarea {
     font-weight: 500;
     font-size: 14px;
     transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+    background: #E50002;
 }
 
 .bottom-footer {
