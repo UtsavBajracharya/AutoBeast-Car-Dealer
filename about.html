@@ -1,11 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="css/style_aboutus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
-<body>
-    
+
+<body class="sub_page">
+
+    <!-- header section starts -->
+    <div class="header_area">
+        <header class="header_section">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-link"><a href="index.html" target="_blank">Home</a></li>
+                        <li class="nav-link"><a href="about.html" target="_blank">About</a></li>
+                        <li class="nav-link"><a href="product.html" target="_blank">Product</a></li>
+                        <li class="nav-link"><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- header section ends -->
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row">                
+                <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+                    <div class="inner-column">
+                        <div class="sec-title">
+                            <span class="title">About Company</span>
+                            <h2>We are leader in <br>Industrial market Since 1992</h2>
+                        </div>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</div>
+                        <ul class="list-style-one">
+                            <li>Lorem Ipsum is simply dummy tex</li>
+                            <li>Consectetur adipisicing elit</li>
+                            <li>Sed do eiusmod tempor incididunt</li>
+                        </ul>
+                        <!-- <div class="btn-box">
+                            <a href="#" class="theme-btn btn-style-one">Contact Us</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Image Column -->
+                <!-- <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInLeft">
+                        <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img src="https://i.ibb.co/QP6Nmpf/image-1-about.jpg" alt=""></a></figure>
+                        <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img src="https://i.ibb.co/JvN0NVB/image-2-about.jpg" alt=""></a></figure>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section starts -->
+
+    <section class="top-footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam.
+                </p>
+
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f fa-lg grow"></i>
+                    <i class="fa-brands fa-instagram fa-lg grow"></i>
+                    <i class="fa-brands fa-twitter fa-lg grow"></i>
+                    <i class="fa-brands fa-youtube fa-lg grow"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li class="links"><a href="index.html">Home</a></li>
+                    <li class="links"><a href="about.html">About</a></li>
+                    <li class="links"><a href="product.html">Products</a></li>
+                    <li class="links"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="footer-links">
+                    <li class="links"><a href="#">Special Offers</a></li>
+                    <li class="links"><a href="#">Latest Models</a></li>
+                    <li class="links"><a href="#">Customer Stories</a></li>
+                    <li class="links"><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <form action="#">
+                    <input type="email" placeholder="Enter email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bottom-footer">
+        <p>
+            &copy; 2023 All Rights Reserved By
+            <a href="index.html">Sleek Auto</a>
+        </p>
+    </footer>
+
+    <!-- end footer section -->
+
+    <script>
+        const nav = document.querySelector('nav');
+        const navMenu = document.querySelector(".nav-menu");
+        const hamburger = document.querySelector(".hamburger");
+        const navLink = document.querySelectorAll("li");
+
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                nav.classList.add('scrolled');
+            }
+            else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        } 
+    </script>
 </body>
+
 </html>
