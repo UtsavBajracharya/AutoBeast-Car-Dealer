@@ -465,10 +465,6 @@ a {
 /* Mobile */
 
 @media screen and (max-width: 767px) {
-    .blog_section .custom-column {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
     nav {
         padding: 3rem 2rem;
     }
@@ -549,6 +545,9 @@ a {
     }
 }
 
+
+/* Blog section */
+
 .blog_section .heading_container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -580,14 +579,7 @@ a {
 
 .blog_section .box .detail-box h5 {
     font-weight: bold;
-    line-height: 1.2;
 }
-
-
-/* ... Your existing styles ... */
-
-
-/* Blog section */
 
 .blog_section .row {
     display: flex;
@@ -599,4 +591,11 @@ a {
     flex: 0 0 calc(50% - 15px);
     max-width: calc(50% - 15px);
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .blog_section .custom-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
