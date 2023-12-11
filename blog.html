@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="css/style_blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body class="sub_page">
+
+    <!-- header section starts -->
+    <div class="header_area">
+        <header class="header_section">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-link"><a href="index.html">Home</a></li>
+                        <li class="nav-link"><a href="about.html">About</a></li>
+                        <li class="nav-link"><a href="product.html">Product</a></li>
+                        <li class="nav-link"><a href="blog.html">Blog</a></li>
+                        <li class="nav-link"><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- header section ends -->
+
+    <!-- blog section starts -->
+    <section class="blog_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    Blog
+                </h2>
+                <i class="fa-solid fa-pencil"></i>
+
+            </div>
+            <div class="row">
+                <div class="custom-column">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/blog1.jpg" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Blog Title Goes Here
+                            </h5>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-column">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/blog2.jpg" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Blog Title Goes Here
+                            </h5>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end blog section -->
+
+    <!-- footer section starts -->
+
+    <section class="top-footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f fa-lg grow"></i>
+                    <i class="fa-brands fa-instagram fa-lg grow"></i>
+                    <i class="fa-brands fa-twitter fa-lg grow"></i>
+                    <i class="fa-brands fa-youtube fa-lg grow"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li class="links"><a href="index.html">Home</a></li>
+                    <li class="links"><a href="about.html">About</a></li>
+                    <li class="links"><a href="product.html">Products</a></li>
+                    <li class="links"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="footer-links">
+                    <li class="links"><a href="#">Special Offers</a></li>
+                    <li class="links"><a href="#">Latest Models</a></li>
+                    <li class="links"><a href="#">Customer Stories</a></li>
+                    <li class="links"><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <form action="#">
+                    <input type="email" placeholder="Enter email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bottom-footer">
+        <p>
+            &copy; 2023 All Rights Reserved By
+            <a href="index.html">Sleek Auto</a>
+        </p>
+    </footer>
+
+    <!-- end footer section -->
+
+    <script>
+        const nav = document.querySelector('nav');
+        const navMenu = document.querySelector(".nav-menu");
+        const hamburger = document.querySelector(".hamburger");
+        const navLink = document.querySelectorAll("li");
+
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>
