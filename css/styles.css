@@ -461,7 +461,7 @@ a {
 }
 
 .footer-col{
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 
@@ -507,7 +507,7 @@ a {
 .footer-col form {
     display: flex;
     gap: 12px;
-    margin:30px 0;
+    margin-top:30px ;
 }
 
 .footer-col input {
@@ -530,7 +530,7 @@ a {
 .footer-col input:focus {
     border: 1px solid rgb(184, 184, 184);
     box-shadow: 0 0 4px rgb(170, 170, 170);
-  }
+}
 
 .footer-col form button {
     background: #FF0003;
