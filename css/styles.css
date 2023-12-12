@@ -804,8 +804,12 @@ a {
 
 
 
-/* Contact Section */
+/* Contact and About Section */
 
+.about-column{
+    text-align: justify;
+    padding: 10px;
+}
 
 .contact-column h2 {
     font-size: 40px;
@@ -814,7 +818,8 @@ a {
     text-align: left;
 }
 
-.contact_section {
+.contact_section,
+.about_section {
     width: 100%;
     display: grid;
     text-align: center;
@@ -892,29 +897,30 @@ input, button, select, optgroup, textarea {
         padding: 0 180px;
     }
 
-    .contact-column {
+    .contact-column,
+    .about-column {
         flex: 0 50%;
         max-width: 50%;
     }
 
-    .contact_section {
+    .contact_section,
+    .about_section {
         padding: 4rem 4rem;
     }
+    
 }
 
 /* Tablet */
 @media screen and (min-width:768px) and (max-width: 1023px) {
-    .contact_section{
+    .contact_section,
+    .about_section {
         padding: 4rem 4rem;
     }
 
-    .contact-column {
+    .contact-column,
+    .about-column {
         flex: 0 0 50%;
         max-width: 50%;
-    }
-
-    .contact_section {
-        padding: 4rem 4rem;
     }
 }
 
@@ -931,7 +937,8 @@ input, button, select, optgroup, textarea {
         border-bottom: 4px solid rgb(22, 22, 22);
     }
 
-    .contact-column{
+    .contact-column,
+    .about-column {
         width: 100%;
     }
 
@@ -940,11 +947,10 @@ input, button, select, optgroup, textarea {
         padding-right: 0;
     }
 
-    .contact_section {
+    .contact_section,
+    .about_section {
         padding: 4rem 2rem;
     }
-
-
 }
 
 /* Contact Section */
