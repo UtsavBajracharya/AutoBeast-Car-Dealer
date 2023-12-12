@@ -60,8 +60,12 @@ nav.scrolled {
 
 nav a {
     text-decoration: none;
-    color: azure;
+    color: #bfbfbf;
     font-weight: 500;
+}
+
+nav a.active {
+    color: azure;
 }
 
 .logo img {
@@ -86,12 +90,6 @@ nav a {
 
 li {
     list-style: none;
-}
-
-nav a {
-    text-decoration: none;
-    color: azure;
-    font-weight: 500;
 }
 
 .hamburger {
@@ -560,8 +558,8 @@ a {
     }
 
     li a {
-        color: #fff;
-        font-size: 14px;
+        color: #bfbfbf;
+        font-size: 16px;
     }
 }
 
@@ -607,8 +605,8 @@ a {
     }
 
     li a {
-        color: #fff;
-        font-size: 20px;
+        color: #bfbfbf;
+        font-size: 16px;
     }
 
     .hamburger {
@@ -630,11 +628,6 @@ a {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-    }
-
-    li a {
-        color: #fff;
-        font-size: 14px;
     }
 
     .top-footer {
