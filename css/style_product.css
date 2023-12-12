@@ -91,9 +91,13 @@ li {
 
 nav a {
     text-decoration: none;
-    color: azure;
+    color: #bfbfbf;
     font-weight: 500;
 }
+
+nav a.active {
+    color: azure;
+ }
 
 .hamburger {
     display: none;
@@ -120,7 +124,7 @@ nav a {
 
 .product-detail {
     color: #575a7b;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     margin-bottom: 20px; 
@@ -229,7 +233,7 @@ h3 {
 
 .description {
     color: #575a7b;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     margin-top: 16px;
@@ -522,8 +526,7 @@ a {
     }
 
     li a {
-        color: #fff;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -565,8 +568,8 @@ a {
     }
 
     li a {
-        color: #fff;
-        font-size: 20px;
+        color: #bfbfbf;
+        font-size: 16px;
     }
 
     .hamburger {
@@ -591,8 +594,7 @@ a {
     }
 
     li a {
-        color: #fff;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .products {
@@ -611,6 +613,7 @@ a {
     .box {
         width: 100%;
         height: 130px;
+        border-bottom: 4px solid rgb(22, 22, 22);
     }
 
     .top-footer {

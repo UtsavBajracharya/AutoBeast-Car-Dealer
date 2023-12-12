@@ -91,9 +91,13 @@ li {
 
 nav a {
     text-decoration: none;
-    color: azure;
+    color: #bfbfbf;
     font-weight: 500;
 }
+
+nav a.active {
+    color: azure;
+ }
 
 .hamburger {
     display: none;
@@ -498,8 +502,8 @@ a {
     }
 
     li a {
-        color: #fff;
-        font-size: 14px;
+        color: #bfbfbf;
+        font-size: 16px;
     }
 }
 
@@ -575,8 +579,8 @@ a {
     }
 
     li a {
-        color: #fff;
-        font-size: 14px;
+        color: #bfbfbf;
+        font-size: 16px;
     }
 
     .top-footer {

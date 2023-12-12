@@ -61,9 +61,13 @@ nav.scrolled {
 
 nav a {
     text-decoration: none;
-    color: azure;
+    color: #bfbfbf;
     font-weight: 500;
 }
+
+nav a.active {
+    color: azure;
+ }
 
 .logo img {
     width: 50%;
@@ -89,11 +93,6 @@ li {
     list-style: none;
 }
 
-nav a {
-    text-decoration: none;
-    color: azure;
-    font-weight: 500;
-}
 
 .hamburger {
     display: none;
@@ -394,6 +393,12 @@ a {
     nav {
         padding: 3rem 2rem;
     }
+
+    li a {
+        color: #bfbfbf;
+        font-size: 16px;
+    }
+
     .nav-menu.active {
         left: 0;
         top: 0;
@@ -456,8 +461,8 @@ a {
         font-size: 14px;
     }
     li a {
-        color: #fff;
-        font-size: 14px;
+        color: #bfbfbf;
+        font-size: 16px;
     }
 }
 
@@ -515,8 +520,8 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
     li a {
-        color: #fff;
-        font-size: 14px;
+        color: #bfbfbf;
+        font-size: 16px;
     }
     .top-footer {
         position: relative;
@@ -578,7 +583,16 @@ a {
 }
 
 .blog_section .box .detail-box h5 {
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.blog_section .box .detail-box p {
+    color: #575a7b;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    margin-top: 16px;
 }
 
 .blog_section .row {
