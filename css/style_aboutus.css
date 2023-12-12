@@ -109,6 +109,64 @@ nav a {
 }
 /* navigation header ends*/
 
+
+.gallery {
+    --childs: 5;
+    --gap: 5px;
+    background: rgb(22, 22, 22);
+    border: 6px solid rgb(22, 22, 22);
+    border-radius: 6px;
+    display: flex;
+    gap: var(--gap);
+    margin: 20px 0 50px 0;
+  }
+  
+  .box {
+    width: calc((100% / var(--childs)));
+    box-sizing: border-box;
+    height: min(30vmin, 250px);
+    background-color: white;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transition: width 300ms 50ms ease-in-out;
+  }
+  
+  .box:hover {
+    width: calc((100% / (var(--childs) - 2))); 
+  }
+
+  
+
+ .gallery:has(.box:hover) .box:not(:hover) .box span{
+    width: calc((100% / (var(--childs) + 1)));
+    
+  }
+  
+  .box-1 {
+    background-image: url("../images/sports-cars.jpg");
+  }
+  
+  .box-2 {
+    background-image: url("../images/monster-trucks.jpg");
+  }
+  
+  .box-3 {
+    background-image: url("../images/two-wheelers.jpg");
+  }
+  
+  .box-4 {
+    background-image: url("../images/mini-vans.jpg");
+  }
+  
+  .box-5 {
+    background-image: url("../images/electric-cars.jpg");
+  }
+
 h1,
 h2,
 h3,
@@ -121,6 +179,15 @@ a:focus,
 a:active {
     text-decoration: none;
     outline: none;
+}
+.section-heading {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    display: grid;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 a,
@@ -265,6 +332,7 @@ color: #ffffff;
 .about-section{
 position: relative;
 padding: 120px 0 70px;
+width: 100%;
 }
 
 .about-section .sec-title{
