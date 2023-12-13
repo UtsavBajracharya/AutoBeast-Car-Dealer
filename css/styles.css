@@ -491,6 +491,10 @@ a {
     background: #161616; 
 }
 
+.btn-box a {
+    color: azure;
+}
+
 
 
   @media screen and (min-width: 768px) {
@@ -890,6 +894,31 @@ input, button, select, optgroup, textarea {
     height: 100%;
 }
 
+.about-section .container-row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.about_section .row {
+    align-items: center;
+}
+
+.about-column .about-detail p {
+    line-height: 1.5rem;
+}
+
+.about-column img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.about-column .button-flex {
+    justify-content: center;
+    display: flex;
+}
+
 /* Laptop */
 @media screen and (min-width: 1024px) {
 
@@ -906,8 +935,7 @@ input, button, select, optgroup, textarea {
     .contact_section,
     .about_section {
         padding: 4rem 4rem;
-    }
-    
+    }    
 }
 
 /* Tablet */
@@ -917,8 +945,7 @@ input, button, select, optgroup, textarea {
         padding: 4rem 4rem;
     }
 
-    .contact-column,
-    .about-column {
+    .contact-column {
         flex: 0 0 50%;
         max-width: 50%;
     }
