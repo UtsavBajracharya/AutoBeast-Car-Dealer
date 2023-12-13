@@ -270,7 +270,11 @@ section {
 }
 
 .container-column p {
-    line-height: 1.5rem;
+    color: #575a7b;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 
 
