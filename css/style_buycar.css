@@ -1082,3 +1082,45 @@ a {
         font-size: 14px;
     }
 }
+
+
+/*Pagination styling*/
+
+#pagination {
+    margin-top: 35px;
+}
+
+.page-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #161616;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.page-link.active {
+    background-color: #ee0002;
+    color: #fff;
+}
+
+.page-link:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.prev,.next {
+    background-color: #161616;
+    color: #fff;
+}
+
+.prev:focus, .next:focus {
+    background-color: #161616;
+    color: #fff;
+}
+
+
+
+
+
