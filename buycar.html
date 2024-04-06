@@ -80,11 +80,11 @@
                                 <li class="list-group-item car-listing-filter-option-title">Mileage</li>
                                 <li class="list-group-item">
                                     <div class="slider slider-horizontal" id="">
-                                        <b style="float: left;">80,000</b>
+                                        <b style="float: left;">5,000</b>
                                         <b style="float: right;">350,000</b>
                                         <input id="mileage_range_m" type="text" class="span2" 
-                                        value="" data-slider-min="80000" data-slider-max="350000" 
-                                        data-slider-step="10000" data-slider-value="[80000,350000]"> 
+                                        value="" data-slider-min="5000" data-slider-max="350000" 
+                                        data-slider-step="10000" data-slider-value="[5000,350000]"> 
                                     </div>
                                 </li>
                                 <span class="car-listing-filter-line"></span>
@@ -96,11 +96,11 @@
                                 <li class="list-group-item car-listing-filter-option-title">Price Range</li>
                                 <li class="list-group-item">
                                     <div class="slider slider-horizontal" id="">
-                                        <b style="float: left;">$5,000</b>
-                                        <b style="float: right;">$45,000</b>
+                                        <b style="float: left;">$2,000</b>
+                                        <b style="float: right;">$99,000</b>
                                         <input id="price_range_m" type="text" class="span2" 
-                                        value="" data-slider-min="5000" data-slider-max="45000" 
-                                        data-slider-step="5000" data-slider-value="[5000,45000]"> 
+                                        value="" data-slider-min="2000" data-slider-max="99000" 
+                                        data-slider-step="5000" data-slider-value="[2000,99000]"> 
                                     </div>
                                 </li>
                                 <span class="car-listing-filter-line"></span>
@@ -108,7 +108,7 @@
                         </div>
                         
                         <div class="car-listing-filter-option-container">
-                            <button type="button" class="filter-update-btn">UPDATE</button>
+                            <button type="button" class="filter-update-m-btn">UPDATE</button>
                         </div>
                     </div>
                 </div>
@@ -164,11 +164,11 @@
                                                     <li class="list-group-item car-listing-filter-option-title">Mileage</li>
                                                     <li class="list-group-item">
                                                         <div class="slider slider-horizontal" id="">
-                                                            <b style="float: left;">80,000</b>
+                                                            <b style="float: left;">5,000</b>
                                                             <b style="float: right;">350,000</b>
                                                             <input id="mileage_range" type="text" class="span2" 
-                                                            value="" data-slider-min="80000" data-slider-max="350000" 
-                                                            data-slider-step="10000" data-slider-value="[80000,350000]"> 
+                                                            value="" data-slider-min="5000" data-slider-max="350000" 
+                                                            data-slider-step="10000" data-slider-value="[5000,350000]"> 
                                                         </div>
                                                     </li>
                                                     <span class="car-listing-filter-line"></span>
@@ -180,11 +180,11 @@
                                                     <li class="list-group-item car-listing-filter-option-title">Price Range</li>
                                                     <li class="list-group-item">
                                                         <div class="slider slider-horizontal" id="">
-                                                            <b style="float: left;">$5,000</b>
-                                                            <b style="float: right;">$45,000</b>
+                                                            <b style="float: left;">$2,000</b>
+                                                            <b style="float: right;">$99,000</b>
                                                             <input id="price_range" type="text" class="span2" 
-                                                            value="" data-slider-min="5000" data-slider-max="45000" 
-                                                            data-slider-step="5000" data-slider-value="[5000,45000]"> 
+                                                            value="" data-slider-min="2000" data-slider-max="99000" 
+                                                            data-slider-step="5000" data-slider-value="[2000,99000]"> 
                                                         </div>
                                                     </li>
                                                     <span class="car-listing-filter-line"></span>
@@ -214,35 +214,38 @@
                             <div class="car_listing_toolbar">
                                 <div class="car_listing_search pull-left">
                                     <input type="text" id="search" class="search" placeholder="Keyword Search">
+                                    <button class="btn-search" id="search-btn" type="button" title="Click to search">
+                                        <i class="fa fa-search"></i>
+                                    </button>
                                 </div>
                                 <div class="car_listing_controls">
                                     <div class="dropdown page-size-options">
                                         <div class="dropdown">
                                             <button class="down-arrow-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <span class="car-listing-control-btn-label">Page Size</span>
-                                                <span class="car-listing-control-btn-value">12 items</span>
+                                                <span class="car-listing-control-btn-value page-value">12 items</span>
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="">9 items per page</a></li>
-                                                <li class="active"><a class="dropdown-item" href="">12 items per page</a></li>
-                                                <li><a class="dropdown-item" href="">18 items per page</a></li>
-                                                <li><a class="dropdown-item" href="">24 items per page</a></li>
+                                                <li class="page_selection" data-bind="9"><span class="dropdown-item">9 items per page</span></li>
+                                                <li class="page_selection active" data-bind="12"><span class="dropdown-item">12 items per page</span></li>
+                                                <li class="page_selection" data-bind="18"><span class="dropdown-item">18 items per page</span></li>
+                                                <li class="page_selection" data-bind="24"><span class="dropdown-item">24 items per page</span></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="dropdown sort-by-options">
                                         <button class="down-arrow-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <span class="car-listing-control-btn-label">Sort By</span>
-                                            <span class="car-listing-control-btn-value">Default</span>
+                                            <span class="car-listing-control-btn-value sort-value">Default</span>
                                         </button>
                                         <ul class="dropdown-menu">
-                                            <li class="active"><a  class="dropdown-item" href="">Default</a></li>
-                                            <li><a class="dropdown-item" href="">Price: High - Low</a></li>
-                                            <li><a class="dropdown-item" href="">Price: Low - High</a></li>
-                                            <li><a class="dropdown-item" href="">Miles: High - Low</a></li>
-                                            <li><a class="dropdown-item" href="">MIles: Low - High</a></li>
-                                            <li><a class="dropdown-item" href="">Year: New - Old</a></li>
-                                            <li><a class="dropdown-item" href="">Year: Old - New</a></li>
+                                            <li class="sort_selection active" data-bind="d"><span  class="dropdown-item">Default</span></li>
+                                            <li class="sort_selection" data-bind="p1"><span class="dropdown-item">Price: High - Low</span></li>
+                                            <li class="sort_selection" data-bind="p2"><span class="dropdown-item">Price: Low - High</span></li>
+                                            <li class="sort_selection" data-bind="m1"><span class="dropdown-item">Miles: High - Low</span></li>
+                                            <li class="sort_selection" data-bind="m2"><span class="dropdown-item">MIles: Low - High</span></li>
+                                            <li class="sort_selection" data-bind="y1"><span class="dropdown-item">Year: New - Old</span></li>
+                                            <li class="sort_selection" data-bind="y2"><span class="dropdown-item">Year: Old - New</span></li>
                                         </ul>
                                     </div>
                                     <button type="button" class="car-listing-filter-btn btn" data-bs-toggle="modal" data-bs-target="#carFilterModal">
@@ -259,425 +262,12 @@
                     <div class="car-listing-container container-fluid no-h-padding">
                         <div class="car-row">
                             <div class="column-12">
-                                <div class="list-group">
-                                    <!-- list-group-item -->
-                                    <div class="list-group-item car-listing-item container-fluid no-h-padding">
-                                        <div class="car-row">
-                                            <div class="display-car-style">
-
-                                                <!-- car image wapper -->
-                                                <div class="car-listing-item-img car-listing-item-img-left column-4">
-                                                    <div class="image-wrapper">
-                                                        <a class="car-view-detail-link" aria-hidden="true" href="">
-                                                            <div class="car-image-container" 
-                                                                title="2012 FORD F250 SUPER DUTY CREW CAB"
-                                                                style="padding-top: 67%; background-image: url(https://imagescf.dealercenter.net/640/480/202402-559ad505e1764fb58f18367a4295f994.jpg);"
-                                                                data-background-image="https://imagescf.dealercenter.net/640/480/202402-559ad505e1764fb58f18367a4295f994.jpg"
-                                                                data-loaded="true"
-                                                            >
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- car image wapper ends -->
-                                                
-                                                <!-- car-listing-item-info -->
-                                                <div class="car-listing-item-info left column-12">
-                                                    <div class="car-row">
-                                                        <div class="column-small-7">
-                                                            <div class="car-listing-item-title">
-                                                                <a href="">2017 FORD F350 SUPER DUTY CREW CAB</a>
-                                                            </div>
-                                                            <div class="car-listing-item-field-container">
-                                                                <div class="car-listing-item-field car-field-drivetrain ">
-                                                                    <span class="car-listing-item-field-label">Drivetrain</span>
-                                                                    <span class="car-listing-item-field-value">4WD</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-transmission ">
-                                                                    <span class="car-listing-item-field-label">Transmission</span>
-                                                                    <span class="car-listing-item-field-value">AUTOMATIC</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-engine ">
-                                                                    <span class="car-listing-item-field-label">Engine</span>
-                                                                    <span class="car-listing-item-field-value">V8, TURBO DIESEL, 6.7 LITER</span>
-                                                                </div>
-                                                                    <div class="car-listing-item-field car-field-mileage ">
-                                                                    <span class="car-listing-item-field-label">Mileage</span>
-                                                                    <span class="car-listing-item-field-value">110,247</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-door ">
-                                                                    <span class="car-listing-item-field-label">Doors</span>
-                                                                    <span class="car-listing-item-field-value">4</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-vin ">
-                                                                    <span class="car-listing-item-field-label">VIN</span>
-                                                                    <span class="car-listing-item-field-value">1FT8W3BT3HEB38494</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-stock-number ">
-                                                                    <span class="car-listing-item-field-label">Stock Number</span>
-                                                                    <span class="car-listing-item-field-value">B38494</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-transmission-details ">
-                                                                    <span class="car-listing-item-field-label">Transmission Detail</span>
-                                                                    <span class="car-listing-item-field-value">AUTO, HD 6-SPD SELSHFT</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-mpg ">
-                                                                    <span class="car-listing-item-field-label">MPG (city/hwy)</span>
-                                                                    <span class="car-listing-item-field-value">- / -</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-bodytype ">
-                                                                    <span class="car-listing-item-field-label">Body Type</span>
-                                                                    <span class="car-listing-item-field-value">PICKUP</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-trim ">
-                                                                    <span class="car-listing-item-field-label">Trim</span>
-                                                                    <span class="car-listing-item-field-value">LARIAT PICKUP 4D 6 3/4 FT</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-fueltype ">
-                                                                    <span class="car-listing-item-field-label">Fuel Type</span>
-                                                                    <span class="car-listing-item-field-value">DIESEL</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- car-price -->
-                                                        <div class="car-price-wrapper">
-                                                            <div class="pull-right car-price">
-                                                                <span class="car-price-value">$39,990</span>
-                                                            </div>
-                                                        </div>
-                                                        <!-- car-price -->
-                                                    </div>
-                                                </div>
-                                                <!-- car-listing-item-info ends -->
-                                            </div>
-                                        </div>
-
-                                        <!-- button row -->
-                                        <div class="car-row">
-                                            <div class="car-listing-item-buttons column-12">
-                                                <button type="button" class="btn btn-apply-online">APPLY ONLINE</button>
-                                                <button type="button" class="btn btn-check-availability">CHECK AVAILABILITY</button>
-                                                <button type="button" class="btn btn-test-drive">TEST DRIVE</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- list-group-item ends-->
-
-                                    <!-- list-group-item -->
-                                    <div class="list-group-item car-listing-item container-fluid no-h-padding">
-                                        <div class="car-row">
-                                            <div class="display-car-style">
-
-                                                <!-- car image wapper -->
-                                                <div class="car-listing-item-img car-listing-item-img-left column-4">
-                                                    <div class="image-wrapper">
-                                                        <a class="car-view-detail-link" aria-hidden="true" href="">
-                                                            <div class="car-image-container" 
-                                                                title="2012 FORD F250 SUPER DUTY CREW CAB"
-                                                                style="padding-top: 67%; background-image: url(https://imagescf.dealercenter.net/640/480/202402-559ad505e1764fb58f18367a4295f994.jpg);"
-                                                                data-background-image="https://imagescf.dealercenter.net/640/480/202402-559ad505e1764fb58f18367a4295f994.jpg"
-                                                                data-loaded="true"
-                                                            >
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- car image wapper ends -->
-                                                
-                                                <!-- car-listing-item-info -->
-                                                <div class="car-listing-item-info left column-12">
-                                                    <div class="car-row">
-                                                        <div class="column-small-7">
-                                                            <div class="car-listing-item-title">
-                                                                <a href="">2017 FORD F350 SUPER DUTY CREW CAB</a>
-                                                            </div>
-                                                            <div class="car-listing-item-field-container">
-                                                                <div class="car-listing-item-field car-field-drivetrain ">
-                                                                    <span class="car-listing-item-field-label">Drivetrain</span>
-                                                                    <span class="car-listing-item-field-value">4WD</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-transmission ">
-                                                                    <span class="car-listing-item-field-label">Transmission</span>
-                                                                    <span class="car-listing-item-field-value">AUTOMATIC</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-engine ">
-                                                                    <span class="car-listing-item-field-label">Engine</span>
-                                                                    <span class="car-listing-item-field-value">V8, TURBO DIESEL, 6.7 LITER</span>
-                                                                </div>
-                                                                    <div class="car-listing-item-field car-field-mileage ">
-                                                                    <span class="car-listing-item-field-label">Mileage</span>
-                                                                    <span class="car-listing-item-field-value">110,247</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-door ">
-                                                                    <span class="car-listing-item-field-label">Doors</span>
-                                                                    <span class="car-listing-item-field-value">4</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-vin ">
-                                                                    <span class="car-listing-item-field-label">VIN</span>
-                                                                    <span class="car-listing-item-field-value">1FT8W3BT3HEB38494</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-stock-number ">
-                                                                    <span class="car-listing-item-field-label">Stock Number</span>
-                                                                    <span class="car-listing-item-field-value">B38494</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-transmission-details ">
-                                                                    <span class="car-listing-item-field-label">Transmission Detail</span>
-                                                                    <span class="car-listing-item-field-value">AUTO, HD 6-SPD SELSHFT</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-mpg ">
-                                                                    <span class="car-listing-item-field-label">MPG (city/hwy)</span>
-                                                                    <span class="car-listing-item-field-value">- / -</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-bodytype ">
-                                                                    <span class="car-listing-item-field-label">Body Type</span>
-                                                                    <span class="car-listing-item-field-value">PICKUP</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-trim ">
-                                                                    <span class="car-listing-item-field-label">Trim</span>
-                                                                    <span class="car-listing-item-field-value">LARIAT PICKUP 4D 6 3/4 FT</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-fueltype ">
-                                                                    <span class="car-listing-item-field-label">Fuel Type</span>
-                                                                    <span class="car-listing-item-field-value">DIESEL</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- car-price -->
-                                                        <div class="car-price-wrapper">
-                                                            <div class="pull-right car-price">
-                                                                <span class="car-price-value">$39,990</span>
-                                                            </div>
-                                                        </div>
-                                                        <!-- car-price -->
-                                                    </div>
-                                                </div>
-                                                <!-- car-listing-item-info ends -->
-                                            </div>
-                                        </div>
-
-                                        <!-- button row -->
-                                        <div class="car-row">
-                                            <div class="car-listing-item-buttons column-12">
-                                                <button type="button" class="btn btn-apply-online">APPLY ONLINE</button>
-                                                <button type="button" class="btn btn-check-availability">CHECK AVAILABILITY</button>
-                                                <button type="button" class="btn btn-test-drive">TEST DRIVE</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- list-group-item ends-->
-
-                                    <!-- list-group-item -->
-                                    <div class="list-group-item car-listing-item container-fluid no-h-padding">
-                                        <div class="car-row">
-                                            <div class="display-car-style">
-
-                                                <!-- car image wapper -->
-                                                <div class="car-listing-item-img car-listing-item-img-left column-4">
-                                                    <div class="image-wrapper">
-                                                        <a class="car-view-detail-link" aria-hidden="true" href="">
-                                                            <div class="car-image-container" 
-                                                                title="2012 FORD F250 SUPER DUTY CREW CAB"
-                                                                style="padding-top: 67%; background-image: url(https://imagescf.dealercenter.net/640/480/202402-559ad505e1764fb58f18367a4295f994.jpg);"
-                                                                data-background-image="https://imagescf.dealercenter.net/640/480/202402-559ad505e1764fb58f18367a4295f994.jpg"
-                                                                data-loaded="true"
-                                                            >
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- car image wapper ends -->
-                                                
-                                                <!-- car-listing-item-info -->
-                                                <div class="car-listing-item-info left column-12">
-                                                    <div class="car-row">
-                                                        <div class="column-small-7">
-                                                            <div class="car-listing-item-title">
-                                                                <a href="">2017 FORD F350 SUPER DUTY CREW CAB</a>
-                                                            </div>
-                                                            <div class="car-listing-item-field-container">
-                                                                <div class="car-listing-item-field car-field-drivetrain ">
-                                                                    <span class="car-listing-item-field-label">Drivetrain</span>
-                                                                    <span class="car-listing-item-field-value">4WD</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-transmission ">
-                                                                    <span class="car-listing-item-field-label">Transmission</span>
-                                                                    <span class="car-listing-item-field-value">AUTOMATIC</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-engine ">
-                                                                    <span class="car-listing-item-field-label">Engine</span>
-                                                                    <span class="car-listing-item-field-value">V8, TURBO DIESEL, 6.7 LITER</span>
-                                                                </div>
-                                                                    <div class="car-listing-item-field car-field-mileage ">
-                                                                    <span class="car-listing-item-field-label">Mileage</span>
-                                                                    <span class="car-listing-item-field-value">110,247</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-door ">
-                                                                    <span class="car-listing-item-field-label">Doors</span>
-                                                                    <span class="car-listing-item-field-value">4</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-vin ">
-                                                                    <span class="car-listing-item-field-label">VIN</span>
-                                                                    <span class="car-listing-item-field-value">1FT8W3BT3HEB38494</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-stock-number ">
-                                                                    <span class="car-listing-item-field-label">Stock Number</span>
-                                                                    <span class="car-listing-item-field-value">B38494</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-transmission-details ">
-                                                                    <span class="car-listing-item-field-label">Transmission Detail</span>
-                                                                    <span class="car-listing-item-field-value">AUTO, HD 6-SPD SELSHFT</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-mpg ">
-                                                                    <span class="car-listing-item-field-label">MPG (city/hwy)</span>
-                                                                    <span class="car-listing-item-field-value">- / -</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-bodytype ">
-                                                                    <span class="car-listing-item-field-label">Body Type</span>
-                                                                    <span class="car-listing-item-field-value">PICKUP</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-trim ">
-                                                                    <span class="car-listing-item-field-label">Trim</span>
-                                                                    <span class="car-listing-item-field-value">LARIAT PICKUP 4D 6 3/4 FT</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-fueltype ">
-                                                                    <span class="car-listing-item-field-label">Fuel Type</span>
-                                                                    <span class="car-listing-item-field-value">DIESEL</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- car-price -->
-                                                        <div class="car-price-wrapper">
-                                                            <div class="pull-right car-price">
-                                                                <span class="car-price-value">$39,990</span>
-                                                            </div>
-                                                        </div>
-                                                        <!-- car-price -->
-                                                    </div>
-                                                </div>
-                                                <!-- car-listing-item-info ends -->
-                                            </div>
-                                        </div>
-
-                                        <!-- button row -->
-                                        <div class="car-row">
-                                            <div class="car-listing-item-buttons column-12">
-                                                <button type="button" class="btn btn-apply-online">APPLY ONLINE</button>
-                                                <button type="button" class="btn btn-check-availability">CHECK AVAILABILITY</button>
-                                                <button type="button" class="btn btn-test-drive">TEST DRIVE</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- list-group-item ends-->
-
-                                    <!-- list-group-item -->
-                                    <div class="list-group-item car-listing-item container-fluid no-h-padding">
-                                        <div class="car-row">
-                                            <div class="display-car-style">
-
-                                                <!-- car image wapper -->
-                                                <div class="car-listing-item-img car-listing-item-img-left column-4">
-                                                    <div class="image-wrapper">
-                                                        <a class="car-view-detail-link" aria-hidden="true" href="">
-                                                            <div class="car-image-container" 
-                                                                title="2012 FORD F250 SUPER DUTY CREW CAB"
-                                                                style="padding-top: 67%; background-image: url(https://imagescf.dealercenter.net/640/480/202402-559ad505e1764fb58f18367a4295f994.jpg);"
-                                                                data-background-image="https://imagescf.dealercenter.net/640/480/202402-559ad505e1764fb58f18367a4295f994.jpg"
-                                                                data-loaded="true"
-                                                            >
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <!-- car image wapper ends -->
-                                                
-                                                <!-- car-listing-item-info -->
-                                                <div class="car-listing-item-info left column-12">
-                                                    <div class="car-row">
-                                                        <div class="column-small-7">
-                                                            <div class="car-listing-item-title">
-                                                                <a href="">2017 FORD F350 SUPER DUTY CREW CAB</a>
-                                                            </div>
-                                                            <div class="car-listing-item-field-container">
-                                                                <div class="car-listing-item-field car-field-drivetrain ">
-                                                                    <span class="car-listing-item-field-label">Drivetrain</span>
-                                                                    <span class="car-listing-item-field-value">4WD</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-transmission ">
-                                                                    <span class="car-listing-item-field-label">Transmission</span>
-                                                                    <span class="car-listing-item-field-value">AUTOMATIC</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-engine ">
-                                                                    <span class="car-listing-item-field-label">Engine</span>
-                                                                    <span class="car-listing-item-field-value">V8, TURBO DIESEL, 6.7 LITER</span>
-                                                                </div>
-                                                                    <div class="car-listing-item-field car-field-mileage ">
-                                                                    <span class="car-listing-item-field-label">Mileage</span>
-                                                                    <span class="car-listing-item-field-value">110,247</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-door ">
-                                                                    <span class="car-listing-item-field-label">Doors</span>
-                                                                    <span class="car-listing-item-field-value">4</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-vin ">
-                                                                    <span class="car-listing-item-field-label">VIN</span>
-                                                                    <span class="car-listing-item-field-value">1FT8W3BT3HEB38494</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-stock-number ">
-                                                                    <span class="car-listing-item-field-label">Stock Number</span>
-                                                                    <span class="car-listing-item-field-value">B38494</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-transmission-details ">
-                                                                    <span class="car-listing-item-field-label">Transmission Detail</span>
-                                                                    <span class="car-listing-item-field-value">AUTO, HD 6-SPD SELSHFT</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-mpg ">
-                                                                    <span class="car-listing-item-field-label">MPG (city/hwy)</span>
-                                                                    <span class="car-listing-item-field-value">- / -</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-bodytype ">
-                                                                    <span class="car-listing-item-field-label">Body Type</span>
-                                                                    <span class="car-listing-item-field-value">PICKUP</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-trim ">
-                                                                    <span class="car-listing-item-field-label">Trim</span>
-                                                                    <span class="car-listing-item-field-value">LARIAT PICKUP 4D 6 3/4 FT</span>
-                                                                </div>
-                                                                <div class="car-listing-item-field car-field-fueltype ">
-                                                                    <span class="car-listing-item-field-label">Fuel Type</span>
-                                                                    <span class="car-listing-item-field-value">DIESEL</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- car-price -->
-                                                        <div class="car-price-wrapper">
-                                                            <div class="pull-right car-price">
-                                                                <span class="car-price-value">$39,990</span>
-                                                            </div>
-                                                        </div>
-                                                        <!-- car-price -->
-                                                    </div>
-                                                </div>
-                                                <!-- car-listing-item-info ends -->
-                                            </div>
-                                        </div>
-
-                                        <!-- button row -->
-                                        <div class="car-row">
-                                            <div class="car-listing-item-buttons column-12">
-                                                <button type="button" class="btn btn-apply-online">APPLY ONLINE</button>
-                                                <button type="button" class="btn btn-check-availability">CHECK AVAILABILITY</button>
-                                                <button type="button" class="btn btn-test-drive">TEST DRIVE</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- list-group-item ends-->
+                                <!-- list of cars items-->
+                                <div class="list-group" id="data-container">
                                 </div>
         
                                 <!-- Pagination for the items -->
                                 <div id="pagination"></div>
-
-                                
-
                             </div>
                         </div>
                     </div>

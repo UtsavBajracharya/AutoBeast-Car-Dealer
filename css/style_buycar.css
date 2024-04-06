@@ -295,7 +295,7 @@ li {
     border-bottom: 1px solid;
 }
 
-.filter-update-btn {
+.filter-update-btn, .filter-update-m-btn {
     float: right !important;
     margin-top: 10px !important;
     margin-bottom: 10px !important;
@@ -320,7 +320,8 @@ li {
     user-select: none;
 }
 
-.filter-update-btn:hover {
+.filter-update-btn:hover, 
+.filter-update-m-btn:hover {
     background-color: #ae9b9b;
     color: #505050;
 }
@@ -370,6 +371,7 @@ li {
 .car_listing_search {
     position: relative;
     width: calc(100% - 370px);
+    display: flex;
 }
 
 .pull-left {
@@ -398,6 +400,16 @@ li {
 
 .pull-right {
     float: right !important;
+}
+
+.car_listing_search .btn-voice {
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    font-size: 16px;
+    border: 0;
+    background-color: transparent;
+    color: #000;
 }
 
 .car_listing_controls .dropdown {
@@ -443,7 +455,8 @@ li {
 }
 
 
-.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>span, .dropdown-menu>.active>span:hover, .dropdown-menu>.active>span:focus {
     color: #fff;
     text-decoration: none;
     outline: 0;
@@ -451,7 +464,8 @@ li {
 }
 
 
-.dropdown-menu>li>a {
+.dropdown-menu>li>a,
+.dropdown-menu>li>span {
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -461,10 +475,12 @@ li {
     white-space: nowrap;
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus,
+.dropdown-menu>li>span:hover, .dropdown-menu>li>span:focus {
     text-decoration: none;
     color: #262626;
     background-color: #f5f5f5;
+    cursor: pointer;
 }
 
 /* car lisfing container */
@@ -845,7 +861,6 @@ a {
 
     .car_listing_search {
         width: 100%;
-        display: block;
     }
 
     .slider.slider-horizontal >b {
@@ -986,7 +1001,6 @@ a {
 
     .car_listing_search {
         width: 100%;
-        display: block;
     }
 
     .car_listing_controls {
@@ -1014,6 +1028,11 @@ a {
     .car-listing-container .car-listing-item-info {
         width: 100% !important;
         padding-top: 2%;    
+    }
+
+    .car-image-container {
+        max-width: 95%;
+        margin: 2%;
     }
     
     .list-group-item .display-car-style {
@@ -1098,6 +1117,7 @@ a {
     text-decoration: none;
     margin-right: 5px;
     font-family: 'Raleway', sans-serif;
+    margin: 5px;
 }
 
 .page-link.active {
