@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <link rel="stylesheet" href="css/style_contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-</head>
+    <link rel="stylesheet" href="css/style_contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
 
-<body class="sub_page">
-
+  <body class="sub_page">
     <!-- header section starts -->
     <div class="header_area">
+<<<<<<< HEAD
+      <header class="header_section">
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="logo" />
+              </a>
+=======
         <header class="header_section">
             <div class="container">
                 <nav>
@@ -36,51 +46,86 @@
                         <span class="bar"></span>
                     </div>
                 </nav>
+>>>>>>> origin/master
             </div>
-        </header>
+            <ul class="nav-menu">
+              <li class="nav-link"><a href="index.html">Home</a></li>
+              <li class="nav-link"><a href="about.html">About</a></li>
+              <li class="nav-link"><a href="product.html">Product</a></li>
+              <li class="nav-link">
+                <a href="applyonline.html">Apply Online</a>
+              </li>
+              <li class="nav-link"><a href="blog.html">Blog</a></li>
+              <li class="nav-link">
+                <a href="contact.html" class="active">Contact</a>
+              </li>
+            </ul>
+
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </header>
     </div>
 
     <!-- header section ends -->
 
     <!-- contact section starts -->
     <section class="contact_section layout_padding">
-        <div class="container ">
-            <div class="heading_container">
-                <h2> Contact Us </h2>
-                <i class="fa-solid fa-envelope-open-text"></i>
-            </div>
+      <div class="container">
+        <div class="heading_container">
+          <h2>Contact Us</h2>
+          <i class="fa-solid fa-envelope-open-text"></i>
         </div>
-        <div class="container">
-            <div class="container-row">
-                <div class="container-column">
-                    <form action="">
-                        <div>
-                            <input type="text" placeholder="Name" minlength="3" required />
-                        </div>
-                        <div>
-                            <input type="email" placeholder="Email" required />
-                        </div>
-                        <div>
-                            <input type="tel" placeholder="Phone Number" />
-                        </div>
-                        <div>
-                            <textarea cols="30" rows="10" class="message-box" placeholder="Message" maxlength="100" required></textarea>
-                        </div>
-                        <div class="button-flex">
-                            <button>SEND</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="container-column">
-                    <div class="map_container">
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.2470995573035!2d-77.90356492455915!3d34.29324660496667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a98aee415a54d5%3A0x3b3dab4a6ddfa666!2sSleek%20Auto%20Sales%20INC!5e0!3m2!1sen!2sca!4v1702228192763!5m2!1sen!2sca"
-                                width="600" height="450" style="border:0; width: 100%; height:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="container">
+        <div class="container-row">
+          <div class="container-column">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Name" minlength="3" required />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" required />
+              </div>
+              <div>
+                <input type="tel" placeholder="Phone Number" />
+              </div>
+              <div>
+                <textarea
+                  cols="30"
+                  rows="10"
+                  class="message-box"
+                  placeholder="Message"
+                  maxlength="100"
+                  required
+                ></textarea>
+              </div>
+              <div class="button-flex">
+                <button>SEND</button>
+              </div>
+            </form>
+          </div>
+          <div class="container-column">
+            <div class="map_container">
+              <div class="map-responsive">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.2470995573035!2d-77.90356492455915!3d34.29324660496667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a98aee415a54d5%3A0x3b3dab4a6ddfa666!2sSleek%20Auto%20Sales%20INC!5e0!3m2!1sen!2sca!4v1702228192763!5m2!1sen!2sca"
+                  width="600"
+                  height="450"
+                  style="border: 0; width: 100%; height: 100%"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- end contact section -->
@@ -88,18 +133,27 @@
     <!-- footer section starts -->
 
     <section class="top-footer">
-        <div class="footer-row">
-            <div class="footer-col">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="logo">
-                    </a>
-                </div>
-                <p>
-                    Driving Dreams, Delivering Value: Your Trusted Car Partner for Quality, Service, and Satisfaction. 
-                    Where Every Mile Feels Like Home.
-                </p>
+      <div class="footer-row">
+        <div class="footer-col">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <p>
+            Driving Dreams, Delivering Value: Your Trusted Car Partner for
+            Quality, Service, and Satisfaction. Where Every Mile Feels Like
+            Home.
+          </p>
 
+<<<<<<< HEAD
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f fa-lg grow"></i>
+            <i class="fa-brands fa-instagram fa-lg grow"></i>
+            <i class="fa-brands fa-twitter fa-lg grow"></i>
+            <i class="fa-brands fa-youtube fa-lg grow"></i>
+          </div>
+=======
                 <div class="icons">
                     <i class="fa-brands fa-facebook-f fa-lg grow"></i>
                     <i class="fa-brands fa-instagram fa-lg grow"></i>
@@ -133,46 +187,73 @@
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
+>>>>>>> origin/master
         </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li class="links"><a href="index.html">Home</a></li>
+            <li class="links"><a href="about.html">About</a></li>
+            <li class="links"><a href="product.html">Product</a></li>
+            <li class="links"><a href="blog.html">Blog</a></li>
+            <li class="links"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li class="links"><a href="#">Special Offers</a></li>
+            <li class="links"><a href="#">Latest Models</a></li>
+            <li class="links"><a href="#">Customer Stories</a></li>
+            <li class="links"><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <form action="#">
+            <input type="email" placeholder="Enter email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <footer class="bottom-footer">
-        <p>
-            &copy; 2023 All Rights Reserved By
-            <a href="index.html">Sleek Auto</a>
-        </p>
+      <p>
+        &copy; 2023 All Rights Reserved By
+        <a href="index.html">Sleek Auto</a>
+      </p>
     </footer>
 
     <!-- end footer section -->
 
     <script>
-        const nav = document.querySelector('nav');
-        const navMenu = document.querySelector(".nav-menu");
-        const hamburger = document.querySelector(".hamburger");
-        const navLink = document.querySelectorAll("li");
+      const nav = document.querySelector("nav");
+      const navMenu = document.querySelector(".nav-menu");
+      const hamburger = document.querySelector(".hamburger");
+      const navLink = document.querySelectorAll("li");
 
-        document.addEventListener('scroll', () => {
-            if (window.scrollY > 0) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        hamburger.addEventListener("click", mobileMenu);
-
-        function mobileMenu() {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
+      document.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
         }
+      });
 
-        navLink.forEach(n => n.addEventListener("click", closeMenu));
+      hamburger.addEventListener("click", mobileMenu);
 
-        function closeMenu() {
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
-        }
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
     </script>
-</body>
-
+  </body>
 </html>
