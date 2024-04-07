@@ -109,6 +109,7 @@ li {
 
 /* navigation header ends*/
 
+
 /* car section starts */
 .cars {
     width: 100%;
@@ -116,6 +117,13 @@ li {
     text-align: center;
 }
 
+.car-description {
+    color: #575a7b;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px; 
+}
 
 .section-heading {
     padding-top: 80px;
@@ -130,9 +138,207 @@ li {
 }
 
 
+/* car record display starts */
+.car_container {
+    width: 75%;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    box-sizing: border-box;
+}
 
+.car_container_inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    padding-top: 0px !important;
+}
+
+.car-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.column-12 {
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* car lisfing container */
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.car-listing-container p,h1,h2,h3,a,span {
+    font-family: "Titillium Web", sans-serif;
+}
+
+.no-h-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.car-listing-container .list-group-item:first-child {
+    border-top: none;
+}
+
+.car-listing-container .list-group-item {
+    background: 0 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.column-4 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.car-listing-container .car-listing-item-img.car-listing-item-img-left {
+    padding-right: 0;
+}
+
+.car-listing-container .car-listing-item-img {
+    width: 250px;
+}
+
+.car-listing-container .car-listing-item .image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.car-listing-container .car-listing-item .image-wrapper .car-view-detail-link {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.car-image-container {
+    width: 100%;
+    content: ' ';
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.car-image-container > img {
+    height: 235;
+    width: 156.66;
+    padding-top: 66.67%;
+}
+
+.car-listing-container .car-listing-item-info {
+    width: calc(100% - 250px) !important;
+}
+
+.left {
+    float: left;
+}
+
+.column-small-7 {
+    width: 80%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.car-listing-item-title {
+    font-weight: 700;
+}
+
+.car-listing-item-field-container {
+    margin-left: -10px;
+    margin-bottom: 15px;
+}
+
+.list-group-item .display-car-style {
+    display: flex;
+}
+
+.car-listing-item-field-container .car-listing-item-field {
+    float: left;
+    margin-left: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.car-listing-item-title a,
+.car-listing-item-field-label,
+.car-listing-item-field-value {
+    color: #000000;
+}
+
+.car-listing-item-field-container .car-listing-item-field .car-listing-item-field-label {
+    font-size: 10px;
+    display: block;
+    color: #999;
+}
+
+.car-listing-item-field-container .car-listing-item-field .car-listing-item-field-value {
+    font-size: 14px;
+    display: block;
+}
+
+.car-price-wrapper {
+    width: 20%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+.car-listing-item .car-price-wrapper .car-price {
+    padding: 5px;
+    display: inline;
+    text-align: right;
+}
+
+.car-price-wrapper > .car-price {
+    color: #f0f0f0;
+    background-color: #000000;
+    border-left-color: #000000;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 5px 0 10px;
+    margin-bottom: 5px;
+    clear: right;
+    border-color: #5e5e5e;
+}
+
+.car-listing-item-buttons .btn {
+    margin-top: 10px;
+    margin-right: 10px;
+    white-space: normal;
+    color: #ffffff;
+    background-color: #505050;
+    border-color: #3f3f3f;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 0;
+}
+/*car record display ends*/
 
 /* car section ends */
+
+
 
 /* Footer section starts*/
 .footer-row {

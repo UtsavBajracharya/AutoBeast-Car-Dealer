@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Detail Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style_buycar.css">
+    <link rel="stylesheet" href="css/style_cardetail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" />
@@ -15,7 +15,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./scripts/cardetail.js"></script>
-    <script src="./scripts/buycar.js"></script>
 </head>
 
 <body class="sub_page">
@@ -54,28 +53,61 @@
     <!-- Buy Car Section starts -->
     <section class="cars">
         <h2 class="section-heading">Car Detail</h2>
-
+        <p class="car-description">
+            We are proud to offer these values in our sales and business practices , so our customers keep coming back. 
+            Our sales team can help you get acquainted with our wide range of inventory, 
+            and help you narrow down your choices to find your perfect RIDE!
+        </p>
         <div class="car_details">
-                                <!-- car listing container starts -->
-                                <div class="car-listing-container container-fluid no-h-padding">
-                                    <div class="car-row">
-                                        <div class="column-12">
-                                            <!-- list of cars items -->
-                                             <div class="list-group" id="data-container">
-                                            </div> 
-                    
-            
-                                        </div>
-                                    </div> 
-                                 </div> 
-            
-            
-                                <!-- car listing container ends-->
 
-                                    
-    
+
+            <!-- car record display starts -->
+            <div class="car_container">
+                <div class="car_container_inner">
+
+                    <!-- Search tool bar starts-->
+                    <div class="car-row car_listing_toolbar_holder">
+                        <div class="column-12">
+                                <div class="car_listing_controls">
+                                    <div class="dropdown page-size-options">
+                                        <div class="dropdown">
+                           
+                                            <ul class="dropdown-menu">
+                                                <li class="page_selection" data-bind="9"><span class="dropdown-item">9 items per page</span></li>
+                                                <li class="page_selection active" data-bind="12"><span class="dropdown-item">12 items per page</span></li>
+                                                <li class="page_selection" data-bind="18"><span class="dropdown-item">18 items per page</span></li>
+                                                <li class="page_selection" data-bind="24"><span class="dropdown-item">24 items per page</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- Search tool bar ends-->
+
+                    <!-- car listing container starts-->
+                    <div class="car-listing-container container-fluid no-h-padding">
+                        <div class="car-row">
+                            <div class="column-12">
+                                <!-- list of cars items-->
+                                <div class="list-group" id="data-container">
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- car listing container ends-->
+                </div>
+
+            </div>
+
+
         </div>
- 
+
+
+        
     </section>
     <!-- Buy Car Section ends -->
 
