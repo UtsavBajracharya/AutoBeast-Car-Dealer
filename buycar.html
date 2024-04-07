@@ -77,6 +77,7 @@
     <!-- header section ends -->
 
     <!-- search filter modal -->
+<<<<<<< HEAD
     <div
       class="modal fade carFilterModal"
       id="carFilterModal"
@@ -117,6 +118,68 @@
                         data-slider-step="1"
                         data-slider-value="[2004,2020]"
                       />
+=======
+    <div class="modal fade carFilterModal" id="carFilterModal" role="dialog" tabindex="-1" aria-labelledby="carFilterModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Car Filter</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="car-listing-filter-container-modal">
+                        <div class="car-listing-filter-option-container">
+                            <ul class="list-group">
+                                <li class="list-group-item car-listing-filter-option-title">Year</li>
+                                <li class="list-group-item">
+                                    <div class="slider slider-horizontal" id="">
+                                        <b style="float: left;">2004</b>
+                                        <b style="float: right;">2020</b>
+                                        <input id="year_range_m" type="text" class="span2" 
+                                        value="" data-slider-min="2004" data-slider-max="2020" 
+                                        data-slider-step="1" data-slider-value="[2004,2020]"> 
+                                    </div>
+                                </li>
+                                <span class="car-listing-filter-line"></span>
+                            </ul>
+                        </div>
+
+                        <div class="car-listing-filter-option-container">
+                            <ul class="list-group">
+                                <li class="list-group-item car-listing-filter-option-title">Mileage</li>
+                                <li class="list-group-item">
+                                    <div class="slider slider-horizontal" id="">
+                                        <b style="float: left;">5,000</b>
+                                        <b style="float: right;">350,000</b>
+                                        <input id="mileage_range_m" type="text" class="span2" 
+                                        value="" data-slider-min="5000" data-slider-max="350000" 
+                                        data-slider-step="10000" data-slider-value="[5000,350000]"> 
+                                    </div>
+                                </li>
+                                <span class="car-listing-filter-line"></span>
+                            </ul>
+                        </div>
+
+                        <div class="car-listing-filter-option-container">
+                            <ul class="list-group">
+                                <li class="list-group-item car-listing-filter-option-title">Price Range</li>
+                                <li class="list-group-item">
+                                    <div class="slider slider-horizontal" id="">
+                                        <b style="float: left;">$2,000</b>
+                                        <b style="float: right;">$99,000</b>
+                                        <input id="price_range_m" type="text" class="span2" 
+                                        value="" data-slider-min="2000" data-slider-max="99000" 
+                                        data-slider-step="5000" data-slider-value="[2000,99000]"> 
+                                    </div>
+                                </li>
+                                <span class="car-listing-filter-line"></span>
+                            </ul>
+                        </div>
+                        
+                        <div class="car-listing-filter-option-container">
+                            <button type="button" class="filter-update-m-btn">UPDATE</button>
+                        </div>
+>>>>>>> origin/master
                     </div>
                   </li>
                   <span class="car-listing-filter-line"></span>
@@ -207,6 +270,7 @@
                   <div class="search_inner">
                     <p class="search_filter_label">Search Filter</p>
 
+<<<<<<< HEAD
                     <div class="car-listing-filter">
                       <div class="column-12 car-listing-filter-container">
                         <div class="car-listing-filter-option-container">
@@ -234,6 +298,76 @@
                             </li>
                             <span class="car-listing-filter-line"></span>
                           </ul>
+=======
+            <!-- car filter starts -->
+            <div class="search_filter_container">
+                <div class="search_filter_inner">
+                    <div class="search_filter_wrapper">
+                        <div class="search_row">
+                            <div class="search_column">
+                                <div class="search_inner">
+                                    <p class="search_filter_label">
+                                        Search Filter
+                                    </p>
+
+                                    <div class="car-listing-filter">
+                                        <div class="column-12 car-listing-filter-container">
+                                            <div class="car-listing-filter-option-container">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item car-listing-filter-option-title">Year</li>
+                                                    <li class="list-group-item">
+                                                        <div class="slider slider-horizontal" id="">
+                                                            <b style="float: left;">2004</b>
+                                                            <b style="float: right;">2020</b>
+                                                            <input id="year_range" type="text" class="span2" 
+                                                            value="" data-slider-min="2004" data-slider-max="2020" 
+                                                            data-slider-step="1" data-slider-value="[2004,2020]"> 
+                                                        </div>
+                                                    </li>
+                                                    <span class="car-listing-filter-line"></span>
+                                                </ul>
+                                            </div>
+
+                                            <div class="car-listing-filter-option-container">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item car-listing-filter-option-title">Mileage</li>
+                                                    <li class="list-group-item">
+                                                        <div class="slider slider-horizontal" id="">
+                                                            <b style="float: left;">5,000</b>
+                                                            <b style="float: right;">350,000</b>
+                                                            <input id="mileage_range" type="text" class="span2" 
+                                                            value="" data-slider-min="5000" data-slider-max="350000" 
+                                                            data-slider-step="10000" data-slider-value="[5000,350000]"> 
+                                                        </div>
+                                                    </li>
+                                                    <span class="car-listing-filter-line"></span>
+                                                </ul>
+                                            </div>
+
+                                            <div class="car-listing-filter-option-container">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item car-listing-filter-option-title">Price Range</li>
+                                                    <li class="list-group-item">
+                                                        <div class="slider slider-horizontal" id="">
+                                                            <b style="float: left;">$2,000</b>
+                                                            <b style="float: right;">$99,000</b>
+                                                            <input id="price_range" type="text" class="span2" 
+                                                            value="" data-slider-min="2000" data-slider-max="99000" 
+                                                            data-slider-step="5000" data-slider-value="[2000,99000]"> 
+                                                        </div>
+                                                    </li>
+                                                    <span class="car-listing-filter-line"></span>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="car-listing-filter-option-container">
+                                                <button type="button" class="filter-update-btn">UPDATE</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+>>>>>>> origin/master
                         </div>
 
                         <div class="car-listing-filter-option-container">
@@ -301,7 +435,87 @@
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
           </div>
+=======
+            <!-- car filter ends -->
+
+            <!-- car record display starts -->
+            <div class="car_container">
+                <div class="car_container_inner">
+
+                    <!-- Search tool bar starts-->
+                    <div class="car-row car_listing_toolbar_holder">
+                        <div class="column-12">
+                            <div class="car_listing_toolbar">
+                                <div class="car_listing_search pull-left">
+                                    <input type="text" id="search" class="search" placeholder="Keyword Search">
+                                    <button class="btn-search" id="search-btn" type="button" title="Click to search">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="car_listing_controls">
+                                    <div class="dropdown page-size-options">
+                                        <div class="dropdown">
+                                            <button class="down-arrow-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="car-listing-control-btn-label">Page Size</span>
+                                                <span class="car-listing-control-btn-value page-value">12 items</span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li class="page_selection" data-bind="9"><span class="dropdown-item">9 items per page</span></li>
+                                                <li class="page_selection active" data-bind="12"><span class="dropdown-item">12 items per page</span></li>
+                                                <li class="page_selection" data-bind="18"><span class="dropdown-item">18 items per page</span></li>
+                                                <li class="page_selection" data-bind="24"><span class="dropdown-item">24 items per page</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown sort-by-options">
+                                        <button class="down-arrow-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="car-listing-control-btn-label">Sort By</span>
+                                            <span class="car-listing-control-btn-value sort-value">Default</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li class="sort_selection active" data-bind="d"><span  class="dropdown-item">Default</span></li>
+                                            <li class="sort_selection" data-bind="p1"><span class="dropdown-item">Price: High - Low</span></li>
+                                            <li class="sort_selection" data-bind="p2"><span class="dropdown-item">Price: Low - High</span></li>
+                                            <li class="sort_selection" data-bind="m1"><span class="dropdown-item">Miles: High - Low</span></li>
+                                            <li class="sort_selection" data-bind="m2"><span class="dropdown-item">MIles: Low - High</span></li>
+                                            <li class="sort_selection" data-bind="y1"><span class="dropdown-item">Year: New - Old</span></li>
+                                            <li class="sort_selection" data-bind="y2"><span class="dropdown-item">Year: Old - New</span></li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="car-listing-filter-btn btn" data-bs-toggle="modal" data-bs-target="#carFilterModal">
+                                        <i class="fa fa-filter"></i>
+                                        Filter
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Search tool bar ends-->
+
+                    <!-- car listing container starts-->
+                    <div class="car-listing-container container-fluid no-h-padding">
+                        <div class="car-row">
+                            <div class="column-12">
+                                <!-- list of cars items-->
+                                <div class="list-group" id="data-container">
+                                </div>
+        
+                                <!-- Pagination for the items -->
+                                <div id="pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- car listing container ends-->
+                </div>
+
+            </div>
+
+
+>>>>>>> origin/master
         </div>
         <!-- car filter ends -->
 
