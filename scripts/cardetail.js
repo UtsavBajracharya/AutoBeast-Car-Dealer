@@ -178,7 +178,7 @@ function fetchData(data) {
                     <!-- car-listing-item-info ends -->
                 </div>
             </div>
-
+            
             <!-- button row -->
             <div class="car-row">
                 <div class="car-listing-item-buttons column-12">
