@@ -1,617 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apply Online Page</title>
-    <link rel="stylesheet" href="css/style_applyonline.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-  </head>
 
-  <body class="sub_page">
-    <!-- header section starts -->
-    <div class="header_area">
-      <header class="header_section">
-        <div class="container">
-          <nav>
-            <div class="logo">
-              <a href="index.html">
-                <img src="images/logo.png" alt="logo" />
-              </a>
-            </div>
-            <ul class="nav-menu">
-              <li class="nav-link"><a href="index.html">Home</a></li>
-              <li class="nav-link"><a href="about.html">About</a></li>
-              <li class="nav-link"><a href="buycar.html">Buy Car</a></li>
-              <li class="nav-link"><a href="applyonline.html" class="active">Apply Online</a></li>
-              <li class="nav-link"><a href="blog.html">Blog</a></li>
-              <li class="nav-link"> <a href="contact.html" class="active">Contact</a> </li>
-            </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply Online Page</title>
+  <link rel="stylesheet" href="css/style_applyonline.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
 
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </nav>
-        </div>
-      </header>
-    </div>
-    <!-- header section ends -->
-    <!-- contact section starts -->
-    <section class="contact_section layout_padding">
+<body class="sub_page">
+  <!-- header section starts -->
+  <div class="header_area">
+    <header class="header_section">
       <div class="container">
-        <div class="heading_container">
-          <h2>
-            Apply Online <span style="color: rgb(13, 123, 219)">Buyer</span>
-          </h2>
-        </div>
-      </div>
-      <form id="myForm" action="">
-        <div class="container">
-          <h3 style="margin-bottom: 10px">Personal Information</h3>
-          <div class="container-row">
-            <div class="container-column">
-              <div>
-                <label>First Name <span style="color: red">*</span></label>
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  minlength="3"
-                  id="firstName"
-                  required
-                />
-              </div>
-              <div>
-                <label>Email <span style="color: red">*</span></label>
-                <input type="email" id="email" placeholder="Email" required />
-              </div>
-              <div>
-                <label>Date Of Birth <span style="color: red">*</span></label>
-                <input type="date" id="dob" required />
-              </div>
-              <div>
-                <label>Driver's License Number</label>
-                <input
-                  type="text"
-                  id="dl_number"
-                  placeholder="Driver's License Number"
-                />
-              </div>
-              <div>
-                <label>Driver's License Issue Date </label>
-                <input
-                  type="date"
-                  id="dl_issue_date"
-                  placeholder="Driver's License Issue Date"
-                />
-              </div>
-              <div>
-                <label>Driver's License Expiry Date </label>
-                <input
-                  type="date"
-                  id="dl_expiry_date"
-                  required
-                  placeholder="Driver's License Expiry Date"
-                />
-              </div>
-            </div>
-            <div class="container-column">
-              <div class="map_container">
-                <div class="map-responsive">
-                  <div>
-                    <label>Last Name <span style="color: red">*</span> </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      placeholder="Last Name"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label>Cell Phone <span style="color: red">*</span> </label>
-                    <input
-                      type="tel"
-                      id="cellPhone"
-                      placeholder="Cell Phone"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label>Home Phone (Optional)</label>
-                    <input
-                      type="number"
-                      id="homePhone"
-                      placeholder="Home Phone"
-                    />
-                  </div>
-                  <div>
-                    <label>SSN <span style="color: red">*</span></label>
-                    <input type="text" id="ssn" placeholder="SSN" required />
-                  </div>
-                  <div>
-                    <label>Driver's License State </label>
-                    <select id="state" name="state">
-                      <option value="">Select a state...</option>
-                      <option value="AB">Alberta</option>
-                      <option value="BC">British Columbia</option>
-                      <option value="MB">Manitoba</option>
-                      <option value="NB">New Brunswick</option>
-                      <option value="NL">Newfoundland and Labrador</option>
-                      <option value="NS">Nova Scotia</option>
-                      <option value="NT">Northwest Territories</option>
-                      <option value="NU">Nunavut</option>
-                      <option value="ON">Ontario</option>
-                      <option value="PE">Prince Edward Island</option>
-                      <option value="QC">Quebec</option>
-                      <option value="SK">Saskatchewan</option>
-                      <option value="YT">Yukon</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <h3 style="margin-bottom: 10px">Residential Information</h3>
-          <div class="container-row">
-            <div class="container-column">
-              <div>
-                <label>Street Address <span style="color: red">*</span></label>
-                <input
-                  type="text"
-                  id="streetAddress"
-                  placeholder="Street Address"
-                  required
-                />
-              </div>
-              <div>
-                <label>City <span style="color: red">*</span></label>
-                <input type="text" id="city" placeholder="City" required />
-              </div>
-              <div>
-                <label>State <span style="color: red">*</span></label>
-                <select id="state2" name="state2">
-                  <option value="">Select a state...</option>
-                  <option value="AB">Alberta</option>
-                  <option value="BC">British Columbia</option>
-                  <option value="MB">Manitoba</option>
-                  <option value="NB">New Brunswick</option>
-                  <option value="NL">Newfoundland and Labrador</option>
-                  <option value="NS">Nova Scotia</option>
-                  <option value="NT">Northwest Territories</option>
-                  <option value="NU">Nunavut</option>
-                  <option value="ON">Ontario</option>
-                  <option value="PE">Prince Edward Island</option>
-                  <option value="QC">Quebec</option>
-                  <option value="SK">Saskatchewan</option>
-                  <option value="YT">Yukon</option>
-                </select>
-              </div>
-              <div>
-                <label>Zip Code<span style="color: red">*</span></label>
-                <input
-                  type="text"
-                  id="zipCode"
-                  placeholder="Zip Code"
-                  required
-                />
-              </div>
-            </div>
-            <div class="container-column">
-              <div class="map_container">
-                <div class="map-responsive">
-                  <div>
-                    <label
-                      >Housing Type <span style="color: red">*</span>
-                    </label>
-
-                    <select id="housingType" name="housingType">
-                      <option value="">Select a type...</option>
-                      <option value="rent">Rent</option>
-                      <option value="own">Owned</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label
-                      >Monthly Rent/Mortgage Amount
-                      <span style="color: red">*</span>
-                    </label>
-                    <input
-                      type="number"
-                      id="monthlyRent"
-                      placeholder="Monthly Rent/Mortgage Amount"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label
-                      >Years at Address<span style="color: red">*</span></label
-                    >
-                    <select id="yearsAtAddress" name="yearsAtAddress">
-                      <option value="">Select a Year at Address...</option>
-                      <option value="1-">One Year -</option>
-                      <option value="1+">One Year +</option>
-                      <option value="5-">Five Year -</option>
-                      <option value="5+">Five Year +</option>
-                      <option value="10-">Ten Year -</option>
-                      <option value="10+">Ten Year +</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <h3 style="margin-bottom: 10px">Employment Information</h3>
-          <div class="container-row">
-            <div class="container-column">
-              <div>
-                <label>Employer Name <span style="color: red">*</span></label>
-                <input
-                  type="text"
-                  id="employerName"
-                  placeholder="Employer Name"
-                  required
-                />
-              </div>
-              <div>
-                <label>Title/Position <span style="color: red">*</span></label>
-                <input
-                  type="text"
-                  id="title"
-                  placeholder="Title/Position"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  >Employer Phone Number
-                  <span style="color: red">*</span></label
-                >
-                <input
-                  type="tel"
-                  id="employeePhoneNumber"
-                  placeholder="Employer Phone Number"
-                  required
-                />
-              </div>
-            </div>
-            <div class="container-column">
-              <div class="map_container">
-                <div class="map-responsive">
-                  <div>
-                    <label
-                      >Monthly Gross Income
-                      <span style="color: red">*</span>
-                    </label>
-                    <input
-                      type="number"
-                      id="monthlyGross"
-                      placeholder="Monthly Gross Income"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label>Years at Job<span style="color: red">*</span></label>
-                    <input
-                      type="number"
-                      id="yearsAtJob"
-                      placeholder="Years at Job"
-                      required
-                    />
-                    <select id="yearsAtJob" name="yearsAtJob">
-                      <option value="">Select a Year at Address...</option>
-                      <option value="1-">One Year -</option>
-                      <option value="1+">One Year +</option>
-                      <option value="5-">Five Year -</option>
-                      <option value="5+">Five Year +</option>
-                      <option value="10-">Ten Year -</option>
-                      <option value="10+">Ten Year +</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <h3 style="margin-bottom: 10px">Intrested Vehicle</h3>
-          <div class="container-row">
-            <div class="container-column">
-              <div>
-                <label>Vehicle Keyword</label>
-                <input
-                  type="text"
-                  id="vehicleKeyword"
-                  placeholder="Search Here"
-                />
-              </div>
-              <div>
-                <label>Stock Number</label>
-                <input
-                  type="text"
-                  id="stockNumber"
-                  placeholder="Stock Number"
-                />
-              </div>
-              <div>
-                <label>Year </label>
-                <input type="text" id="year" placeholder="Year" />
-              </div>
-              <div>
-                <label>Make </label>
-                <input type="text" id="make" placeholder="Make" />
-              </div>
-              <div>
-                <label>Model </label>
-                <input type="text" id="model" placeholder="Model" />
-              </div>
-
-              <div class="button-flex">
-                <button onclick="validateForm()" type="submit">Submit</button>
-              </div>
-            </div>
-            <div class="container-column">
-              <div class="map_container">
-                <div class="map-responsive">
-                  <div>
-                    <label>Vehicle Price </label>
-                    <input
-                      type="number"
-                      id="vehiclePrice"
-                      placeholder="Vehicle Price"
-                    />
-                  </div>
-                  <div>
-                    <label>Down Payment </label>
-                    <input
-                      type="number"
-                      id="downPayment"
-                      placeholder="Monthly Gross Income"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label>Exterior Color </label>
-                    <input
-                      type="text"
-                      id="exteriorColor"
-                      placeholder="Exterior Color"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label>Interior Color </label>
-                    <input
-                      type="text"
-                      id="interiorColor"
-                      placeholder="Interior Color"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </section>
-
-    <!-- end contact section -->
-
-    <!-- footer section starts -->
-
-    <section class="top-footer">
-      <div class="footer-row">
-        <div class="footer-col">
+        <nav>
           <div class="logo">
             <a href="index.html">
               <img src="images/logo.png" alt="logo" />
             </a>
           </div>
-          <p>
-            Driving Dreams, Delivering Value: Your Trusted Car Partner for
-            Quality, Service, and Satisfaction. Where Every Mile Feels Like
-            Home.
-          </p>
+          <ul class="nav-menu">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="about.html">About</a></li>
+            <li class="nav-link"><a href="buycar.html">Buy Car</a></li>
+            <li class="nav-link"><a href="applyonline.html"  class="active">Apply Online</a></li>
+            <li class="nav-link"><a href="blog.html">Blog</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
+          </ul>
 
-          <div class="icons">
-            <i class="fa-brands fa-facebook-f fa-lg grow"></i>
-            <i class="fa-brands fa-instagram fa-lg grow"></i>
-            <i class="fa-brands fa-twitter fa-lg grow"></i>
-            <i class="fa-brands fa-youtube fa-lg grow"></i>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!-- header section ends -->
+  <!-- contact section starts -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Apply Online <span style="color: rgb(13, 123, 219)">Buyer</span>
+        </h2>
+      </div>
+    </div>
+    <form id="myForm" action="">
+      <div class="container">
+        <h3 style="margin-bottom: 10px">Personal Information</h3>
+        <div class="container-row">
+          <div class="container-column">
+            <div>
+              <label>First Name <span style="color: red">*</span></label>
+              <input type="text" placeholder="First Name" minlength="3" id="firstName" required />
+            </div>
+            <div>
+              <label>Email <span style="color: red">*</span></label>
+              <input type="email" id="email" placeholder="Email" required />
+            </div>
+            <div>
+              <label>Date Of Birth <span style="color: red">*</span></label>
+              <input type="date" id="dob" required />
+            </div>
+            <div>
+              <label>Driver's License Number</label>
+              <input type="text" id="dl_number" placeholder="Driver's License Number" />
+            </div>
+            <div>
+              <label>Driver's License Issue Date </label>
+              <input type="date" id="dl_issue_date" placeholder="Driver's License Issue Date" />
+            </div>
+            <div>
+              <label>Driver's License Expiry Date </label>
+              <input type="date" id="dl_expiry_date" required placeholder="Driver's License Expiry Date" />
+            </div>
+          </div>
+          <div class="container-column">
+            <div class="map_container">
+              <div class="map-responsive">
+                <div>
+                  <label>Last Name <span style="color: red">*</span> </label>
+                  <input type="text" id="lastName" placeholder="Last Name" required />
+                </div>
+                <div>
+                  <label>Cell Phone <span style="color: red">*</span> </label>
+                  <input type="tel" id="cellPhone" placeholder="Cell Phone" required />
+                </div>
+                <div>
+                  <label>Home Phone (Optional)</label>
+                  <input type="number" id="homePhone" placeholder="Home Phone" />
+                </div>
+                <div>
+                  <label>SSN <span style="color: red">*</span></label>
+                  <input type="text" id="ssn" placeholder="SSN" required />
+                </div>
+                <div>
+                  <label>Driver's License State </label>
+                  <select id="state" name="state">
+                    <option value="">Select a state...</option>
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="YT">Yukon</option>
+                  </select>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li class="links"><a href="index.html">Home</a></li>
-            <li class="links"><a href="about.html">About</a></li>
-            <li class="links"><a href="buycar.html">Buy Car</a></li>
-            <li class="links"><a href="applyonline.html">Apply Online</a></li>
-            <li class="links"><a href="blog.html">Blog</a></li>
-            <li class="links"><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <ul class="footer-links">
-            <li class="links"><a href="#">Special Offers</a></li>
-            <li class="links"><a href="#">Latest Models</a></li>
-            <li class="links"><a href="#">Customer Stories</a></li>
-            <li class="links"><a href="#">Events</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Newsletter</h4>
-          <form action="#">
-            <input type="email" placeholder="Enter email address" required />
-            <button type="submit">Subscribe</button>
-          </form>
+      </div>
+
+      <div class="container">
+        <h3 style="margin-bottom: 10px">Residential Information</h3>
+        <div class="container-row">
+          <div class="container-column">
+            <div>
+              <label>Street Address <span style="color: red">*</span></label>
+              <input type="text" id="streetAddress" placeholder="Street Address" required />
+            </div>
+            <div>
+              <label>City <span style="color: red">*</span></label>
+              <input type="text" id="city" placeholder="City" required />
+            </div>
+            <div>
+              <label>State <span style="color: red">*</span></label>
+              <select id="state2" name="state2">
+                <option value="">Select a state...</option>
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland and Labrador</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NU">Nunavut</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="YT">Yukon</option>
+              </select>
+            </div>
+            <div>
+              <label>Zip Code<span style="color: red">*</span></label>
+              <input type="text" id="zipCode" placeholder="Zip Code" required />
+            </div>
+          </div>
+          <div class="container-column">
+            <div class="map_container">
+              <div class="map-responsive">
+                <div>
+                  <label>Housing Type <span style="color: red">*</span>
+                  </label>
+
+                  <select id="housingType" name="housingType">
+                    <option value="">Select a type...</option>
+                    <option value="rent">Rent</option>
+                    <option value="own">Owned</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label>Monthly Rent/Mortgage Amount
+                    <span style="color: red">*</span>
+                  </label>
+                  <input type="number" id="monthlyRent" placeholder="Monthly Rent/Mortgage Amount" required />
+                </div>
+                <div>
+                  <label>Years at Address<span style="color: red">*</span></label>
+                  <select id="yearsAtAddress" name="yearsAtAddress">
+                    <option value="">Select a Year at Address...</option>
+                    <option value="1-">One Year -</option>
+                    <option value="1+">One Year +</option>
+                    <option value="5-">Five Year -</option>
+                    <option value="5+">Five Year +</option>
+                    <option value="10-">Ten Year -</option>
+                    <option value="10+">Ten Year +</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <footer class="bottom-footer">
-      <p>
-        &copy; 2023 All Rights Reserved By
-        <a href="index.html">Sleek Auto</a>
-      </p>
-    </footer>
+      <div class="container">
+        <h3 style="margin-bottom: 10px">Employment Information</h3>
+        <div class="container-row">
+          <div class="container-column">
+            <div>
+              <label>Employer Name <span style="color: red">*</span></label>
+              <input type="text" id="employerName" placeholder="Employer Name" required />
+            </div>
+            <div>
+              <label>Title/Position <span style="color: red">*</span></label>
+              <input type="text" id="title" placeholder="Title/Position" required />
+            </div>
+            <div>
+              <label>Employer Phone Number
+                <span style="color: red">*</span></label>
+              <input type="tel" id="employeePhoneNumber" placeholder="Employer Phone Number" required />
+            </div>
+          </div>
+          <div class="container-column">
+            <div class="map_container">
+              <div class="map-responsive">
+                <div>
+                  <label>Monthly Gross Income
+                    <span style="color: red">*</span>
+                  </label>
+                  <input type="number" id="monthlyGross" placeholder="Monthly Gross Income" required />
+                </div>
+                <div>
+                  <label>Years at Job<span style="color: red">*</span></label>
+                  <input type="number" id="yearsAtJob" placeholder="Years at Job" required />
+                  <select id="yearsAtJob" name="yearsAtJob">
+                    <option value="">Select a Year at Address...</option>
+                    <option value="1-">One Year -</option>
+                    <option value="1+">One Year +</option>
+                    <option value="5-">Five Year -</option>
+                    <option value="5+">Five Year +</option>
+                    <option value="10-">Ten Year -</option>
+                    <option value="10+">Ten Year +</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- end footer section -->
+      <div class="container">
+        <h3 style="margin-bottom: 10px">Intrested Vehicle</h3>
+        <div class="container-row">
+          <div class="container-column">
+            <div>
+              <label>Vehicle Keyword</label>
+              <input type="text" id="vehicleKeyword" placeholder="Search Here" />
+            </div>
+            <div>
+              <label>Stock Number</label>
+              <input type="text" id="stockNumber" placeholder="Stock Number" />
+            </div>
+            <div>
+              <label>Year </label>
+              <input type="text" id="year" placeholder="Year" />
+            </div>
+            <div>
+              <label>Make </label>
+              <input type="text" id="make" placeholder="Make" />
+            </div>
+            <div>
+              <label>Model </label>
+              <input type="text" id="model" placeholder="Model" />
+            </div>
 
-    <script>
-      const nav = document.querySelector("nav");
-      const navMenu = document.querySelector(".nav-menu");
-      const hamburger = document.querySelector(".hamburger");
-      const navLink = document.querySelectorAll("li");
+            <div class="button-flex">
+              <button onclick="validateForm()" type="submit">Submit</button>
+            </div>
+          </div>
+          <div class="container-column">
+            <div class="map_container">
+              <div class="map-responsive">
+                <div>
+                  <label>Vehicle Price </label>
+                  <input type="number" id="vehiclePrice" placeholder="Vehicle Price" />
+                </div>
+                <div>
+                  <label>Down Payment </label>
+                  <input type="number" id="downPayment" placeholder="Monthly Gross Income" required />
+                </div>
+                <div>
+                  <label>Exterior Color </label>
+                  <input type="text" id="exteriorColor" placeholder="Exterior Color" required />
+                </div>
+                <div>
+                  <label>Interior Color </label>
+                  <input type="text" id="interiorColor" placeholder="Interior Color" required />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
 
-      document.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-          nav.classList.add("scrolled");
+  <!-- end contact section -->
+
+  <!-- footer section starts -->
+
+  <section class="top-footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <p>
+          Driving Dreams, Delivering Value: Your Trusted Car Partner for
+          Quality, Service, and Satisfaction. Where Every Mile Feels Like
+          Home.
+        </p>
+
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f fa-lg grow"></i>
+          <i class="fa-brands fa-instagram fa-lg grow"></i>
+          <i class="fa-brands fa-twitter fa-lg grow"></i>
+          <i class="fa-brands fa-youtube fa-lg grow"></i>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li class="links"><a href="index.html">Home</a></li>
+          <li class="links"><a href="about.html">About</a></li>
+          <li class="links"><a href="buycar.html">Buy Car</a></li>
+          <li class="links"><a href="applyonline.html">Apply Online</a></li>
+          <li class="links"><a href="blog.html">Blog</a></li>
+          <li class="links"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li class="links"><a href="#">Special Offers</a></li>
+          <li class="links"><a href="#">Latest Models</a></li>
+          <li class="links"><a href="#">Customer Stories</a></li>
+          <li class="links"><a href="#">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form action="#">
+          <input type="email" placeholder="Enter email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bottom-footer">
+    <p>
+      &copy; 2023 All Rights Reserved By
+      <a href="index.html">Sleek Auto</a>
+    </p>
+  </footer>
+
+  <!-- end footer section -->
+
+  <script>
+    const nav = document.querySelector("nav");
+    const navMenu = document.querySelector(".nav-menu");
+    const hamburger = document.querySelector(".hamburger");
+    const navLink = document.querySelectorAll("li");
+
+    document.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+
+    //   validation
+    function validateForm() {
+      // Check each input field for validity
+      const inputs = document.querySelectorAll("input");
+      let isValid = true;
+
+      inputs.forEach((input) => {
+        // Check if input is required and empty
+        if (input.hasAttribute("required") && !input.value.trim()) {
+          alert(
+            `${input.previousElementSibling.textContent.trim()} is required.`
+          );
+          isValid = false;
+          return;
+        }
+
+        // Check specific validation rules for certain inputs (e.g., email, minimum length)
+        if (
+          input.id === "email" &&
+          input.value.trim() &&
+          !isValidEmail(input.value)
+        ) {
+          alert("Please enter a valid email address.");
+          isValid = false;
+        }
+
+        const selectedProvince = document.getElementById("state").value;
+
+        if (selectedProvince == "") {
+          alert("Please select a province or territory!");
+          return;
+        }
+        const yearsAtAddress =
+          document.getElementById("yearsAtAddress").value;
+
+        if (yearsAtAddress == "") {
+          alert("Please select a Years at Address!");
+          return;
+        }
+
+        const selectedProvince2 = document.getElementById("state2").value;
+
+        if (selectedProvince2 == "") {
+          alert("Please select a province or territory!");
+          return;
+        }
+        const yearsAtJob = document.getElementById("yearsAtJob").value;
+
+        if (yearsAtJob == "") {
+          alert("Please select a year at job!");
+          return;
+        }
+
+        if (input.id === "firstName" && input.value.trim().length < 3) {
+          alert("First Name must be at least 3 characters long.");
+          isValid = false;
+        }
+
+        // Add more specific validation rules as needed for other fields
+
+        // Apply border color based on validity
+        if (isValid) {
+          input.style.border = "1px solid green";
         } else {
-          nav.classList.remove("scrolled");
+          input.style.border = "1px solid red";
         }
       });
 
-      hamburger.addEventListener("click", mobileMenu);
-
-      function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
+      // Perform form submission if all inputs are valid
+      if (isValid) {
+        alert("Form submitted successfully!");
+        document.getElementById("myForm").submit();
       }
+    }
 
-      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
 
-      function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
+    //   get provience
+    function getProvinceName(code) {
+      switch (code) {
+        case "AB":
+          return "Alberta";
+        case "BC":
+          return "British Columbia";
+        case "MB":
+          return "Manitoba";
+        case "NB":
+          return "New Brunswick";
+        case "NL":
+          return "Newfoundland and Labrador";
+        case "NS":
+          return "Nova Scotia";
+        case "NT":
+          return "Northwest Territories";
+        case "NU":
+          return "Nunavut";
+        case "ON":
+          return "Ontario";
+        case "PE":
+          return "Prince Edward Island";
+        case "QC":
+          return "Quebec";
+        case "SK":
+          return "Saskatchewan";
+        case "YT":
+          return "Yukon";
+        default:
+          return "Unknown Province";
       }
+    }
+  </script>
+</body>
 
-      //   validation
-      function validateForm() {
-        // Check each input field for validity
-        const inputs = document.querySelectorAll("input");
-        let isValid = true;
-
-        inputs.forEach((input) => {
-          // Check if input is required and empty
-          if (input.hasAttribute("required") && !input.value.trim()) {
-            alert(
-              `${input.previousElementSibling.textContent.trim()} is required.`
-            );
-            isValid = false;
-            return;
-          }
-
-          // Check specific validation rules for certain inputs (e.g., email, minimum length)
-          if (
-            input.id === "email" &&
-            input.value.trim() &&
-            !isValidEmail(input.value)
-          ) {
-            alert("Please enter a valid email address.");
-            isValid = false;
-          }
-
-          const selectedProvince = document.getElementById("state").value;
-
-          if (selectedProvince == "") {
-            alert("Please select a province or territory!");
-            return;
-          }
-          const yearsAtAddress =
-            document.getElementById("yearsAtAddress").value;
-
-          if (yearsAtAddress == "") {
-            alert("Please select a Years at Address!");
-            return;
-          }
-
-          const selectedProvince2 = document.getElementById("state2").value;
-
-          if (selectedProvince2 == "") {
-            alert("Please select a province or territory!");
-            return;
-          }
-          const yearsAtJob = document.getElementById("yearsAtJob").value;
-
-          if (yearsAtJob == "") {
-            alert("Please select a year at job!");
-            return;
-          }
-
-          if (input.id === "firstName" && input.value.trim().length < 3) {
-            alert("First Name must be at least 3 characters long.");
-            isValid = false;
-          }
-
-          // Add more specific validation rules as needed for other fields
-
-          // Apply border color based on validity
-          if (isValid) {
-            input.style.border = "1px solid green";
-          } else {
-            input.style.border = "1px solid red";
-          }
-        });
-
-        // Perform form submission if all inputs are valid
-        if (isValid) {
-          alert("Form submitted successfully!");
-          document.getElementById("myForm").submit();
-        }
-      }
-
-      function isValidEmail(email) {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-      }
-
-      //   get provience
-      function getProvinceName(code) {
-        switch (code) {
-          case "AB":
-            return "Alberta";
-          case "BC":
-            return "British Columbia";
-          case "MB":
-            return "Manitoba";
-          case "NB":
-            return "New Brunswick";
-          case "NL":
-            return "Newfoundland and Labrador";
-          case "NS":
-            return "Nova Scotia";
-          case "NT":
-            return "Northwest Territories";
-          case "NU":
-            return "Nunavut";
-          case "ON":
-            return "Ontario";
-          case "PE":
-            return "Prince Edward Island";
-          case "QC":
-            return "Quebec";
-          case "SK":
-            return "Saskatchewan";
-          case "YT":
-            return "Yukon";
-          default:
-            return "Unknown Province";
-        }
-      }
-    </script>
-  </body>
 </html>
