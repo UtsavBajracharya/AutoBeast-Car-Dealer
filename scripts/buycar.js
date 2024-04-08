@@ -2869,7 +2869,7 @@ $(document).ready(function(){
                         <!-- car image wapper -->
                         <div class="car-listing-item-img car-listing-item-img-left column-4">
                             <div class="image-wrapper">
-                                <a class="car-view-detail-link" aria-hidden="true" href="">
+                                <a class="car-view-detail-link" aria-hidden="true" href="javascript:void(0);" onclick='setToLocalStorage(${item.Year}, "${item.Name}", "${item.Model}")'>
                                     <div class="car-image-container" 
                                         title="${item.Year} ${item.Name} ${item.Trim}"
                                         style="padding-top: 67%; background-image: url(${item.image_1})"
@@ -2886,7 +2886,7 @@ $(document).ready(function(){
                             <div class="car-row">
                                 <div class="column-small-7">
                                     <div class="car-listing-item-title">
-                                        <a href="">${item.Year} ${item.Name} ${item.Trim}</a>
+                                        <a href="javascript:void(0);" onclick='setToLocalStorage(${item.Year}, "${item.Name}", "${item.Model}")'>${item.Year} ${item.Name} ${item.Trim}</a>
                                     </div>
                                     <div class="car-listing-item-field-container">
                                         <div class="car-listing-item-field car-field-drivetrain ">
@@ -3087,7 +3087,22 @@ $(document).ready(function(){
         fetchData(filteredData);
         showPage(1);
     }
+
 });
+
+// setting data to local storage
+function setToLocalStorage(year, name, model){
+
+    const c_data = {
+        year: year,
+        name: name, 
+        model: model
+    }
+
+    const jsonData = JSON.stringify(c_data);
+
+    localStorage.setItem('cardata', jsonData);
+}
 
 
 
