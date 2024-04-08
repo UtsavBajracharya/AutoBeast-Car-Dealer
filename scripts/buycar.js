@@ -3093,10 +3093,36 @@ $(document).ready(function(){
 // setting data to local storage
 function setToLocalStorage(year, name, model){
 
+    const filteredData = carData.filter(item => {
+        // Filter by name, year, model
+        
+        return  item.Name.toLowerCase() == name.toLowerCase() && 
+        item.Model.toLowerCase() == model.toLowerCase()
+        && item.Year == year;
+    });
+
     const c_data = {
-        year: year,
-        name: name, 
-        model: model
+        "Name": filteredData[0].Name,
+        "Model": filteredData[0].Model,
+        "Year": filteredData[0].Year,
+        "Mileage": filteredData[0].Mileage,
+        "Price": filteredData[0].Price,
+        "Drivetrain": filteredData[0].Drivetrain,
+        "Transmission": filteredData[0].Transmission,
+        "Transmission_Detail": filteredData[0].Name.Transmission_Detail,
+        "Engine": filteredData[0].Engine,
+        "Doors": filteredData[0].Doors,
+        "VIN": filteredData[0].VIN,
+        "Stock_Number": filteredData[0].Stock_Number,
+        "MPG": filteredData[0].MPG,
+        "Body_Type": filteredData[0].Body_Type,
+        "Trim": filteredData[0].Trim,
+        "Fuel_Type": filteredData[0].Fuel_Type,
+        "image_1": filteredData[0].image_1,
+        "image_2": filteredData[0].image_2,
+        "image_3": filteredData[0].image_3,
+        "image_4": filteredData[0].image_4,
+        "image_5": filteredData[0].image_5
     }
 
     const jsonData = JSON.stringify(c_data);
