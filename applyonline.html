@@ -8,6 +8,61 @@
   <link rel="stylesheet" href="css/style_applyonline.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-group div {
+      flex-basis: 30%;
+      /* Each input takes up almost half of the space */
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="number"],
+    #r_state,
+    #housingType,
+    #dl_state,
+    #yearsAtAddress,
+    #yearsAtJob {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
 </head>
 
 <body class="sub_page">
@@ -25,7 +80,7 @@
             <li class="nav-link"><a href="index.html">Home</a></li>
             <li class="nav-link"><a href="about.html">About</a></li>
             <li class="nav-link"><a href="buycar.html">Buy Car</a></li>
-            <li class="nav-link"><a href="applyonline.html"  class="active">Apply Online</a></li>
+            <li class="nav-link"><a href="applyonline.html" class="active">Apply Online</a></li>
             <li class="nav-link"><a href="blog.html">Blog</a></li>
             <li class="nav-link"><a href="contact.html">Contact</a></li>
           </ul>
@@ -40,7 +95,8 @@
     </header>
   </div>
   <!-- header section ends -->
-  <!-- contact section starts -->
+
+  <!-- applyonline section starts -->
   <section class="contact_section layout_padding">
     <div class="container">
       <div class="heading_container">
@@ -49,257 +105,281 @@
         </h2>
       </div>
     </div>
-    <form id="myForm" action="">
-      <div class="container">
-        <h3 style="margin-bottom: 10px">Personal Information</h3>
-        <div class="container-row">
-          <div class="container-column">
-            <div>
-              <label>First Name <span style="color: red">*</span></label>
-              <input type="text" placeholder="First Name" minlength="3" id="firstName" required />
-            </div>
-            <div>
-              <label>Email <span style="color: red">*</span></label>
-              <input type="email" id="email" placeholder="Email" required />
-            </div>
-            <div>
-              <label>Date Of Birth <span style="color: red">*</span></label>
-              <input type="date" id="dob" required />
-            </div>
-            <div>
-              <label>Driver's License Number</label>
-              <input type="text" id="dl_number" placeholder="Driver's License Number" />
-            </div>
-            <div>
-              <label>Driver's License Issue Date </label>
-              <input type="date" id="dl_issue_date" placeholder="Driver's License Issue Date" />
-            </div>
-            <div>
-              <label>Driver's License Expiry Date </label>
-              <input type="date" id="dl_expiry_date" required placeholder="Driver's License Expiry Date" />
-            </div>
+
+    <div class="container">
+      <form id="myForm">
+        <h2>Personal Details</h2>
+        <hr style="width: 200px; margin-bottom: 10px" />
+        <div class="form-group">
+          <div>
+            <label for="firstName">First Name:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="firstName" name="firstName" required />
           </div>
-          <div class="container-column">
-            <div class="map_container">
-              <div class="map-responsive">
-                <div>
-                  <label>Last Name <span style="color: red">*</span> </label>
-                  <input type="text" id="lastName" placeholder="Last Name" required />
-                </div>
-                <div>
-                  <label>Cell Phone <span style="color: red">*</span> </label>
-                  <input type="tel" id="cellPhone" placeholder="Cell Phone" required />
-                </div>
-                <div>
-                  <label>Home Phone (Optional)</label>
-                  <input type="number" id="homePhone" placeholder="Home Phone" />
-                </div>
-                <div>
-                  <label>SSN <span style="color: red">*</span></label>
-                  <input type="text" id="ssn" placeholder="SSN" required />
-                </div>
-                <div>
-                  <label>Driver's License State </label>
-                  <select id="state" name="state">
-                    <option value="">Select a state...</option>
-                    <option value="AB">Alberta</option>
-                    <option value="BC">British Columbia</option>
-                    <option value="MB">Manitoba</option>
-                    <option value="NB">New Brunswick</option>
-                    <option value="NL">Newfoundland and Labrador</option>
-                    <option value="NS">Nova Scotia</option>
-                    <option value="NT">Northwest Territories</option>
-                    <option value="NU">Nunavut</option>
-                    <option value="ON">Ontario</option>
-                    <option value="PE">Prince Edward Island</option>
-                    <option value="QC">Quebec</option>
-                    <option value="SK">Saskatchewan</option>
-                    <option value="YT">Yukon</option>
-                  </select>
-                </div>
-              </div>
-            </div>
+          <div>
+            <label for="lastName">Last Name:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div>
+            <label for="email">Email:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="email" id="email" name="email" required />
           </div>
         </div>
-      </div>
-
-      <div class="container">
-        <h3 style="margin-bottom: 10px">Residential Information</h3>
-        <div class="container-row">
-          <div class="container-column">
-            <div>
-              <label>Street Address <span style="color: red">*</span></label>
-              <input type="text" id="streetAddress" placeholder="Street Address" required />
-            </div>
-            <div>
-              <label>City <span style="color: red">*</span></label>
-              <input type="text" id="city" placeholder="City" required />
-            </div>
-            <div>
-              <label>State <span style="color: red">*</span></label>
-              <select id="state2" name="state2">
-                <option value="">Select a state...</option>
-                <option value="AB">Alberta</option>
-                <option value="BC">British Columbia</option>
-                <option value="MB">Manitoba</option>
-                <option value="NB">New Brunswick</option>
-                <option value="NL">Newfoundland and Labrador</option>
-                <option value="NS">Nova Scotia</option>
-                <option value="NT">Northwest Territories</option>
-                <option value="NU">Nunavut</option>
-                <option value="ON">Ontario</option>
-                <option value="PE">Prince Edward Island</option>
-                <option value="QC">Quebec</option>
-                <option value="SK">Saskatchewan</option>
-                <option value="YT">Yukon</option>
-              </select>
-            </div>
-            <div>
-              <label>Zip Code<span style="color: red">*</span></label>
-              <input type="text" id="zipCode" placeholder="Zip Code" required />
-            </div>
+        <div class="form-group">
+          <div>
+            <label for="cellPhone">Cell Phone:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="number" id="cellPhone" name="cellPhone" required />
           </div>
-          <div class="container-column">
-            <div class="map_container">
-              <div class="map-responsive">
-                <div>
-                  <label>Housing Type <span style="color: red">*</span>
-                  </label>
-
-                  <select id="housingType" name="housingType">
-                    <option value="">Select a type...</option>
-                    <option value="rent">Rent</option>
-                    <option value="own">Owned</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div>
-                  <label>Monthly Rent/Mortgage Amount
-                    <span style="color: red">*</span>
-                  </label>
-                  <input type="number" id="monthlyRent" placeholder="Monthly Rent/Mortgage Amount" required />
-                </div>
-                <div>
-                  <label>Years at Address<span style="color: red">*</span></label>
-                  <select id="yearsAtAddress" name="yearsAtAddress">
-                    <option value="">Select a Year at Address...</option>
-                    <option value="1-">One Year -</option>
-                    <option value="1+">One Year +</option>
-                    <option value="5-">Five Year -</option>
-                    <option value="5+">Five Year +</option>
-                    <option value="10-">Ten Year -</option>
-                    <option value="10+">Ten Year +</option>
-                  </select>
-                </div>
-              </div>
-            </div>
+          <div>
+            <label for="homePhone">Home Phone:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="tel" id="homePhone" name="homePhone" required />
+          </div>
+          <div>
+            <label for="dob">Date of Birth:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="date" id="dob" name="dob" required />
           </div>
         </div>
-      </div>
-
-      <div class="container">
-        <h3 style="margin-bottom: 10px">Employment Information</h3>
-        <div class="container-row">
-          <div class="container-column">
-            <div>
-              <label>Employer Name <span style="color: red">*</span></label>
-              <input type="text" id="employerName" placeholder="Employer Name" required />
-            </div>
-            <div>
-              <label>Title/Position <span style="color: red">*</span></label>
-              <input type="text" id="title" placeholder="Title/Position" required />
-            </div>
-            <div>
-              <label>Employer Phone Number
-                <span style="color: red">*</span></label>
-              <input type="tel" id="employeePhoneNumber" placeholder="Employer Phone Number" required />
-            </div>
+        <div class="form-group">
+          <div>
+            <label for="ssn">SSN: <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="ssn" name="ssn" required />
           </div>
-          <div class="container-column">
-            <div class="map_container">
-              <div class="map-responsive">
-                <div>
-                  <label>Monthly Gross Income
-                    <span style="color: red">*</span>
-                  </label>
-                  <input type="number" id="monthlyGross" placeholder="Monthly Gross Income" required />
-                </div>
-                <div>
-                  <label>Years at Job<span style="color: red">*</span></label>
-                  <input type="number" id="yearsAtJob" placeholder="Years at Job" required />
-                  <select id="yearsAtJob" name="yearsAtJob">
-                    <option value="">Select a Year at Address...</option>
-                    <option value="1-">One Year -</option>
-                    <option value="1+">One Year +</option>
-                    <option value="5-">Five Year -</option>
-                    <option value="5+">Five Year +</option>
-                    <option value="10-">Ten Year -</option>
-                    <option value="10+">Ten Year +</option>
-                  </select>
-                </div>
-              </div>
-            </div>
+          <div>
+            <label for="dl_number">Driver's License Number:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="dl_number" name="dl_number" required />
+          </div>
+          <div>
+            <label for="dl_state">State <span style="color: red">*</span></label>
+            <select id="dl_state" name="dl_state">
+              <option value="">Select a state...</option>
+              <option value="AB">Alberta</option>
+              <option value="BC">British Columbia</option>
+              <option value="MB">Manitoba</option>
+              <option value="NB">New Brunswick</option>
+              <option value="NL">Newfoundland and Labrador</option>
+              <option value="NS">Nova Scotia</option>
+              <option value="NT">Northwest Territories</option>
+              <option value="NU">Nunavut</option>
+              <option value="ON">Ontario</option>
+              <option value="PE">Prince Edward Island</option>
+              <option value="QC">Quebec</option>
+              <option value="SK">Saskatchewan</option>
+              <option value="YT">Yukon</option>
+            </select>
           </div>
         </div>
-      </div>
-
-      <div class="container">
-        <h3 style="margin-bottom: 10px">Intrested Vehicle</h3>
-        <div class="container-row">
-          <div class="container-column">
-            <div>
-              <label>Vehicle Keyword</label>
-              <input type="text" id="vehicleKeyword" placeholder="Search Here" />
-            </div>
-            <div>
-              <label>Stock Number</label>
-              <input type="text" id="stockNumber" placeholder="Stock Number" />
-            </div>
-            <div>
-              <label>Year </label>
-              <input type="text" id="year" placeholder="Year" />
-            </div>
-            <div>
-              <label>Make </label>
-              <input type="text" id="make" placeholder="Make" />
-            </div>
-            <div>
-              <label>Model </label>
-              <input type="text" id="model" placeholder="Model" />
-            </div>
-
-            <div class="button-flex">
-              <button onclick="validateForm()" type="submit">Submit</button>
-            </div>
+        <div class="form-group">
+          <div>
+            <label for="dl_issue_date">Driver's License Issue Date:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="date" id="dl_issue_date" name="dl_issue_date" required />
           </div>
-          <div class="container-column">
-            <div class="map_container">
-              <div class="map-responsive">
-                <div>
-                  <label>Vehicle Price </label>
-                  <input type="number" id="vehiclePrice" placeholder="Vehicle Price" />
-                </div>
-                <div>
-                  <label>Down Payment </label>
-                  <input type="number" id="downPayment" placeholder="Monthly Gross Income" required />
-                </div>
-                <div>
-                  <label>Exterior Color </label>
-                  <input type="text" id="exteriorColor" placeholder="Exterior Color" required />
-                </div>
-                <div>
-                  <label>Interior Color </label>
-                  <input type="text" id="interiorColor" placeholder="Interior Color" required />
-                </div>
-              </div>
-            </div>
+          <div>
+            <label for="dl_expiry_date">Driver's License Esxpiry Date:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="date" id="dl_expiry_date" name="dl_expiry_date" required />
+          </div>
+          <div></div>
+        </div>
+        <h2>Residential Details</h2>
+        <hr style="width: 200px; margin-bottom: 10px" />
+        <div class="form-group">
+          <div>
+            <label for="streetAddress">Street Address:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="streetAddress" name="streetAddress" required />
+          </div>
+          <div>
+            <label for="city">City: <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="city" name="city" required />
+          </div>
+
+          <div>
+            <label for="r_state">State <span style="color: red">*</span></label>
+            <select id="r_state" name="r_state">
+              <option value="">Select a state...</option>
+              <option value="AB">Alberta</option>
+              <option value="BC">British Columbia</option>
+              <option value="MB">Manitoba</option>
+              <option value="NB">New Brunswick</option>
+              <option value="NL">Newfoundland and Labrador</option>
+              <option value="NS">Nova Scotia</option>
+              <option value="NT">Northwest Territories</option>
+              <option value="NU">Nunavut</option>
+              <option value="ON">Ontario</option>
+              <option value="PE">Prince Edward Island</option>
+              <option value="QC">Quebec</option>
+              <option value="SK">Saskatchewan</option>
+              <option value="YT">Yukon</option>
+            </select>
           </div>
         </div>
-      </div>
-    </form>
+        <div class="form-group">
+          <div>
+            <label for="zipCode">Zip Code:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="zipCode" name="zipCode" required />
+          </div>
+          <div>
+            <label for="housingType">Housing Type:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <select id="housingType" name="housingType">
+              <option value="">Select a type...</option>
+              <option value="rent">Rent</option>
+              <option value="own">Owned</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="monthlyRent">Monthly Rent/Mortgage:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="number" id="monthlyRent" name="monthlyRent" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="yearsAtAddress">Years at Address:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <select id="yearsAtAddress" name="yearsAtAddress">
+              <option value="">Select a Year at Address...</option>
+              <option value="1-">One Year -</option>
+              <option value="1+">One Year +</option>
+              <option value="5-">Five Year -</option>
+              <option value="5+">Five Year +</option>
+              <option value="10-">Ten Year -</option>
+              <option value="10+">Ten Year +</option>
+            </select>
+          </div>
+        </div>
+        <h2>Employer Details</h2>
+        <hr style="width: 200px; margin-bottom: 10px" />
+        <div class="form-group">
+          <div>
+            <label for="employerName">Employer Name:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="employerName" name="employerName" required />
+          </div>
+          <div>
+            <label for="e_title">Title/Position:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="e_title" name="e_title" required />
+          </div>
+
+          <div>
+            <label for="e_phoneNumber">Employer Phone Number:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="number" id="e_phoneNumber" name="e_phoneNumber" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="yearsAtJob">Years at Job:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <select id="yearsAtJob" name="yearsAtJob">
+              <option value="">Select a Year at Job...</option>
+              <option value="1-">One Year -</option>
+              <option value="1+">One Year +</option>
+              <option value="5-">Five Year -</option>
+              <option value="5+">Five Year +</option>
+              <option value="10-">Ten Year -</option>
+              <option value="10+">Ten Year +</option>
+            </select>
+          </div>
+        </div>
+        <h2>Intrested Vehicles</h2>
+        <hr style="width: 200px; margin-bottom: 10px" />
+        <div class="form-group">
+          <div>
+            <label for="stockNumber">Stock Number:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="stockNumber" name="stockNumber" required />
+          </div>
+          <div>
+            <label for="years">Years:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="number" id="years" name="years" required />
+          </div>
+
+          <div>
+            <label for="model">Model:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="model" name="model" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <label for="price">Vehicle Price:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="number" id="price" name="price" required />
+          </div>
+          <div>
+            <label for="years">Years:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="number" id="years" name="years" required />
+          </div>
+
+          <div>
+            <label for="payment">Down Payment:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="number" id="payment" name="payment" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <label for="e_color">Exterior Color:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="text" id="e_color" name="e_color" required />
+          </div>
+
+          <div>
+            <label for="i_color">Interior Color:
+              <span style="color: red; font-size: 20px">*</span></label>
+            <input type="number" id="i_color" name="i_color" required />
+          </div>
+          <div></div>
+        </div>
+        <div style="font-size: 20px">
+          By clicking "Submit", I, the undersigned, (a) for the purpose of
+          securing credit, certify the below representations to be correct;
+          (b) authorize financial institutions, as they consider necessary and
+          appropriate, to obtain consumer credit reports on me periodically
+          and to gather employment history, and (c) understand that we, or any
+          financial institution to whom this application is submitted, will
+          retain this application whether or not it is approved, and that it
+          is the applicant's responsibility to notify the creditor of any
+          change of name, address, or employment. We and any financial
+          institution to whom this application is submitted, may share certain
+          non-public personal information about you with your authorization or
+          as provided by law. <br /><br />
+          I consent to be contacted by the dealer at any telephone number or
+          Email I provide, including, without limitation, communications sent
+          via text message to my cell phone or communications sent using an
+          autodialer or prerecorded message. This acknowledgment constitutes
+          my written consent to receive such communications. I have read and
+          agree to the Privacy Policy of this dealer.
+          <br />
+          <br />
+          <div style="display: flex">
+            <input style="width: 20px; height: 20px; margin-right: 5px" type="checkbox" id="chkbox" name="chkbox" />
+            <p>I accept all the above terms.</p>
+          </div>
+        </div>
+
+        <button type="button" id="submitButton">Submit</button>
+      </form>
+    </div>
   </section>
 
-  <!-- end contact section -->
+  <!-- end applyonline section -->
+
 
   <!-- footer section starts -->
 
