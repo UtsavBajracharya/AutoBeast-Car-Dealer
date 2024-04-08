@@ -5,16 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Detail Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style_cardetail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" />
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./scripts/cardetail.js"></script>
+    <script src="./scripts/buycar.js"></script>
 </head>
 
 <body class="sub_page">
@@ -33,7 +28,7 @@
                         <li class="nav-link"><a href="index.html">Home</a></li>
                         <li class="nav-link"><a href="about.html">About</a></li>
                         <li class="nav-link"><a href="buycar.html" class="active">Buy Car</a></li>
-                        <li class="nav-link"><a href="blog.html">Blog</a></li>
+                        <li class="nav-link"><a href="blog.html" >Blog</a></li>
                         <li class="nav-link"><a href="contact.html">Contact</a></li>
                     </ul>
 
@@ -49,63 +44,81 @@
 
     <!-- header section ends -->
 
+    <!-- Car detail starts -->
 
-    <!-- Buy Car Section starts -->
-    <section class="cars">
-        <h2 class="section-heading">Car Detail</h2>
-        <span>price</span>
-        <div class="car_details">
+    <div class = "card-wrapper">
+        <div class = "card">
+          <!-- card left -->
+          <div class = "product-imgs">
+            <div class = "img-display">
+              <div class = "img-showcase">
+                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0101.jpg" alt = "shoe image">
+                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0102.jpg" alt = "shoe image">
+                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0104.jpg" alt = "shoe image">
+                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0109.jpg" alt = "shoe image">
+              </div>
+            </div>
+            <div class = "img-select">
+              <div class = "img-item">
+                <a href = "#" data-id = "1">
+                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0101.jpg" alt = "shoe image">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "2">
+                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0102.jpg" alt = "shoe image">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "3">
+                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0104.jpg" alt = "shoe image">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "4">
+                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0109.jpg" alt = "shoe image">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card right -->
+          <div class = "product-content">
+            <h2 class = "product-title">2005 Audi A4 Base</h2>
+      
+            <div class = "product-price">
+              <p class = "new-price">Price: <span>$249.00 (5%)</span></p>
+            </div>
+      
+            <div class = "product-detail">
+              <h2>about this item: </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+              <ul>
+                <li>Color: <span>Black</span></li>
+                <li>Available: <span>in stock</span></li>
+                <li>Category: <span>Shoes</span></li>
+                <li>Shipping Area: <span>All over the world</span></li>
+                <li>Shipping Fee: <span>Free</span></li>
+              </ul>
+            </div>
+    
 
-
-            <!-- car record display starts -->
-            <div class="car_container">
-                <div class="car_container_inner">
-
-                    <!-- Search tool bar starts-->
-                    <div class="car-row car_listing_toolbar_holder">
-                        <div class="column-12">
-                                <div class="car_listing_controls">
-                                    <div class="dropdown page-size-options">
-                                        <div class="dropdown">
-                           
-                                            <ul class="dropdown-menu">
-                                                <li class="page_selection" data-bind="9"><span class="dropdown-item">9 items per page</span></li>
-                                                <li class="page_selection active" data-bind="12"><span class="dropdown-item">12 items per page</span></li>
-                                                <li class="page_selection" data-bind="18"><span class="dropdown-item">18 items per page</span></li>
-                                                <li class="page_selection" data-bind="24"><span class="dropdown-item">24 items per page</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                    <!-- Search tool bar ends-->
-
-                    <!-- car listing container starts-->
-                    <div class="car-listing-container container-fluid no-h-padding">
-                        <div class="car-row">
-                            <div class="column-12">
-                                <!-- list of cars items-->
-                                <div class="list-group" id="data-container">
-                                </div>
-        
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- car listing container ends-->
+            <!-- button row -->
+            <div class="car-row">
+                <div class="car-listing-item-buttons column-12">
+                    <button type="button" class="btn btn-apply-online">APPLY ONLINE</button>
+                    <button type="button" class="btn btn-check-availability">CHECK AVAILABILITY</button>
+                    <button type="button" class="btn btn-test-drive">TEST DRIVE</button>
                 </div>
-
             </div>
 
-
+            <!-- list of cars items-->
+            <div class="list-group" id="data-container">
+            </div>
+          </div>
         </div>
+      </div>
 
-
-        
-    </section>
-    <!-- Buy Car Section ends -->
 
     <!-- footer section starts -->
 
@@ -113,12 +126,13 @@
         <div class="footer-row">
             <div class="footer-col">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="#">
                         <img src="images/logo.png" alt="logo">
                     </a>
                 </div>
                 <p>
-                    Driving Dreams, Delivering Value: Your Trusted Car Partner for Quality, Service, and Satisfaction. Where Every Mile Feels Like Home.
+                    Driving Dreams, Delivering Value: Your Trusted Car Partner for Quality, Service, and Satisfaction. 
+                    Where Every Mile Feels Like Home.
                 </p>
 
                 <div class="icons">
@@ -175,8 +189,7 @@
         document.addEventListener('scroll', () => {
             if (window.scrollY > 0) {
                 nav.classList.add('scrolled');
-            }
-            else {
+            } else {
                 nav.classList.remove('scrolled');
             }
         });
@@ -193,7 +206,7 @@
         function closeMenu() {
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
-        } 
+        }
     </script>
 </body>
 

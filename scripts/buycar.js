@@ -2860,16 +2860,16 @@ $(document).ready(function(){
         const dataContainer = document.getElementById('data-container');
         dataContainer.innerHTML = '';
         var dataHtml = "";
-        data.forEach(item => {
+        data.forEach((item, index) => {
             dataHtml += `<!-- list-group-item -->
             <div class="list-group-item car-listing-item container-fluid no-h-padding">
                 <div class="car-row">
                     <div class="display-car-style">
-
+    
                         <!-- car image wapper -->
                         <div class="car-listing-item-img car-listing-item-img-left column-4">
                             <div class="image-wrapper">
-                                <a class="car-view-detail-link" aria-hidden="true" href="">
+                                <a class="car-view-detail-link" aria-hidden="true" href="cardetail.html?index=${index}">
                                     <div class="car-image-container" 
                                         title="${item.Year} ${item.Name} ${item.Trim}"
                                         style="padding-top: 67%; background-image: url(${item.image_1})"
@@ -2886,7 +2886,7 @@ $(document).ready(function(){
                             <div class="car-row">
                                 <div class="column-small-7">
                                     <div class="car-listing-item-title">
-                                        <a href="">${item.Year} ${item.Name} ${item.Trim}</a>
+                                        <a href="cardetail.html?index=${index}">${item.Year} ${item.Name} ${item.Trim}</a>
                                     </div>
                                     <div class="car-listing-item-field-container">
                                         <div class="car-listing-item-field car-field-drivetrain ">
@@ -2956,7 +2956,7 @@ $(document).ready(function(){
                         <!-- car-listing-item-info ends -->
                     </div>
                 </div>
-
+                
                 <!-- button row -->
                 <div class="car-row">
                     <div class="car-listing-item-buttons column-12">

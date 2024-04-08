@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
 }
 
 .sub_page .header_area {
@@ -110,234 +109,199 @@ li {
 /* navigation header ends*/
 
 
-/* car section starts */
-.cars {
+/* car detail starts */
+
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 120px auto;
+}
+img{
     width: 100%;
-    display: grid;
-    text-align: center;
+    display: block;
 }
-
-.car-description {
-    color: #575a7b;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px; 
-}
-
-.section-heading {
-    padding-top: 80px;
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-.car_details {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-
-/* car record display starts */
-.car_container {
-    width: 75%;
-    padding-left: 0;
-    padding-right: 0;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    box-sizing: border-box;
-}
-
-.car_container_inner {
-    box-sizing: border-box;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-    padding-top: 0px !important;
-}
-
-.car-row {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.column-12 {
-    width: 100%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-
-/* car lisfing container */
-.container-fluid {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.car-listing-container p,h1,h2,h3,a,span {
-    font-family: "Titillium Web", sans-serif;
-}
-
-.no-h-padding {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.car-listing-container .list-group-item:first-child {
-    border-top: none;
-}
-
-.car-listing-container .list-group-item {
-    background: 0 0;
-    border: none;
-    border-top: 1px solid #ddd;
-}
-
-.column-4 {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.car-listing-container .car-listing-item-img.car-listing-item-img-left {
-    padding-right: 0;
-}
-
-.car-listing-container .car-listing-item-img {
-    width: 250px;
-}
-
-.car-listing-container .car-listing-item .image-wrapper {
-    position: relative;
+.img-display{
     overflow: hidden;
 }
-
-.car-listing-container .car-listing-item .image-wrapper .car-view-detail-link {
-    position: relative;
-    display: block;
-    z-index: 1;
-}
-
-.car-image-container {
+.img-showcase{
+    display: flex;
     width: 100%;
-    content: ' ';
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+    transition: all 0.5s ease;
 }
-
-.car-image-container > img {
-    height: 235;
-    width: 156.66;
-    padding-top: 66.67%;
+.img-showcase img{
+    min-width: 100%;
 }
-
-.car-listing-container .car-listing-item-info {
-    width: calc(100% - 250px) !important;
-}
-
-.left {
-    float: left;
-}
-
-.column-small-7 {
-    width: 80%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.car-listing-item-title {
-    font-weight: 700;
-}
-
-.car-listing-item-field-container {
-    margin-left: -10px;
-    margin-bottom: 15px;
-}
-
-.list-group-item .display-car-style {
+.img-select{
     display: flex;
 }
-
-.car-listing-item-field-container .car-listing-item-field {
-    float: left;
-    margin-left: 10px;
-    padding-left: 5px;
-    margin-top: 10px;
+.img-item{
+    margin: 0.3rem;
 }
-
-.car-listing-item-title a,
-.car-listing-item-field-label,
-.car-listing-item-field-value {
-    color: #000000;
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
 }
-
-.car-listing-item-field-container .car-listing-item-field .car-listing-item-field-label {
-    font-size: 10px;
-    display: block;
-    color: #999;
+.img-item:hover{
+    opacity: 0.8;
 }
-
-.car-listing-item-field-container .car-listing-item-field .car-listing-item-field-value {
-    font-size: 14px;
-    display: block;
+.product-content{
+    padding: 2rem 1rem;
 }
-
-.car-price-wrapper {
-    width: 20%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 0px;
-    padding-right: 15px;
-}
-
-.car-listing-item .car-price-wrapper .car-price {
-    padding: 5px;
-    display: inline;
-    text-align: right;
-}
-
-.car-price-wrapper > .car-price {
-    color: #f0f0f0;
-    background-color: #000000;
-    border-left-color: #000000;
-    border-right-color: #000000;
-    border-bottom-color: #000000;
-    font-size: 18px;
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
     font-weight: 700;
-    padding: 0 5px 0 10px;
-    margin-bottom: 5px;
-    clear: right;
-    border-color: #5e5e5e;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #256eff;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+.product-rating{
+    color: #ffc107;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #256eff;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    background: #256eff;
+}
+.purchase-info .btn:last-of-type{
+    background: #f64749;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
 }
 
-.car-listing-item-buttons .btn {
-    margin-top: 10px;
-    margin-right: 10px;
-    white-space: normal;
-    color: #ffffff;
-    background-color: #505050;
-    border-color: #3f3f3f;
-    padding: 5px 10px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 0;
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
 }
-/*car record display ends*/
-
-/* car section ends */
-
 
 
 /* Footer section starts*/
@@ -415,7 +379,7 @@ li {
 .footer-col form {
     display: flex;
     gap: 12px;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 
 .footer-col input {
@@ -429,15 +393,6 @@ li {
     caret-color: #fff;
     color: #fff;
     padding-left: 10px;
-}
-
-.footer-col input::placeholder {
-    color: #c3c3c37e;
-}
-
-.footer-col input:focus {
-    border: 1px solid rgb(184, 184, 184);
-    box-shadow: 0 0 4px rgb(170, 170, 170);
 }
 
 .footer-col form button {
@@ -482,17 +437,29 @@ a {
 
 /* Laptop */
 @media screen and (min-width: 1024px) {
-    .cars {
-        padding: 4rem 4rem;
+    .container {
+        max-width: 1100px;
     }
 
-    .car-detail {
-        padding: 0 180px;
+    .about-section .container-column {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }
 
 /* Tablet */
 @media screen and (min-width:768px) and (max-width: 1023px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .container-column img {
+        margin-top: 50px;
+    }
+
+    .header_section {
+        padding-top: 10px;
+    }
 
     .logo img {
         width: 50%;
@@ -545,36 +512,6 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .cars {
-        padding: 4rem 2rem;
-    }
-
-    .car_listing_search {
-        width: 100%;
-    }
-
-    .slider.slider-horizontal >b {
-        font-size: smaller;
-    }
-
-    .car-listing-filter-line {
-        margin-top: 12%;
-        border-bottom: 1px solid;
-    }
-
-    .car-listing-container .car-listing-item-img {
-        width: 100% !important;
-    }
-
-    .car-listing-container .car-listing-item-info {
-        width: 100% !important;
-        padding-top: 2%;    
-    }
-    
-    .list-group-item .display-car-style {
-        display: block;
-    }
-
     .top-footer {
         position: relative;
         bottom: 0;
@@ -606,6 +543,7 @@ a {
     }
 
     li a {
+        color: #bfbfbf;
         font-size: 16px;
     }
 }
@@ -673,92 +611,8 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .cars {
-        padding: 4rem 2rem;
-    }
-
-    .section-heading {
-        padding-top: 80px;
-    }
-
-    .search_filter_container {
-        display: none;
-    }
-
-    .car_container {
-        width: 100%;
-    }
-
-    .car_listing_search {
-        width: 100%;
-    }
-
-    .car_listing_controls {
-        width: auto;
-        margin-top: 40px;
-    }
-
-    .car-listing-filter-btn {
-        display: inline-block;
-    }
-
-    .slider.slider-horizontal >b {
-        font-size: smaller;
-    }
-
-    .car-listing-filter-line {
-        margin-top: 12%;
-        border-bottom: 1px solid;
-    }
-
-    .car-listing-container .car-listing-item-img {
-        width: 100% !important;
-    }
-
-    .car-listing-container .car-listing-item-info {
-        width: 100% !important;
-        padding-top: 2%;    
-    }
-
-    .car-image-container {
-        max-width: 95%;
-        margin: 2%;
-    }
-    
-    .list-group-item .display-car-style {
-        display: block;
-    }
-
-    .column-small-7 {
-        width: 100%;        
-    }
-
-    .car-price-wrapper {
-        width: 100%;
-        padding-top: 10px;
-    }
-
-    .car-listing-item-buttons {
-        display: grid;
-    }
-
-    .car-listing-item-buttons .btn {
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    .list-group-item {
-        position: relative;
-        display: block;
-        padding: 0px 50px;
-        margin-bottom: -1px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-    }
-
-    .car-listing-filter-container-modal .list-group-item .slider-horizontal .tooltip-main {
-        opacity: 9 !important;
-        z-index: 100 !important;
+    .container-column img {
+        margin-top: 50px;
     }
 
     .top-footer {
@@ -771,7 +625,7 @@ a {
     }
 
     .footer-col {
-        margin-bottom: 12px;
+        margin-bottom: 20px;
         width: 100%;
     }
 
@@ -791,9 +645,3 @@ a {
         font-size: 14px;
     }
 }
-
-
-
-
-
-
