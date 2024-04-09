@@ -2771,8 +2771,8 @@ $(document).ready(function () {
 
 function setSearchOption() {
     var searchCar = {
-        "Name": $("#s_make").val(),
-        "Year": $("#s_year").val(),
+        "Name": $("#s_make").val() == "0" ? "" : $("#s_make").val(),
+        "Year": $("#s_year").val() == "0" ? "" : $("#s_year").val(),
         "price_range_s": $("#price_range_s").val()
     }
 
