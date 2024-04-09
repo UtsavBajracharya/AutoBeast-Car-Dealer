@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" />
     <title>Home Page</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/index.js"></script>
 </head>
 
 <body>
@@ -53,13 +58,13 @@
 
     <!-- Product Section starts -->
     <section class="products">
-        <h2 class="section-heading">Our Products</h2>
+        <h2 class="section-heading">Buy Car</h2>
         <p class="product-detail">
             We are proud to offer these values in our sales and business practices , so our customers keep coming back. 
             Our sales team can help you get acquainted with our wide range of inventory, 
             and help you narrow down your choices to find your perfect RIDE!
         </p>
-        <div class="gallery">
+        <!-- <div class="gallery">
             <div class="box box-1"></div>
             <div class="box box-2"></div>
             <div class="box box-3"></div>
@@ -144,7 +149,49 @@
                     Read More
                 </a>
             </div>
+        </div> -->
+        
+        <div class="row search-wrapper">
+            <div class="search-inner">
+                <div class="search-column">
+                    <div class="search-div">
+                        <label>MAKE</label>
+                        <div>
+                            <select id="s_make">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-div">
+                        <label>YEAR</label>
+                        <div>
+                            <select id="s_year">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-div">
+                        <label>PRICE</label>
+                        <div class="slider slider-horizontal">
+                            <b style="float: left;">$2,000</b>
+                            <b style="float: right;">$99,000</b>
+                            <input id="price_range_s" type="text" class="span2" 
+                            value="" data-slider-min="2000" data-slider-max="99000" 
+                            data-slider-step="5000" data-slider-value="[2000,99000]"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="search-column">
+                   
+                    <div class="search-div">
+                        <div class="search-btn">
+                            <a class="btn-box" href="buycar.html" onclick="setSearchOption()">
+                                SEARCH
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </section>
     <!-- Product Section ends -->
 

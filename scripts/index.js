@@ -1,73 +1,73 @@
 carData = [
-        {
-            "Name": "Audi A4",
-            "Model": "A4",
-            "Year": 2005,
-            "Mileage": "20000",
-            "Price": "10000",
-            "Drivetrain": "FWD",
-            "Transmission": "Automatic",
-            "Transmission_Detail": "6-Speed Automatic with Tiptronic",
-            "Engine": "2.0L I4",
-            "Doors": "4",
-            "VIN": "1234567890",
-            "Stock_Number": "A12345",
-            "MPG": "21/29",
-            "Body_Type": "Sedan",
-            "Trim": "Base",
-            "Fuel_Type": "Gasoline",
-            "image_1": "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0101.jpg",
-            "image_2": "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0102.jpg",
-            "image_3": "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0104.jpg",
-            "image_4": "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0109.jpg",
-            "image_5": "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0112.jpg"
-        },
-        {
-            "Name": "BMW 3 Series",
-            "Model": "3 Series",
-            "Year": 2005,
-            "Mileage": "30000",
-            "Price": "12000",
-            "Drivetrain": "RWD",
-            "Transmission": "Manual",
-            "Transmission_Detail": "6-Speed Manual",
-            "Engine": "2.5L I6",
-            "Doors": "2",
-            "VIN": "0987654321",
-            "Stock_Number": "B54321",
-            "MPG": "18/27",
-            "Body_Type": "Coupe",
-            "Trim": "325Ci",
-            "Fuel_Type": "Gasoline",
-            "image_1": "https://www.motortrend.com/uploads/sites/10/2015/11/2005-bmw-3-series-325i-sedan-angular-front.png?fit=around%7C875:492",
-            "image_2": "https://www.motortrend.com/uploads/sites/10/2015/11/2005-bmw-3-series-325i-sedan-angular-rear.png?fit=around%7C875:492",
-            "image_3": "https://www.motortrend.com/uploads/sites/10/2015/11/2005-bmw-3-series-325i-sedan-wheel-cap.png?fit=around%7C875:492",
-            "image_4": "https://www.motortrend.com/uploads/sites/10/2015/11/2005-bmw-3-series-325i-sedan-front-view.png?fit=around%7C875:492",
-            "image_5": "https://www.motortrend.com/uploads/sites/10/2015/11/2005-bmw-3-series-325i-sedan-rear-view.png?fit=around%7C875:492"
-        },
-        {
-            "Name": "Honda Civic",
-            "Model": "Civic",
-            "Year": 2005,
-            "Mileage": "25000",
-            "Price": "8000",
-            "Drivetrain": "FWD",
-            "Transmission": "Automatic",
-            "Transmission_Detail": "4-Speed Automatic with Overdrive",
-            "Engine": "1.7L I4",
-            "Doors": "4",
-            "VIN": "9876543210",
-            "Stock_Number": "C67890",
-            "MPG": "29/38",
-            "Body_Type": "Sedan",
-            "Trim": "LX",
-            "Fuel_Type": "Gasoline",
-            "image_1": "https://www.motortrend.com/uploads/sites/5/2005/02/112_05_chicago_civicsi08_z.jpg?w=768&width=768&q=75&format=webp",
-            "image_2": "https://www.motortrend.com/uploads/sites/5/2005/02/112_05_chicago_civicsi10_z.jpg?w=768&width=768&q=75&format=webp",
-            "image_3": "https://www.motortrend.com/uploads/sites/5/2005/02/112_05_chicago_civicsi04_z.jpg?w=768&width=768&q=75&format=webp",
-            "image_4": "https://www.motortrend.com/uploads/sites/5/2005/02/112_05_chicago_civicsi02_z.jpg?w=768&width=768&q=75&format=webp",
-            "image_5": "https://www.motortrend.com/uploads/sites/5/2005/02/112_05_chicago_civicsi06_z.jpg?w=768&width=768&q=75&format=webp"
-        },
+    {
+        "Name": "Audi A4",
+        "Model": "A4",
+        "Year": 2005,
+        "Mileage": "20000",
+        "Price": "10000",
+        "Drivetrain": "FWD",
+        "Transmission": "Automatic",
+        "Transmission_Detail": "6-Speed Automatic with Tiptronic",
+        "Engine": "2.0L I4",
+        "Doors": "4",
+        "VIN": "1234567890",
+        "Stock_Number": "A12345",
+        "MPG": "21/29",
+        "Body_Type": "Sedan",
+        "Trim": "Base",
+        "Fuel_Type": "Gasoline",
+        "image_1": "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0101.jpg",
+        "image_2": "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0102.jpg",
+        "image_3": "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0104.jpg",
+        "image_4": "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0109.jpg",
+        "image_5": "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0112.jpg"
+    },
+    {
+        "Name": "BMW 3 Series",
+        "Model": "3 Series",
+        "Year": 2005,
+        "Mileage": "30000",
+        "Price": "12000",
+        "Drivetrain": "RWD",
+        "Transmission": "Manual",
+        "Transmission_Detail": "6-Speed Manual",
+        "Engine": "2.5L I6",
+        "Doors": "2",
+        "VIN": "0987654321",
+        "Stock_Number": "B54321",
+        "MPG": "18/27",
+        "Body_Type": "Coupe",
+        "Trim": "325Ci",
+        "Fuel_Type": "Gasoline",
+        "image_1": "https://www.motortrend.com/uploads/sites/10/2015/11/2005-bmw-3-series-325i-sedan-angular-front.png?fit=around%7C875:492",
+        "image_2": "https://www.motortrend.com/uploads/sites/10/2015/11/2005-bmw-3-series-325i-sedan-angular-rear.png?fit=around%7C875:492",
+        "image_3": "https://www.motortrend.com/uploads/sites/10/2015/11/2005-bmw-3-series-325i-sedan-wheel-cap.png?fit=around%7C875:492",
+        "image_4": "https://www.motortrend.com/uploads/sites/10/2015/11/2005-bmw-3-series-325i-sedan-front-view.png?fit=around%7C875:492",
+        "image_5": "https://www.motortrend.com/uploads/sites/10/2015/11/2005-bmw-3-series-325i-sedan-rear-view.png?fit=around%7C875:492"
+    },
+    {
+        "Name": "Honda Civic",
+        "Model": "Civic",
+        "Year": 2005,
+        "Mileage": "25000",
+        "Price": "8000",
+        "Drivetrain": "FWD",
+        "Transmission": "Automatic",
+        "Transmission_Detail": "4-Speed Automatic with Overdrive",
+        "Engine": "1.7L I4",
+        "Doors": "4",
+        "VIN": "9876543210",
+        "Stock_Number": "C67890",
+        "MPG": "29/38",
+        "Body_Type": "Sedan",
+        "Trim": "LX",
+        "Fuel_Type": "Gasoline",
+        "image_1": "https://www.motortrend.com/uploads/sites/5/2005/02/112_05_chicago_civicsi08_z.jpg?w=768&width=768&q=75&format=webp",
+        "image_2": "https://www.motortrend.com/uploads/sites/5/2005/02/112_05_chicago_civicsi10_z.jpg?w=768&width=768&q=75&format=webp",
+        "image_3": "https://www.motortrend.com/uploads/sites/5/2005/02/112_05_chicago_civicsi04_z.jpg?w=768&width=768&q=75&format=webp",
+        "image_4": "https://www.motortrend.com/uploads/sites/5/2005/02/112_05_chicago_civicsi02_z.jpg?w=768&width=768&q=75&format=webp",
+        "image_5": "https://www.motortrend.com/uploads/sites/5/2005/02/112_05_chicago_civicsi06_z.jpg?w=768&width=768&q=75&format=webp"
+    },
     {
         "Name": "Toyota Camry",
         "Model": "Camry",
@@ -2737,417 +2737,46 @@ carData = [
     }
 ];
 
-$(document).ready(function(){
-    $("#year_range").slider({
-        range: true,
-        min: 2004,
-        max: 2020,
-        step: 1,
-        values: [ 2010, 2013],
-        formatter: function(value) {
-            if(value.length > 1){
-                value = value[0] +' - ' + value[1];
+$(document).ready(function () {
+    // To delete the item with key "search_cardata"
+    localStorage.removeItem("search_cardata");
+
+    $("#price_range_s").slider({
+        formatter: function (value) {
+            if (value.length > 1) {
+                value = '$' + value[0].toLocaleString() + ' - $' + value[1].toLocaleString();
             }
             return value;
         },
     });
 
-    $("#mileage_range").slider({
-        formatter: function(value) {
-            if(value.length > 1){
-                value = value[0].toLocaleString() + ' - ' + value[1].toLocaleString();
+    var carNames = '<option value="0">Select an option</option>';
+    carData.map((car)=> {
+            if(!carNames.includes(car.Name)) {
+                carNames += `<option value="${car.Name}">${car.Name}</option>`
             }
-            return value;
-        },
-    });
-
-    $("#price_range").slider({
-        formatter: function(value) {
-            if(value.length > 1){
-                value = '$' + value[0].toLocaleString() +' - $' + value[1].toLocaleString();
-            }
-            return value;
-        },
-    });
-
-    $("#year_range_m").slider({
-        formatter: function(value) {
-            if(value.length > 1){
-                value = value[0].toString() + ' - ' + value[1].toString();
-            }
-            return value;
-        },
-    });
-
-    $("#mileage_range_m").slider({
-        formatter: function(value) {
-            if(value.length > 1){
-                value = value[0].toLocaleString() + ' - ' + value[1].toLocaleString();
-            }
-            return value;
-        },
-    });
-
-    $("#price_range_m").slider({
-        formatter: function(value) {
-            if(value.length > 1){
-                value = '$' + value[0].toLocaleString() +' - $' + value[1].toLocaleString();
-            }
-            return value;
-        },
-    });
-
-    $('#carFilterModal').modal();
-    
-    fetchData(carData);
-
-    // Define number of items per page
-    var itemsPerPage = $(".page_selection.active").data("bind");;
-    var items = $(".list-group-item.car-listing-item");
-    var numItems = items.length;
-    var numPages = Math.ceil(numItems / itemsPerPage);
-    var currentPage = parseInt($(".page-link.active").text());
-
-    // Initial page to display
-    showPage(1);
-
-    // Function to display items for a particular page
-    function showPage(page) {
-        items.hide();
-        var startIndex = (page - 1) * itemsPerPage;
-        var endIndex = Math.min(startIndex + itemsPerPage, numItems);
-        items.slice(startIndex, endIndex).show();
-        pagination();
-    }
-
-    // Create a pagination links
-    function pagination(){
-        var paginationHTML = "";
-        paginationHTML += "<a href='#' class='page-link prev'>« Prev</a>";
-        paginationHTML += "<a href='#' class='page-link'>1</a>"; // First number
-        for (var i = 2; i <= numPages; i++) {
-            paginationHTML += "<a href='#' class='page-link'>" + i + "</a>";
         }
-        paginationHTML += "<a href='#' class='page-link next'>Next »</a>";
-        $("#pagination").html(paginationHTML);
+    );
+    $('#s_make').html(carNames);
 
-        // Initially highlight the first page
-        $(".page-link:nth-child(2)").addClass("active");
-    }
-    
-    // Handle pagination link click
-    $("#pagination").on("click", ".page-link", function(e) {
-        e.preventDefault();
-        currentPage = parseInt($(".page-link.active").text());
-        
-        if ($(this).hasClass("prev")) { // Clicked on "Previous"
-            if (currentPage > 1) {
-                showPage(currentPage - 1);
-                $(".page-link").removeClass("active");
-                $(".page-link:nth-child("+(currentPage)+")").addClass("active");
+    var carYear = '<option value="0">Select an option</option>';
+    carData.map((car)=> {
+            if(!carYear.includes(car.Year)) {
+                carYear += `<option value="${car.Year}">${car.Year}</option>`
             }
-        } else if ($(this).hasClass("next")) { // Clicked on "Next"
-            if (currentPage < numPages) {
-                showPage(currentPage + 1);
-                $(".page-link").removeClass("active");
-                $(".page-link:nth-child("+(currentPage + 2)+")").addClass("active");
-            }
-        } else { // Clicked on "Page Number"
-            showPage(parseInt($(this).text()));
-            $(".page-link").removeClass("active");
-            $(this).addClass("active");
         }
-    });
-
-    // Fetch all data from json file
-    function fetchData(data) {
-        const dataContainer = document.getElementById('data-container');
-        dataContainer.innerHTML = '';
-        var dataHtml = "";
-        data.forEach((item) => {
-            dataHtml += `<!-- list-group-item -->
-            <div class="list-group-item car-listing-item container-fluid no-h-padding">
-                <div class="car-row">
-                    <div class="display-car-style">
-    
-                        <!-- car image wapper -->
-                        <div class="car-listing-item-img car-listing-item-img-left column-4">
-                            <div class="image-wrapper">
-                                <a class="car-view-detail-link" aria-hidden="true" href="./cardetail.html" onclick='setToLocalStorage(${item.Year}, "${item.Name}", "${item.Model}")'>
-                                    <div class="car-image-container" 
-                                        title="${item.Year} ${item.Name} ${item.Trim}"
-                                        style="padding-top: 67%; background-image: url(${item.image_1})"
-                                        data-loaded="true"
-                                    >
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- car image wapper ends -->
-                        
-                        <!-- car-listing-item-info -->
-                        <div class="car-listing-item-info left column-12">
-                            <div class="car-row">
-                                <div class="column-small-7">
-                                    <div class="car-listing-item-title">
-                                        <a href="./cardetail.html" onclick='setToLocalStorage(${item.Year}, "${item.Name}", "${item.Model}")'>${item.Year} ${item.Name} ${item.Trim}</a>
-                                    </div>
-                                    <div class="car-listing-item-field-container">
-                                        <div class="car-listing-item-field car-field-drivetrain ">
-                                            <span class="car-listing-item-field-label">Drivetrain</span>
-                                            <span class="car-listing-item-field-value">${item.Drivetrain}</span>
-                                        </div>
-                                        <div class="car-listing-item-field car-field-transmission ">
-                                            <span class="car-listing-item-field-label">Transmission</span>
-                                            <span class="car-listing-item-field-value">${item.Transmission}</span>
-                                        </div>
-                                        <div class="car-listing-item-field car-field-engine ">
-                                            <span class="car-listing-item-field-label">Engine</span>
-                                            <span class="car-listing-item-field-value">${item.Engine}</span>
-                                        </div>
-                                            <div class="car-listing-item-field car-field-mileage ">
-                                            <span class="car-listing-item-field-label">Mileage</span>
-                                            <span class="car-listing-item-field-value">${item.Mileage}</span>
-                                        </div>
-                                        <div class="car-listing-item-field car-field-door ">
-                                            <span class="car-listing-item-field-label">Doors</span>
-                                            <span class="car-listing-item-field-value">${item.Doors}</span>
-                                        </div>
-                                        <div class="car-listing-item-field car-field-vin ">
-                                            <span class="car-listing-item-field-label">VIN</span>
-                                            <span class="car-listing-item-field-value">${item.VIN}</span>
-                                        </div>
-                                        <div class="car-listing-item-field car-field-stock-number ">
-                                            <span class="car-listing-item-field-label">Stock Number</span>
-                                            <span class="car-listing-item-field-value">${item.Stock_Number}</span>
-                                        </div>
-                                        <div class="car-listing-item-field car-field-transmission-details ">
-                                            <span class="car-listing-item-field-label">Transmission Detail</span>
-                                            <span class="car-listing-item-field-value">${item.Transmission_Detail}</span>
-                                        </div>
-                                        <div class="car-listing-item-field car-field-mpg ">
-                                            <span class="car-listing-item-field-label">MPG (city/hwy)</span>
-                                            <span class="car-listing-item-field-value">${item.MPG}</span>
-                                        </div>
-                                        <div class="car-listing-item-field car-field-bodytype ">
-                                            <span class="car-listing-item-field-label">Body Type</span>
-                                            <span class="car-listing-item-field-value">${item.Body_Type}</span>
-                                        </div>
-                                        <div class="car-listing-item-field car-field-trim ">
-                                            <span class="car-listing-item-field-label">Trim</span>
-                                            <span class="car-listing-item-field-value">${item.Trim}</span>
-                                        </div>
-                                        <div class="car-listing-item-field car-field-fueltype ">
-                                            <span class="car-listing-item-field-label">Fuel Type</span>
-                                            <span class="car-listing-item-field-value">${item.Fuel_Type}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- car-price -->
-                                <div class="car-price-wrapper">
-                                    <div class="pull-right car-price">
-                                        <span class="car-price-value">${(parseFloat(item.Price)).toLocaleString('en-US', {
-                                            style: 'currency',
-                                            currency: 'USD',
-                                            minimumFractionDigits: 2,
-                                            maximumFractionDigits: 2
-                                        })}</span>
-                                    </div>
-                                </div>
-                                <!-- car-price -->
-                            </div>
-                        </div>
-                        <!-- car-listing-item-info ends -->
-                    </div>
-                </div>
-                
-                <!-- button row -->
-                <div class="car-row">
-                    <div class="car-listing-item-buttons column-12">
-                        <button type="button" class="btn btn-apply-online">APPLY ONLINE</button>
-                        <button type="button" class="btn btn-check-availability" data-bs-toggle="modal" data-bs-target="#checkAvailabilityModal">CHECK AVAILABILITY</button>
-                        <button type="button" class="btn btn-test-drive" data-bs-toggle="modal" data-bs-target="#testDriveModal" >TEST DRIVE</button>
-                    </div>
-                </div>
-            </div>
-            <!-- list-group-item ends-->
-            `;
-        });
-        dataContainer.innerHTML = dataHtml;
-
-        items = $(".list-group-item.car-listing-item");
-        numItems = items.length;
-        numPages = Math.ceil(numItems / itemsPerPage);
-        
-        items.hide();
-        startIndex = 1;
-        endIndex = Math.min(startIndex + itemsPerPage, numItems);
-        items.slice(startIndex, endIndex).show();
-    }
-
-    $('.page_selection').click(function() {
-        $(".page_selection").removeClass("active");
-        $(this).addClass("active");
-        itemsPerPage = $(this).data('bind');
-        $('.page-value').text(itemsPerPage + ' items');
-        numPages = Math.ceil(numItems / itemsPerPage);
-        showPage(1);
-    });
-
-    $('.sort_selection').click(function() {
-        $(".sort_selection").removeClass("active");
-        $(this).addClass("active");
-        filterAndSortData();
-    })
-
-    $('.filter-update-btn').click(function(){
-        filterAndSortData();
-    });
-
-    $('.filter-update-m-btn').click(function(){
-        filterAndSortData('modal');
-    });
-
-    $('#search-btn').click(function(){
-        filterAndSortData();
-    });
-
-    // Filter and sort data based on manufacture date and mileage
-    function filterAndSortData(type) {
-        var sortby = "";
-        var year_range = "";
-        var mileage_range = "";
-        var price_range = "";
-
-        const search_keyword = $('#search').val().trim();
-
-        if($(".sort_selection").hasClass('active')){
-            sortby = $(".sort_selection.active").data("bind");
-        }
-
-        if(type == 'modal'){
-            year_range = $("#year_range_m").val().split(',');
-            mileage_range = $("#mileage_range_m").val().split(',');
-            price_range = $("#price_range_m").val().split(',');
-            $('#carFilterModal').modal('hide');
-        }
-        else {
-            year_range = $("#year_range").val().split(',');
-            mileage_range = $("#mileage_range").val().split(',');
-            price_range = $("#price_range").val().split(',');
-        }
-        
-        const filteredData = carData.filter(item => {
-            // Filter by name if search keyword is provided
-            if (search_keyword !== '') {
-                return  item.Name.toLowerCase().includes(search_keyword.toLowerCase()) &&
-                item.Year >= parseInt(year_range[0]) && item.Year <= parseInt(year_range[1]) // year range
-                && item.Mileage >= parseInt(mileage_range[0]) && item.Mileage <= parseInt(mileage_range[1]) // mileage range
-                && item.Price >= parseInt(price_range[0]) && item.Price <= parseInt(price_range[1]); // price range
-            }
-
-            return item.Year >= parseInt(year_range[0]) && item.Year <= parseInt(year_range[1]) // year range
-            && item.Mileage >= parseInt(mileage_range[0]) && item.Mileage <= parseInt(mileage_range[1]) // mileage range
-            && item.Price >= parseInt(price_range[0]) && item.Price <= parseInt(price_range[1]); // price range
-        });
-        
-        switch(sortby){
-            case 'p1':
-                filteredData.sort((a, b) => parseInt(b.Price) - parseInt(a.Price));
-                $('.sort-value').text('Price: High - Low');
-                break;
-            case 'p2':
-                filteredData.sort((a, b) => parseInt(a.Price) - parseInt(b.Price));
-                $('.sort-value').text('Price: Low - High');
-                break;
-            case 'm1':
-                filteredData.sort((a, b) => parseInt(b.Mileage) - parseInt(a.Mileage));
-                $('.sort-value').text('Mileage: High - Low');
-                break;
-            case 'm2':
-                filteredData.sort((a, b) => parseInt(a.Mileage) - parseInt(b.Mileage));
-                $('.sort-value').text('Mileage: Low - High');
-                break;
-            case 'y1':
-                filteredData.sort((a, b) => parseInt(b.Year) - parseInt(a.Year));
-                $('.sort-value').text('Year: New - Old');
-                break;
-            case 'y2':
-                filteredData.sort((a, b) => parseInt(a.Year) - parseInt(b.Year));
-                $('.sort-value').text('Year: Old - New');
-                break;
-            default:
-                filteredData.sort((a, b) => {
-                    const nameA = a.Name.toLowerCase();
-                    const nameB = b.Name.toLowerCase();
-                    if (nameA < nameB) return -1;
-                    if (nameA > nameB) return 1;
-                    return 0;
-                }); // Sort by car name in ascending order
-                $('.sort-value').text('Default');
-                break;
-        }
-        
-        fetchData(filteredData);
-        showPage(1);
-    }
-
-    checkSearchFromHome();
-
-    
-    function checkSearchFromHome() {
-        // Retrieve the data from local storage using the key
-        const jsonData = localStorage.getItem('search_cardata');
-
-        // Check if data exists
-        if (jsonData) {
-            // Parse the JSON string back into a JavaScript object
-            const data = JSON.parse(jsonData);
-            $("#search").val(data.Name);
-            filterAndSortData();
-
-        } else {
-            console.log('No data found in local storage.');
-        }
-    }
+    );
+    $('#s_year').html(carYear);
 });
 
-// setting data to local storage
-function setToLocalStorage(year, name, model){
-
-    const filteredData = carData.filter(item => {
-        // Filter by name, year, model
-        
-        return  item.Name.toLowerCase() == name.toLowerCase() && 
-        item.Model.toLowerCase() == model.toLowerCase()
-        && item.Year == year;
-    });
-
-    const c_data = {
-        "Name": filteredData[0].Name,
-        "Model": filteredData[0].Model,
-        "Year": filteredData[0].Year,
-        "Mileage": filteredData[0].Mileage,
-        "Price": filteredData[0].Price,
-        "Drivetrain": filteredData[0].Drivetrain,
-        "Transmission": filteredData[0].Transmission,
-        "Transmission_Detail": filteredData[0].Name.Transmission_Detail,
-        "Engine": filteredData[0].Engine,
-        "Doors": filteredData[0].Doors,
-        "VIN": filteredData[0].VIN,
-        "Stock_Number": filteredData[0].Stock_Number,
-        "MPG": filteredData[0].MPG,
-        "Body_Type": filteredData[0].Body_Type,
-        "Trim": filteredData[0].Trim,
-        "Fuel_Type": filteredData[0].Fuel_Type,
-        "image_1": filteredData[0].image_1,
-        "image_2": filteredData[0].image_2,
-        "image_3": filteredData[0].image_3,
-        "image_4": filteredData[0].image_4,
-        "image_5": filteredData[0].image_5
+function setSearchOption() {
+    var searchCar = {
+        "Name": $("#s_make").val(),
+        "Year": $("#s_year").val(),
+        "price_range_s": $("#price_range_s").val()
     }
 
-    const jsonData = JSON.stringify(c_data);
+    const jsonData = JSON.stringify(searchCar);
 
-    localStorage.setItem('cardata', jsonData);
+    localStorage.setItem('search_cardata', jsonData);
 }
