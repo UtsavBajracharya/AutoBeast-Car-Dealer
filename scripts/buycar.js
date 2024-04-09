@@ -2860,7 +2860,7 @@ $(document).ready(function(){
         const dataContainer = document.getElementById('data-container');
         dataContainer.innerHTML = '';
         var dataHtml = "";
-        data.forEach((item, index) => {
+        data.forEach((item) => {
             dataHtml += `<!-- list-group-item -->
             <div class="list-group-item car-listing-item container-fluid no-h-padding">
                 <div class="car-row">

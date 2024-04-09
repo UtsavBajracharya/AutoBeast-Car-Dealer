@@ -1,14 +1,3 @@
-//product images slider
-document.addEventListener('DOMContentLoaded', function () {
-    const imgItems = document.querySelectorAll('.img-select .img-item');
-    const showcase = document.querySelector('.img-showcase');
-
-    imgItems.forEach((imgItem, index) => {
-        imgItem.addEventListener('click', () => {
-            showcase.style.transform = `translateX(-${index * 100}%)`;
-        });
-    });
-});
 
 function getFromLocalStorage(){
     // Retrieve the data from local storage using the key
@@ -21,23 +10,86 @@ function getFromLocalStorage(){
         console.log(data)
         
         renderDetails(data);
+        renderImages(data);
     } else {
         console.log('No data found in local storage.');
     }
 }
+
 getFromLocalStorage();
+
+
+function renderImages(data) {
+    document.addEventListener('DOMContentLoaded', function () {
+        const outputDiv = document.getElementById('image-container');
+        outputDiv.innerHTML = `
+
+            <div class = "product-imgs">
+                <div class = "img-display">
+                    <div class = "img-showcase">
+                        <img src="${data.image_1}" alt="Car Image">
+                        <img src="${data.image_2}" alt="Car Image">
+                        <img src="${data.image_3}" alt="Car Image">
+                        <img src="${data.image_4}" alt="Car Image">
+                    </div>
+                </div>  
+                <div class = "img-select">
+              <div class = "img-item">
+                <a href = "#" data-id = "1">
+                  <img src = "${data.image_1}" alt = "car image">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "2">
+                  <img src = "${data.image_2}" alt = "car image">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "3">
+                  <img src = "${data.image_3}" alt = "car image">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "4">
+                  <img src = "${data.image_4}" alt = "car image">
+                </a>
+              </div>
+            </div>
+            
+        `;
+        $(document).ready(function() {
+            // Add event listener to handle image selection
+            $('#image-container').on('click', '.img-item', function(event) {
+                event.preventDefault();
+                const imgId = $(this).find('a').data('id');
+                const imgWidth = $('.img-showcase img').width(); // Get width of each image
+        
+                // Calculate the distance to move the showcase container
+                const moveDistance = (imgId - 1) * imgWidth;
+        
+                // Move the showcase container to reveal the selected image
+                $('.img-showcase').css('transform', `translateX(-${moveDistance}px)`);
+            });
+        });
+    });
+}
+
+
+
+
 
 function renderDetails(data) {
     document.addEventListener('DOMContentLoaded', function () {
         const outputDiv = document.getElementById('data-container');
         outputDiv.innerHTML = `
-        
+
         <h2 class = "product-title">${data.Name}</h2>
+        
           
                 <div class = "product-price">
                   <p class = "new-price">Price: <span>$${data.Price}</span></p>
                 </div>
-    
+
     
                 <div class="car-listing-item-field-container">
                 <div class="car-listing-item-field car-field-drivetrain ">
@@ -90,7 +142,6 @@ function renderDetails(data) {
                 </div>
             </div>
           
-    
                 <!-- button row -->
                 <div class="car-row">
                     <div class="car-listing-item-buttons column-12">
