@@ -1,0 +1,268 @@
+
+/*check availability*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#checkAvailabilityModal .modal-dialog {
+    max-width: 800px; /* Set the maximum width of the modal */
+}
+
+#checkAvailabilityModal .modal-content form {
+    width: 100%; /* Make the form width 100% */
+}
+
+#checkAvailabilityModal form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0 12px 0;
+}
+#checkAvailabilityModal form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+#checkAvailabilityModal .user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#checkAvailabilityModal .user-details .input-box input{
+    height: 45px;  
+    width: 100%;  
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+}
+#checkAvailabilityModal .user-details .input-box input:focus,
+#checkAvailabilityModal .user-details .input-box input:valid{
+    border-color: black;
+}
+#checkAvailabilityModal form .contact-pref .contact-preference{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right:100px;
+}
+#checkAvailabilityModal form .contact-pref .category{
+    display: flex; 
+    width:80%;
+    margin: 14px 0;
+    justify-content: space-between;
+} 
+#checkAvailabilityModal .contact-pref .category label{
+    display: flex;
+    align-items: center;
+}
+#checkAvailabilityModal .contact-pref .category label:not(:last-child) {
+    margin-right: 50px; /* Add margin between each option */
+}
+#checkAvailabilityModal .contact-pref .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s, ease;
+}
+#checkAvailabilityModal #dot-1:checked ~ .category label .one,
+#checkAvailabilityModal #dot-2:checked ~ .category label .two,
+#checkAvailabilityModal #dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: black;
+}
+#checkAvailabilityModal form input[type="radio"]{
+    display: none;
+}
+#checkAvailabilityModal form .button{
+    height: 45px;
+    margin-left: 300px;
+    width:20%;
+}
+#checkAvailabilityModal form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, black, grey);
+}
+#checkAvailabilityModal form .button input:hover{
+    background: linear-gradient(-135deg, black, grey);
+}
+@media (max-width: 584px){
+    #checkAvailabilityModal {
+        max-width:100%;
+    }
+    #checkAvailabilityModal form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    #checkAvailabilityModal form .contact-pref .category{
+        width:100%;
+    } 
+    #checkAvailabilityModal form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    #checkAvailabilityModal .user-details::-webkit-scrollbar{
+        width:0;
+    }
+    #checkAvailabilityModal form .button{
+        margin-left: 130px;
+    }
+    #checkAvailabilityModal form .button input{
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+#checkAvailabilityModal h1{
+    font-size: 16px;
+    text-align: center; 
+}
+#checkAvailabilityModal p{
+    text-align: center;
+}
+
+/*check availability*/
+
+
+/* test drive */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#testDriveModal .modal-dialog {
+    max-width: 800px; /* Set the maximum width of the modal */
+}
+
+#testDriveModal .modal-content form {
+    width: 100%; /* Make the form width 100% */
+}
+
+#testDriveModal form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0 12px 0;
+}
+#testDriveModal form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+#testDriveModal .user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#testDriveModal .user-details .input-box input{
+    height: 45px;  
+    width: 100%;  
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+}
+#testDriveModal .user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+#testDriveModal form .contact-pref .contact-preference{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 100px;
+}
+#testDriveModal form .contact-pref .category{
+    display: flex; 
+    width:80%;
+    margin: 14px 0;
+    justify-content: space-between;
+} 
+#testDriveModal .contact-pref .category label{
+    display: flex;
+    align-items: center;
+}
+#testDriveModal .contact-pref .category label:not(:last-child) {
+    margin-right: 50px; /* Add margin between each option */
+}
+#testDriveModal .contact-pref .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s, ease;
+}
+#testDriveModal #dot-4:checked ~ .category label .four,
+#testDriveModal #dot-5:checked ~ .category label .five,
+#testDriveModal #dot-6:checked ~ .category label .six{
+    border-color: #d9d9d9;
+    background: black;
+}
+#testDriveModal form input[type="radio"]{
+    display: none;
+}
+#testDriveModal form .button{
+    height: 45px;
+    margin-left: 300px;
+    width:20%;
+}
+#testDriveModal form .button input{
+    height: 100%;
+    width:100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, black, grey);
+}
+#testDriveModal form .button input:hover{
+    background: linear-gradient(-135deg, black, grey);
+}
+@media (max-width: 584px){
+    #testDriveModal{
+        max-width:100%;
+    }
+    #testDriveModal form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    #testDriveModal form .contact-pref .category{
+        width:100%;
+    } 
+    #testDriveModal form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    #testDriveModal .user-details::-webkit-scrollbar{
+        width:0;
+    }
+    #testDriveModal form .button{
+        margin-left: 130px;
+    }
+    #testDriveModal form .button input{
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+#testDriveModal h1{
+   font-size: 16px;
+   text-align: center; 
+}
+#testDriveModal p{
+    text-align: center;
+}
+/* test drive */
