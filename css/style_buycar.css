@@ -232,6 +232,10 @@ li {
     background-image: none;
 }
 
+.slider-handle.max-slider-handle{
+    background-color: #FF0003 !important;
+}
+
 .car-listing-filter-container .list-group-item .slider-horizontal .tooltip-main {
     opacity: 9 !important;
     z-index: 100 !important;

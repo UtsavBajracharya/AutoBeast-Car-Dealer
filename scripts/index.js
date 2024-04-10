@@ -2740,6 +2740,10 @@ carData = [
 $(document).ready(function () {
     // To delete the item with key "search_cardata"
     localStorage.removeItem("search_cardata");
+    setTimeout(function(){
+        $("#s_make").val('0');
+        $("#s_year").val('0');
+    }, 100)
 
     $("#price_range_s").slider({
         formatter: function (value) {
