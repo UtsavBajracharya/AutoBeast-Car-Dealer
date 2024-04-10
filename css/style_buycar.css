@@ -232,6 +232,10 @@ li {
     background-image: none;
 }
 
+.slider-handle.max-slider-handle{
+    background-color: #FF0003 !important;
+}
+
 .car-listing-filter-container .list-group-item .slider-horizontal .tooltip-main {
     opacity: 9 !important;
     z-index: 100 !important;
@@ -303,8 +307,9 @@ li {
     display: block;
     word-wrap: break-word;
     color: #ffffff;
-    background-color: #505050;
-    border-color: #3f3f3f;
+    background: #FF0003;
+    color: #fff;
+    outline: none;
     border-radius: 50px;
     font-weight: normal;
     text-align: center;
@@ -322,8 +327,7 @@ li {
 
 .filter-update-btn:hover, 
 .filter-update-m-btn:hover {
-    background-color: #ae9b9b;
-    color: #505050;
+    background: #161616;
 }
 
 /* search filter ends*/
