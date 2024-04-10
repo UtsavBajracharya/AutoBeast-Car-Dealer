@@ -1014,7 +1014,7 @@ a {
     }
 
     .car-listing-filter-btn {
-        display: inline-block;
+        display: contents;
     }
 
     .slider.slider-horizontal >b {
