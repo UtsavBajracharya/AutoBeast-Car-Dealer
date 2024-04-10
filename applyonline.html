@@ -5,10 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apply Online Page</title>
-  <link rel="stylesheet" href="css/style_applyonline.css" />
+  <link rel="stylesheet" href="css/style_contact.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <style>
@@ -61,8 +60,14 @@
     button:hover {
       background-color: #0056b3;
     }
-  </style>
 
+    @media screen and (max-width: 660px) {
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 
 <body class="sub_page">
@@ -79,11 +84,15 @@
           <ul class="nav-menu">
             <li class="nav-link"><a href="index.html">Home</a></li>
             <li class="nav-link"><a href="about.html">About</a></li>
-            <li class="nav-link"><a href="buycar.html">Buy Car</a></li>
-            <li class="nav-link"><a href="applyonline.html" class="active">Apply Online</a></li>
+            <li class="nav-link"><a href="product.html">Product</a></li>
+            <li class="nav-link">
+              <a href="applyonline.html">Apply Online</a>
+            </li>
             <li class="nav-link"><a href="blog.html">Blog</a></li>
             <li class="nav-link"><a href="tradecar.html">Trade Car</a></li>
-            <li class="nav-link"><a href="contact.html">Contact</a></li>
+            <li class="nav-link">
+              <a href="contact.html" class="active">Contact</a>
+            </li>
           </ul>
 
           <div class="hamburger">
@@ -96,8 +105,7 @@
     </header>
   </div>
   <!-- header section ends -->
-
-  <!-- applyonline section starts -->
+  <!-- contact section starts -->
   <section class="contact_section layout_padding">
     <div class="container">
       <div class="heading_container">
@@ -379,8 +387,7 @@
     </div>
   </section>
 
-  <!-- end applyonline section -->
-
+  <!-- end contact section -->
 
   <!-- footer section starts -->
 
@@ -410,8 +417,7 @@
         <ul class="footer-links">
           <li class="links"><a href="index.html">Home</a></li>
           <li class="links"><a href="about.html">About</a></li>
-          <li class="links"><a href="buycar.html">Buy Car</a></li>
-          <li class="links"><a href="applyonline.html">Apply Online</a></li>
+          <li class="links"><a href="product.html">Product</a></li>
           <li class="links"><a href="blog.html">Blog</a></li>
           <li class="links"><a href="tradecar.html">Trade Car</a></li>
           <li class="links"><a href="contact.html">Contact</a></li>
@@ -472,118 +478,80 @@
       hamburger.classList.remove("active");
       navMenu.classList.remove("active");
     }
+  </script>
 
-    //   validation
-    function validateForm() {
-      // Check each input field for validity
-      const inputs = document.querySelectorAll("input");
-      let isValid = true;
+  <script>
+    $(document).ready(function () {
+      $("#submitButton").click(function () {
+        var firstNameInput = $("#firstName").val().trim();
+        var lastNameInput = $("#lastName").val().trim();
+        var emailInput = $("#email").val().trim();
+        var cellPhoneInput = $("#cellPhone").val().trim();
+        var homePhoneInput = $("#homePhone").val().trim();
+        var dobInput = $("#dob").val().trim();
+        var ssnInput = $("#ssn").val().trim();
+        var dlNumberInput = $("#dl_number").val().trim();
+        var dlStateInput = $("#dl_state").val().trim();
+        var dlIssueDateInput = $("#dl_issue_date").val().trim();
+        var lastNameInput = $("#lastName").val().trim();
+        var dlExpiryDateInput = $("#dl_expiry_date").val().trim();
+        var employerNameInput = $("#employerName").val().trim();
+        var titlePositionInput = $("#e_title").val().trim();
+        var employerPhoneNumberInput = $("#e_phoneNumber").val().trim();
+        var yearsAtJobInput = $("#yearsAtJob").val();
+        var yearsAtAddressInput = $("#yearsAtAddress").val();
+        var stockNumberInput = $("#stockNumber").val().trim();
+        var yearsInput = $("#years").val().trim();
+        var modelInput = $("#model").val().trim();
+        var priceInput = $("#price").val().trim();
+        var paymentInput = $("#payment").val().trim();
+        var exteriorColorInput = $("#e_color").val().trim();
+        var interiorColorInput = $("#i_color").val().trim();
+        var isChecked = $("#chkbox").prop("checked");
 
-      inputs.forEach((input) => {
-        // Check if input is required and empty
-        if (input.hasAttribute("required") && !input.value.trim()) {
-          alert(
-            `${input.previousElementSibling.textContent.trim()} is required.`
-          );
-          isValid = false;
-          return;
+        if (!isChecked) {
+          alert("Please agree to terms and conditions.");
         }
 
-        // Check specific validation rules for certain inputs (e.g., email, minimum length)
         if (
-          input.id === "email" &&
-          input.value.trim() &&
-          !isValidEmail(input.value)
+          firstNameInput === "" ||
+          lastNameInput === "" ||
+          emailInput === "" ||
+          cellPhoneInput === "" ||
+          homePhoneInput === "" ||
+          dobInput === "" ||
+          ssnInput === "" ||
+          dlNumberInput === "" ||
+          dlStateInput === "" ||
+          dlIssueDateInput === "" ||
+          lastNameInput === "" ||
+          dlExpiryDateInput === "" ||
+          employerNameInput === "" ||
+          titlePositionInput === "" ||
+          employerPhoneNumberInput === "" ||
+          yearsAtJobInput === "" ||
+          yearsAtAddressInput === "" ||
+          stockNumberInput === "" ||
+          yearsInput === "" ||
+          modelInput === "" ||
+          priceInput === "" ||
+          paymentInput === "" ||
+          exteriorColorInput === "" ||
+          interiorColorInput === ""
         ) {
-          alert("Please enter a valid email address.");
-          isValid = false;
+          alert("Please fill out all fields");
         }
-
-        const selectedProvince = document.getElementById("state").value;
-
-        if (selectedProvince == "") {
-          alert("Please select a province or territory!");
-          return;
-        }
-        const yearsAtAddress =
-          document.getElementById("yearsAtAddress").value;
-
-        if (yearsAtAddress == "") {
-          alert("Please select a Years at Address!");
-          return;
-        }
-
-        const selectedProvince2 = document.getElementById("state2").value;
-
-        if (selectedProvince2 == "") {
-          alert("Please select a province or territory!");
-          return;
-        }
-        const yearsAtJob = document.getElementById("yearsAtJob").value;
-
-        if (yearsAtJob == "") {
-          alert("Please select a year at job!");
-          return;
-        }
-
-        if (input.id === "firstName" && input.value.trim().length < 3) {
-          alert("First Name must be at least 3 characters long.");
-          isValid = false;
-        }
-
-        // Add more specific validation rules as needed for other fields
-
-        // Apply border color based on validity
-        if (isValid) {
-          input.style.border = "1px solid green";
+        if (!isValidEmail(emailInput)) {
+          alert("Invalid email format.");
         } else {
-          input.style.border = "1px solid red";
+          alert("Form submitted successfully!");
+          window.location.reload();
         }
       });
-
-      // Perform form submission if all inputs are valid
-      if (isValid) {
-        alert("Form submitted successfully!");
-        document.getElementById("myForm").submit();
-      }
-    }
+    });
 
     function isValidEmail(email) {
       return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    }
-
-    //   get provience
-    function getProvinceName(code) {
-      switch (code) {
-        case "AB":
-          return "Alberta";
-        case "BC":
-          return "British Columbia";
-        case "MB":
-          return "Manitoba";
-        case "NB":
-          return "New Brunswick";
-        case "NL":
-          return "Newfoundland and Labrador";
-        case "NS":
-          return "Nova Scotia";
-        case "NT":
-          return "Northwest Territories";
-        case "NU":
-          return "Nunavut";
-        case "ON":
-          return "Ontario";
-        case "PE":
-          return "Prince Edward Island";
-        case "QC":
-          return "Quebec";
-        case "SK":
-          return "Saskatchewan";
-        case "YT":
-          return "Yukon";
-        default:
-          return "Unknown Province";
-      }
     }
   </script>
 </body>
