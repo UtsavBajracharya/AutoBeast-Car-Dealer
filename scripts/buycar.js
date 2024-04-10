@@ -2743,7 +2743,7 @@ $(document).ready(function(){
         min: 2004,
         max: 2020,
         step: 1,
-        values: [ 2010, 2013],
+        value: [ 2004, 2020],
         formatter: function(value) {
             if(value.length > 1){
                 value = value[0] +' - ' + value[1];
@@ -2761,7 +2761,12 @@ $(document).ready(function(){
         },
     });
 
-    $("#price_range").slider({
+    $("#price_range").slider({ 
+        range: true,
+        min: 2000,
+        max: 99000,
+        step: 5000,
+        value: [ 2000, 99000],
         formatter: function(value) {
             if(value.length > 1){
                 value = '$' + value[0].toLocaleString() +' - $' + value[1].toLocaleString();
@@ -3103,7 +3108,38 @@ $(document).ready(function(){
         if (jsonData) {
             // Parse the JSON string back into a JavaScript object
             const data = JSON.parse(jsonData);
+            priceRange = data.price_range_s.split(',');
             $("#search").val(data.Name);
+
+            $("#year_range").slider('destroy');
+            $("#year_range").slider({
+                range: true,
+                min: 2004,
+                max: 2020,
+                step: 1,
+                value: [ parseInt(data.Year), parseInt(data.Year)],
+                formatter: function(value) {
+                    if(value.length > 1){
+                        value = value[0] +' - ' + value[1];
+                    }
+                    return value;
+                },
+            });
+
+            $("#price_range").slider('destroy');
+            $("#price_range").slider({ 
+                range: true,
+                min: 2000,
+                max: 99000,
+                step: 5000,
+                value: [ parseInt(priceRange[0]), parseInt(priceRange[1])],
+                formatter: function(value) {
+                    if(value.length > 1){
+                        value = '$' + value[0].toLocaleString() +' - $' + value[1].toLocaleString();
+                    }
+                    return value;
+                },
+            });
             filterAndSortData();
 
         } else {
