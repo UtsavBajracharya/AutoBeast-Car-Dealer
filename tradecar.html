@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Car</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style_tradecar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+
+
+<body class="sub_page">
+    <!-- header section starts -->
+    <div class="header_area">
+        <header class="header_section">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-link"><a href="index.html">Home</a></li>
+                        <li class="nav-link"><a href="about.html">About</a></li>
+                        <li class="nav-link"><a href="buycar.html">Buy Car</a></li>
+                        <li class="nav-link"><a href="applyonline.html">Apply Online</a></li>
+                        <li class="nav-link"><a href="blog.html">Blog</a></li>
+                        <li class="nav-link"><a href="tradecar.html" class="active">Trade Car</a></li>
+                        <li class="nav-link"><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- header section ends -->
+
+    <!-- trade car for starts -->
+    <section class="tradecar_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2 class="section-heading">Trade Car <i class="fa-solid fa-arrow-right-arrow-left"></i></h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <form id="myForm">
+                <h2>Your Car Details</h2>
+                <hr style="width: 250px; margin-bottom: 10px" />
+                <div>
+                    <label for="modelName">Model Name:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="text" id="modelName" name="modelName" required />
+                </div>
+                <div>
+                    <label for="drivetrain">Drivetrain <span style="color: red">*</span></label>
+                    <select id="drivetrain" name="drivetrain" required>
+                        <option value="">Select a Drivetrain...</option>
+                        <option value="AWD">AWD</option>
+                        <option value="4WD">4WD</option>
+                        <option value="FWD">FWD</option>
+                        <option value="RWD">RWD</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="transmission">Transmission:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="text" id="transmission" name="transmission" required />
+                </div>
+                <div>
+                    <label for="engine">Engine:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="text" id="engine" name="engine" required />
+                </div>
+                <div>
+                    <label for="mileage">Mileage:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="number" id="mileage" name="mileage" required />
+                </div>
+                <div>
+                    <label for="doors">Doors:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="number" id="doors" name="doors" required />
+                </div>
+                <div>
+                    <label for="vin">VIN:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="number" id="vin" name="vin" required />
+                </div>
+                <div>
+                    <label for="stocknumber">Stock Number:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="text" id="stocknumber" name="stocknumber" required />
+                </div>
+                <div>
+                    <label for="transmission">Transmission Detail:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="text" id="transmission" name="transmission" required />
+                </div>
+                <div>
+                    <label for="mpg">MPG(City/Highway):
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="text" id="mpg" name="mpg" required />
+                </div>
+                <div>
+                    <label for="bodytype">Bodytype <span style="color: red">*</span></label>
+                    <select id="bodytype" name="bodytype" required>
+                        <option value="bodytype">Select a Bodytype...</option>
+                        <option value="suv">Suv</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="truck">Truck</option>
+                        <option value="coupe">Coupe</option>
+                        <option value="van">Van</option>
+                        <option value="hybrid">Hybrid</option>
+                        <option value="electric">Electric Car</option>
+                        <option value="sports">Sports Car</option>
+                        <option value="convertible">Convertible</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="trim">Trim:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="text" id="trim" name="trim" required />
+                </div>
+                <div>
+                    <label for="fueltype">Fuel Type <span style="color: red">*</span></label>
+                    <select id="fueltype" name="fueltype" required>
+                        <option value="">Select a Fuel Type...</option>
+                        <option value="gasoline">Gasoline</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="electric">Electric</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="purchasedate">Purchased Date:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="date" id="purchasedate" name="purchasedate" required />
+                </div>
+                <div>
+                    <label for="purchaseprice">Purchased Price:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="number" id="purchaseprice" name="purchaseprice" required />
+                </div>
+                <div>
+                    <label for="carimage">Image of the car:
+                        <span style="color: red; font-size: 20px">*</span></label>
+                    <input type="file" id="carimage" name="carimage" required />
+                </div>
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- end of form -->
+
+
+    <!-- footer section starts -->
+
+    <section class="top-footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <p>
+                    Driving Dreams, Delivering Value: Your Trusted Car Partner for
+                    Quality, Service, and Satisfaction. Where Every Mile Feels Like
+                    Home.
+                </p>
+
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f fa-lg grow"></i>
+                    <i class="fa-brands fa-instagram fa-lg grow"></i>
+                    <i class="fa-brands fa-twitter fa-lg grow"></i>
+                    <i class="fa-brands fa-youtube fa-lg grow"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li class="links"><a href="index.html">Home</a></li>
+                    <li class="links"><a href="about.html">About</a></li>
+                    <li class="links"><a href="buycar.html">Buy Car</a></li>
+                    <li class="links"><a href="applyonline.html">Apply Online</a></li>
+                    <li class="links"><a href="blog.html">Blog</a></li>
+                    <li class="links"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="footer-links">
+                    <li class="links"><a href="#">Special Offers</a></li>
+                    <li class="links"><a href="#">Latest Models</a></li>
+                    <li class="links"><a href="#">Customer Stories</a></li>
+                    <li class="links"><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <form action="#">
+                    <input type="email" placeholder="Enter email address" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bottom-footer">
+        <p>
+            &copy; 2023 All Rights Reserved By
+            <a href="index.html">Sleek Auto</a>
+        </p>
+    </footer>
+
+    <!-- end footer section -->
+
+    <script>
+        $(document).ready(function () {
+            $("#myForm").submit(function (event) {
+
+                alert("Successfully submitted!!! We will contact you within 2-3 business days!!!")
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>
