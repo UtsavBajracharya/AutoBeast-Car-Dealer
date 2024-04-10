@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Detail Page</title>
     <link rel="stylesheet" href="css/style_cardetail.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <script src="./scripts/cardetail.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="./scripts/cardetail.js"></script>
+
+
 
 </head>
 
@@ -32,6 +36,7 @@
                         <li class="nav-link"><a href="index.html">Home</a></li>
                         <li class="nav-link"><a href="about.html">About</a></li>
                         <li class="nav-link"><a href="buycar.html" class="active">Buy Car</a></li>
+                        <li class="nav-link"><a href="applyonline.html">Apply Online</a></li>
                         <li class="nav-link"><a href="blog.html" >Blog</a></li>
                         <li class="nav-link"><a href="contact.html">Contact</a></li>
                     </ul>
@@ -53,50 +58,65 @@
     <div class = "card-wrapper">
         <div class = "card">
           <!-- card left -->
-          <!-- <div class = "product-imgs">
-            <div class = "img-display">
-              <div class = "img-showcase">
-                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0102.jpg" alt = "car image">
-                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0101.jpg" alt = "car image">
-                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0104.jpg" alt = "car image">
-                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0109.jpg" alt = "car image">
-              </div>
-            </div>
-            <div class = "img-select">
-              <div class = "img-item">
-                <a href = "#" data-id = "1">
-                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0101.jpg" alt = "car image">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "2">
-                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0102.jpg" alt = "car image">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "3">
-                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0104.jpg" alt = "car image">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "4">
-                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0109.jpg" alt = "car image">
-                </a>
-              </div>
-            </div>
-          </div> -->
-
           <div class="list-group" id="image-container"></div>
 
-
           <!-- card right -->
-            <div class="list-group" id="data-container"></div>
-            
+            <div class="list-group" id="data-container"></div> 
           </div>
-
-
         </div>
       </div>
+
+    <!-- Car detail starts -->
+
+    <div class="wpb_column vc_column_container vc_col-sm-4">
+        <div class="vc_column-inner vc_custom_1575987215179">
+            <div class="wpb_wrapper">
+                <h3 style="text-align: center;font-weight:800;font-style:normal;margin-bottom: 30px;" class="vc_custom_heading vc_custom_1576038070582">LOAN CALCULATOR</h3>
+                <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_custom_1576038286853  vc_custom_1576038286853">
+                    <span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#333333;" class="vc_sep_line"></span></span>
+                    <span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#333333;" class="vc_sep_line"></span></span>
+                </div>
+                <div class="dws-loan-calculator-container" id="DWS_Loan_Calculator_7">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="control-label" for="dws-loan-calculator-vehicle-price-7">Vehicle Price</label>
+                            <input type="text" id="dws-loan-calculator-vehicle-price-7" class="form-control text-right dws-loan-calculator-price" placeholder="" aria-label="Default Price">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="control-label" for="dws-loan-calculator-down-payment-7">Down Payment</label>
+                            <input type="text" id="dws-loan-calculator-down-payment-7" class="form-control text-right dws-loan-calculator-down" data-default="" aria-label="Down Payment. Please enter down payment">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="control-label" for="dws-loan-calculator-term-7">Term</label>
+                            <input type="text" id="dws-loan-calculator-term-7" class="form-control text-right dws-loan-calculator-term" data-default="" aria-label="Default Term">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="control-label" for="dws-loan-calculator-apr-7">APR(%)</label>
+                            <input type="text" id="dws-loan-calculator-apr-7" class="form-control text-right dws-loan-calculator-apr" data-default="" aria-label="Default Apr">
+                        </div>
+                    </div>
+                    <p class="bg-primary text-center dws-loan-calculator-result hidden"> Your estimated payment is:
+                        <b><span class="dws-loan-calculator-result-text"></span></b> per month</p>
+                    <div class="dws-calculate-button-wrap">
+                        <button type="submit" class="btn btn-primary center-block dws-loan-calculator-calc-button default center-align">
+                          <span class="dws-button-layout-label dws-vdp-btn-label">CALCULATE PAYMENT</span>
+                          <span class="dws-button-layout-icon dws-vdp-btn-icon fa fa-calculator" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
 
 
     <!-- footer section starts -->

@@ -113,7 +113,7 @@ li {
 
 .card-wrapper{
     max-width: 1100px;
-    margin: 120px auto;
+    margin: 120px auto 30px auto;
 }
 img{
     width: 100%;
@@ -265,6 +265,193 @@ img{
         padding-top: 0;
     }
 }
+
+.img-display {
+    position: relative;
+    overflow: hidden;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-button {
+    left: 10px;
+    font-size: 30px;
+}
+
+.next-button {
+    right: 10px;
+    font-size: 30px;
+}
+
+
+
+/* Loan Calculator Styles Starts */
+
+.wpb_column  {
+    
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    background-color: #d8d8d8;
+    margin-bottom: 30px;
+}
+
+.vc_custom_heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    font-style: normal;
+    color: #333;
+    /* Adjust color as necessary */
+}
+
+.vc_separator {
+    text-align: center;
+    width: 100%;
+}
+
+.vc_sep_line {
+    border-color: #333;
+    /* Adjust separator color as necessary */
+}
+
+
+/* Input Group Styles */
+
+.dws-loan-calculator-container .input-group {
+    position: relative;
+    width: 100%;
+}
+
+.dws-loan-calculator-container .input-group label {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    z-index: 5;
+    color: #222;
+    /* Adjust label color as necessary */
+}
+
+
+/* Input Field Styles */
+
+.dws-loan-calculator-container .form-control {
+    padding: 12px 10px;
+    text-align: right;
+    width: 100%;
+}
+
+
+/* Button Styles */
+
+.dws-loan-calculator-container .dws-loan-calculator-calc-button {
+    padding: 12px 10px;
+    color: #f0f0f0;
+    background-color: #212121;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dws-loan-calculator-container .dws-loan-calculator-calc-button:hover {
+    background-color: #272727;
+}
+
+.dws-loan-calculator-container .dws-loan-calculator-calc-button .dws-vdp-btn-icon {
+    margin-left: 8px;
+}
+
+
+/* Result Display Styles */
+
+.dws-loan-calculator-container .form-control {
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.dws-loan-calculator-container .input-group-addon {
+    padding: 10px 12px;
+    font-size: 16px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+
+.dws-loan-calculator-container .input-group label {
+    top: 12px;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 0 5px;
+    margin-left: -5px;
+}
+
+.dws-loan-calculator-result {
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    display: none; /* Hidden by default, shown after calculation */
+    
+}
+
+
+/* Additional Styles for Responsiveness and Visual Appeal */
+
+@media (max-width: 768px) {
+    .dws-loan-calculator-container .input-group label {
+        font-size: 14px;
+    }
+}
+
+
+/* Error Message Styles */
+
+.error-message {
+    color: #d9534f;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+.dws-loan-calculator-container .form-control {
+    border-color: #ced4da;
+    margin-bottom: 0;
+}
+
+.dws-loan-calculator-container .form-control.error {
+    border-color: #d9534f;     /* Changes border color to red when there is an error */
+
+}
+
+
+/* Adjusts the layout to accommodate error messages */
+
+.dws-loan-calculator-container .input-group {
+    margin-bottom: 15px;
+    /* Adds space between input groups */
+}
+
+/*Loan calculator styles ends*/
 
 
 /* Footer section starts*/
