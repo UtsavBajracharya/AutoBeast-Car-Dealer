@@ -111,7 +111,7 @@ li {
 
 /* car detail starts */
 
-.card-wrapper{
+.car-wrapper{
     max-width: 1100px;
     margin: 120px auto 30px auto;
 }
@@ -246,12 +246,12 @@ img{
 }
 
 @media screen and (min-width: 992px){
-    .card{
+    .cars{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
     }
-    .card-wrapper{
+    .car-wrapper{
         display: flex;
         justify-content: center;
         align-items: center;

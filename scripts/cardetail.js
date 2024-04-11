@@ -184,18 +184,23 @@ function renderDetails(data) {
                 </div>
             </div>
           
-                <!-- button row -->
-                <div class="car-row">
-                    <div class="car-listing-item-buttons column-12">
-                        <button type="button" class="btn btn-apply-online">APPLY ONLINE</button>
-                        <button type="button" class="btn btn-check-availability">CHECK AVAILABILITY</button>
-                        <button type="button" class="btn btn-test-drive">TEST DRIVE</button>
-                    </div>
+            <!-- button row -->
+            <div class="car-row">
+                <div class="car-listing-item-buttons column-12">
+                    <button type="button" class="btn btn-apply-online" onclick="redirectToApplyOnline()">APPLY ONLINE</button>
+                    <button type="button" class="btn btn-check-availability" data-bs-toggle="modal" data-bs-target="#checkAvailabilityModal">CHECK AVAILABILITY</button>
+                    <button type="button" class="btn btn-test-drive" data-bs-toggle="modal" data-bs-target="#testDriveModal" >TEST DRIVE</button>
                 </div>
+            </div>
+                
         `;
     });
 }
 
+
+function redirectToApplyOnline() {
+    window.location.href = "./applyonline.html";
+}
 
 
 $(document).ready(function() {
