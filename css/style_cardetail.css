@@ -271,6 +271,8 @@ img{
     overflow: hidden;
 }
 
+/*Image slider navigation button*/
+
 .prev-button,
 .next-button {
     position: absolute;
@@ -295,6 +297,9 @@ img{
 }
 
 
+/*Car detail style ends */
+
+
 
 /* Loan Calculator Styles Starts */
 
@@ -303,7 +308,7 @@ img{
     display: flex;
     justify-content: center;
     padding: 60px;
-    background-color: #d8d8d8;
+    background-color:#d3d1d1;
     margin-bottom: 30px;
 }
 
@@ -326,6 +331,9 @@ img{
     /* Adjust separator color as necessary */
 }
 
+    .vc_column-inner{
+        width:30% ;
+    }
 
 /* Input Group Styles */
 
@@ -416,6 +424,14 @@ img{
 @media (max-width: 768px) {
     .dws-loan-calculator-container .input-group label {
         font-size: 14px;
+    }
+
+    .wpb_column {
+        padding: 60px 30px;
+    }
+
+    .vc_column-inner{
+        width: auto!important;
     }
 }
 
