@@ -82,6 +82,7 @@ nav a.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 
 .nav-link {
@@ -113,7 +114,7 @@ li {
 
 .car-wrapper{
     max-width: 1100px;
-    margin: 120px auto 30px auto;
+    margin: 140px auto 30px auto;
 }
 img{
     width: 100%;
@@ -129,6 +130,7 @@ img{
 }
 .img-showcase img{
     min-width: 100%;
+    width: 100%;
 }
 .img-select{
     display: flex;
@@ -208,6 +210,10 @@ img{
     margin-bottom: 15px;
 }
 
+.list-group{
+    padding: 0 30px !important;
+}
+
 .list-group-item .display-car-style {
     display: flex;
 }
@@ -238,12 +244,13 @@ img{
     white-space: normal;
     color: #ffffff;
     background-color: #505050;
-    border-color: #3f3f3f;
+    border-color: #3f3f3f !important;
     padding: 5px 10px;
     font-size: 12px;
     line-height: 1.5;
     border-radius: 0;
 }
+
 
 @media screen and (min-width: 992px){
     .cars{

@@ -1,4 +1,4 @@
-
+// Function to get data from local storage
 function getFromLocalStorage(){
     // Retrieve the data from local storage using the key
     const jsonData = localStorage.getItem('cardata');
@@ -18,7 +18,7 @@ function getFromLocalStorage(){
 
 getFromLocalStorage();
 
-
+// Function to render images from the buycar page car items
 function renderImages(data) {
     document.addEventListener('DOMContentLoaded', function () {
         const outputDiv = document.getElementById('image-container');
@@ -61,6 +61,7 @@ function renderImages(data) {
             
         `;
 
+        // Scripts for car image slider
         $(document).ready(function() {
             const imgCount = $('.img-showcase img').length;
             let currentIndex = 0;
@@ -112,13 +113,13 @@ function renderImages(data) {
                 showImage(currentIndex);
             });
 
-                // Start auto sliding initially
-                startAutoSlide();
+            // Start auto sliding initially
+            startAutoSlide();
         });
     });
 }
 
-
+// Function to render detail of car item 
 function renderDetails(data) {
     document.addEventListener('DOMContentLoaded', function () {
         const outputDiv = document.getElementById('data-container');
@@ -197,12 +198,12 @@ function renderDetails(data) {
     });
 }
 
-
+// Function to redirect to the apply online page
 function redirectToApplyOnline() {
     window.location.href = "./applyonline.html";
 }
 
-
+// Script for the loan calculator section
 $(document).ready(function() {
     const initialPrice = $('input[name="price"]').val();
     $('#dws-loan-calculator-vehicle-price-7').val(initialPrice);
