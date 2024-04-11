@@ -2,19 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Car Detail Page</title>
-  <link rel="stylesheet" href="css/style_cardetail.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <script src="./scripts/cardetail.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Detail Page</title>
+    <link rel="stylesheet" href="css/style_cardetail.css">
+    <link rel="stylesheet" href="css/style_popmodal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="./scripts/cardetail.js"></script>
+    <script src="./scripts/check_availability.js"></script>
+    <script src="./scripts/test_drive.js"></script>
+
 
 </head>
 
@@ -34,8 +41,9 @@
             <li class="nav-link"><a href="index.html">Home</a></li>
             <li class="nav-link"><a href="about.html">About</a></li>
             <li class="nav-link"><a href="buycar.html" class="active">Buy Car</a></li>
+                        <li class="nav-link"><a href="applyonline.html">Apply Online</a></li>
+                        <li class="nav-link"><a href="tradecar.html">Trade Car</a></li>
             <li class="nav-link"><a href="blog.html">Blog</a></li>
-            <li class="nav-link"><a href="tradecar.html">Trade Car</a></li>
             <li class="nav-link"><a href="contact.html">Contact</a></li>
           </ul>
 
@@ -50,57 +58,217 @@
   </div>
 
   <!-- header section ends -->
-
-  <!-- Car detail starts -->
-
-  <div class="card-wrapper">
-    <div class="card">
-      <!-- card left -->
-      <!-- <div class = "product-imgs">
-            <div class = "img-display">
-              <div class = "img-showcase">
-                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0102.jpg" alt = "car image">
-                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0101.jpg" alt = "car image">
-                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0104.jpg" alt = "car image">
-                <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0109.jpg" alt = "car image">
-              </div>
+  
+    <!--check availability modal starts-->
+    <div class="modal fade" id="checkAvailabilityModal" role="dialog" tabindex="-1"
+    aria-labelledby="checkAvailabilityModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Check Availability</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class = "img-select">
-              <div class = "img-item">
-                <a href = "#" data-id = "1">
-                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0101.jpg" alt = "car image">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "2">
-                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0102.jpg" alt = "car image">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "3">
-                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0104.jpg" alt = "car image">
-                </a>
-              </div>
-              <div class = "img-item">
-                <a href = "#" data-id = "4">
-                  <img src = "https://s.aolcdn.com/commerce/autodata/images/USB50AUC013B0109.jpg" alt = "car image">
-                </a>
-              </div>
+            <div class="modal-body">
+                <form id="check_availability_form" action="#">
+                    <h4>Please complete your inquiry to Sleek Auto Sales Inc..We will get back to you as soon as we
+                        can.</h4>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" id="firstName" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last name</span>
+                            <input type="text" id="lastName" placeholder="Enter your last name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone number</span>
+                            <input type="text" id="phoneNumber" placeholder="Enter your number" required>
+                        </div>
+                        <div class="contact-pref">
+                            <input type="radio" name="preference" id="dot-1">
+                            <input type="radio" name="preference" id="dot-2">
+                            <input type="radio" name="preference" id="dot-3">
+                            <span class="contact-preference">Contact-preference</span>
+                            <div class="category">
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="contact">Phone</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="contact">Email</span>
+                                </label>
+                                <label for="dot-3">
+                                    <span class="dot three"></span>
+                                    <span class="contact">Sms</span>
+                                </label>
+                            </div>
+                        </div>
+                        <p>By clicking "SUBMIT", I consent to be contacted by the dealer at any telephone number or
+                            Email I
+                            provide, including, without limitation, communications sent via text message to my cell
+                            phone or
+                            communications sent using an autodialer or prerecorded message. This acknowledgment
+                            constitutes my
+                            written consent to receive such communications. I have read and agree to the Privacy
+                            Policy of this
+                            dealer.</p>
+                        <div class="button">
+                            <input type="submit" value="Submit" onclick="validateForm()">
+                        </div>
+                    </div>
+                </form>
             </div>
-          </div> -->
-
-      <div class="list-group" id="image-container"></div>
-
-
-      <!-- card right -->
-      <div class="list-group" id="data-container"></div>
-
+        </div>
     </div>
+    </div>
+    <!--check availability modal ends-->
 
 
-  </div>
-  </div>
+    <!--Test drive modal starts-->
+    <div class="modal fade" id="testDriveModal" role="dialog" tabindex="-1" aria-labelledby="testDriveModal"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Test Drive</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="testdrive_myForm" action="#" onsubmit="validateTestDriveForm()">
+                    <h4>Please complete your inquiry to Sleek Auto Sales Inc..We will get back to you as soon as we
+                        can.</h4>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" id="td_firsName" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last name</span>
+                            <input type="text" id="td_lastName" placeholder="Enter your last name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" id="td_email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone number</span>
+                            <input type="text" id="td_phoneNumber" placeholder="Enter your number" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Test Drive Date</span>
+                            <input type="date" id="td_date" name="date" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Test Drive Time</span>
+                            <input id="appt-time" type="time" name="appt-time" value="13:30" />
+                        </div>
+                        <div class="contact-pref">
+                            <input type="radio" name="preference" id="dot-4">
+                            <input type="radio" name="preference" id="dot-5">
+                            <input type="radio" name="preference" id="dot-6">
+                            <span class="contact-preference">Contact-preference</span>
+                            <div class="category">
+                                <label for="dot-4">
+                                    <span class="dot four"></span>
+                                    <span class="contact">Phone</span>
+                                </label>
+                                <label for="dot-5">
+                                    <span class="dot five"></span>
+                                    <span class="contact">Email</span>
+                                </label>
+                                <label for="dot-6">
+                                    <span class="dot six"></span>
+                                    <span class="contact">Sms</span>
+                                </label>
+                            </div>
+                        </div>
+                        <p>By clicking "SUBMIT", I consent to be contacted by the dealer at any telephone number or
+                            Email I provide, including, without limitation, communications sent via text message to
+                            my cell phone or communications sent using an autodialer or prerecorded message. This
+                            acknowledgment constitutes my written consent to receive such communications. I have
+                            read and agree to the Privacy Policy of this dealer.</p>
+                        <div class="button">
+                            <input type="submit" value="Submit" onclick="validateTestDriveForm()">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Test drive modal ends-->
 
+
+     <!-- Car detail starts -->
+
+    <div class = "car-wrapper">
+        <div class = "cars">
+          <!-- card left -->
+          <div class="list-group" id="image-container"></div>
+
+          <!-- card right -->
+            <div class="list-group" id="data-container"></div> 
+          </div>
+        </div>
+      </div>
+
+       <!-- Car detail ends -->
+   
+
+    <!-- Loan calculator starts    -->
+    <div class="wpb_column vc_column_container vc_col-sm-4">
+        <div class="vc_column-inner vc_custom_1575987215179">
+            <div class="wpb_wrapper">
+                <h3 style="text-align: center;font-weight:800;font-style:normal;margin-bottom: 30px;" class="vc_custom_heading vc_custom_1576038070582">LOAN CALCULATOR</h3>
+                <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_custom_1576038286853  vc_custom_1576038286853">
+                    <span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#333333;" class="vc_sep_line"></span></span>
+                    <span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#333333;" class="vc_sep_line"></span></span>
+                </div>
+                <div class="dws-loan-calculator-container" id="DWS_Loan_Calculator_7">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="control-label" for="dws-loan-calculator-vehicle-price-7">Vehicle Price</label>
+                            <input type="text" id="dws-loan-calculator-vehicle-price-7" class="form-control text-right dws-loan-calculator-price" placeholder="" aria-label="Default Price">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="control-label" for="dws-loan-calculator-down-payment-7">Down Payment</label>
+                            <input type="text" id="dws-loan-calculator-down-payment-7" class="form-control text-right dws-loan-calculator-down" data-default="" aria-label="Down Payment. Please enter down payment">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="control-label" for="dws-loan-calculator-term-7">Term</label>
+                            <input type="text" id="dws-loan-calculator-term-7" class="form-control text-right dws-loan-calculator-term" data-default="" aria-label="Default Term">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="control-label" for="dws-loan-calculator-apr-7">APR(%)</label>
+                            <input type="text" id="dws-loan-calculator-apr-7" class="form-control text-right dws-loan-calculator-apr" data-default="" aria-label="Default Apr">
+                        </div>
+                    </div>
+                    <p class="text-center dws-loan-calculator-result hidden"> Your estimated payment is:
+                        <b><span class="dws-loan-calculator-result-text"></span></b> per month</p>
+                    <div class="dws-calculate-button-wrap">
+                        <button type="submit" class="dws-loan-calculator-calc-button default center-align">
+                          <span class="dws-button-layout-label dws-vdp-btn-label">CALCULATE PAYMENT</span>
+                          <span class="dws-button-layout-icon dws-vdp-btn-icon fa fa-calculator" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Loan calculator ends -->
 
   <!-- footer section starts -->
 
@@ -130,8 +298,8 @@
           <li class="links"><a href="index.html">Home</a></li>
           <li class="links"><a href="about.html">About</a></li>
           <li class="links"><a href="buycar.html">Buy Car</a></li>
-          <li class="links"><a href="blog.html">Blog</a></li>
           <li class="links"><a href="tradecar.html">Trade Car</a></li>
+          <li class="links"><a href="blog.html">Blog</a></li>
           <li class="links"><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -157,7 +325,7 @@
   <footer class="bottom-footer">
     <p>
       &copy; 2023 All Rights Reserved By
-      <a href="index.html">Sleek Auto</a>
+      <a href="index.html">AutoBeast</a>
     </p>
   </footer>
 

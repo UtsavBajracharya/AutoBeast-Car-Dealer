@@ -2843,26 +2843,33 @@ $(document).ready(function(){
     // Handle pagination link click
     $("#pagination").on("click", ".page-link", function(e) {
         e.preventDefault();
-        currentPage = parseInt($(".page-link.active").text());
+        var $clickedLink = $(this);
         
-        if ($(this).hasClass("prev")) { // Clicked on "Previous"
+        if ($clickedLink.hasClass("prev")) { // Clicked on "Previous"
             if (currentPage > 1) {
-                showPage(currentPage - 1);
-                $(".page-link").removeClass("active");
-                $(".page-link:nth-child("+(currentPage)+")").addClass("active");
+                currentPage --;
+                showPage(currentPage);
+                addClass(currentPage);
             }
-        } else if ($(this).hasClass("next")) { // Clicked on "Next"
+        } else if ($clickedLink.hasClass("next")) { // Clicked on "Next"
             if (currentPage < numPages) {
-                showPage(currentPage + 1);
-                $(".page-link").removeClass("active");
-                $(".page-link:nth-child("+(currentPage + 2)+")").addClass("active");
+                currentPage++;
+                showPage(currentPage);
+                addClass(currentPage);
             }
         } else { // Clicked on "Page Number"
-            showPage(parseInt($(this).text()));
-            $(".page-link").removeClass("active");
-            $(this).addClass("active");
+            var pageNumber = parseInt($clickedLink.text())
+            currentPage = pageNumber;
+            showPage(pageNumber);
+            addClass(currentPage);
+
         }
     });
+
+    function addClass(pageNumber) {
+        $(".page-link").removeClass("active");
+        $(".page-link").eq(pageNumber).addClass("active");
+    }
 
     // Fetch all data from json file
     function fetchData(data) {
