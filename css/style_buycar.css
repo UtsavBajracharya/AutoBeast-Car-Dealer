@@ -83,6 +83,7 @@ nav a.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0px !important;
 }
 
 .nav-link {
@@ -1013,7 +1014,7 @@ a {
     }
 
     .car-listing-filter-btn {
-        display: inline-block;
+        display: contents;
     }
 
     .slider.slider-horizontal >b {
