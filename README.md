@@ -1,7 +1,14 @@
-# FrontendProject
+# Car Dealer e-commerce website
 
-AutoBeast: A e-commerce website related to buy and sell of cars.
+AutoBeast: A e-commerce website related to buy and sell of cars. 
 
-Languages used: HTML, CSS, JavaScript and jQuery
+Features:
+1. Product Filters
+2. Product Search
+3. Product Details
+4. Loan Calculator
+5. Form validation
 
-Github link: https://utsavbajracharya.github.io/CarDealer-e-commerce-site
+Languages used: HTML, CSS, Bootstrap, JavaScript and jQuery
+
+Github link: https://utsavbajracharya.github.io/AutoBeast-CarDealer
